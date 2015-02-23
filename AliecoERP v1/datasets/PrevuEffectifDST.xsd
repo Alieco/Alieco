@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="PrevuEffectifDST" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="PrevuEffectifDST" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="PrevuEffectifDST" msprop:Generator_UserDSName="PrevuEffectifDST">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PrevuEffectif" msprop:Generator_TableClassName="PrevuEffectifDataTable" msprop:Generator_TableVarName="tablePrevuEffectif" msprop:Generator_TablePropName="PrevuEffectif" msprop:Generator_RowDeletingName="PrevuEffectifRowDeleting" msprop:Generator_RowChangingName="PrevuEffectifRowChanging" msprop:Generator_RowEvHandlerName="PrevuEffectifRowChangeEventHandler" msprop:Generator_RowDeletedName="PrevuEffectifRowDeleted" msprop:Generator_UserTableName="PrevuEffectif" msprop:Generator_RowChangedName="PrevuEffectifRowChanged" msprop:Generator_RowEvArgName="PrevuEffectifRowChangeEvent" msprop:Generator_RowClassName="PrevuEffectifRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Groupe" msprop:Generator_ColumnVarNameInTable="columnGroupe" msprop:Generator_ColumnPropNameInRow="Groupe" msprop:Generator_ColumnPropNameInTable="GroupeColumn" msprop:Generator_UserColumnName="Groupe" type="xs:string" minOccurs="0" />
+              <xs:element name="Motif" msprop:Generator_ColumnVarNameInTable="columnMotif" msprop:Generator_ColumnPropNameInRow="Motif" msprop:Generator_ColumnPropNameInTable="MotifColumn" msprop:Generator_UserColumnName="Motif" type="xs:string" minOccurs="0" />
+              <xs:element name="Prévu" msprop:Generator_ColumnVarNameInTable="columnPrévu" msprop:Generator_ColumnPropNameInRow="Prévu" msprop:Generator_ColumnPropNameInTable="PrévuColumn" msprop:Generator_UserColumnName="Prévu" type="xs:short" minOccurs="0" />
+              <xs:element name="PrévuRealisé" msprop:Generator_ColumnVarNameInTable="columnPrévuRealisé" msprop:Generator_ColumnPropNameInRow="PrévuRealisé" msprop:Generator_ColumnPropNameInTable="PrévuRealiséColumn" msprop:Generator_UserColumnName="PrévuRealisé" type="xs:short" minOccurs="0" />
+              <xs:element name="PrévuNonRealisé" msprop:Generator_ColumnVarNameInTable="columnPrévuNonRealisé" msprop:Generator_ColumnPropNameInRow="PrévuNonRealisé" msprop:Generator_ColumnPropNameInTable="PrévuNonRealiséColumn" msprop:Generator_UserColumnName="PrévuNonRealisé" type="xs:short" minOccurs="0" />
+              <xs:element name="RéaliséNonPrevu" msprop:Generator_ColumnVarNameInTable="columnRéaliséNonPrevu" msprop:Generator_ColumnPropNameInRow="RéaliséNonPrevu" msprop:Generator_ColumnPropNameInTable="RéaliséNonPrevuColumn" msprop:Generator_UserColumnName="RéaliséNonPrevu" type="xs:short" minOccurs="0" />
+              <xs:element name="TotalRéalisé" msprop:Generator_ColumnVarNameInTable="columnTotalRéalisé" msprop:Generator_ColumnPropNameInRow="TotalRéalisé" msprop:Generator_ColumnPropNameInTable="TotalRéaliséColumn" msprop:Generator_UserColumnName="TotalRéalisé" type="xs:short" minOccurs="0" />
+              <xs:element name="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" msprop:Generator_UserColumnName="Year" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

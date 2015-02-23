@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="CoutTravailDS" targetNamespace="http://tempuri.org/CoutTravailDS.xsd" xmlns:mstns="http://tempuri.org/CoutTravailDS.xsd" xmlns="http://tempuri.org/CoutTravailDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="CoutTravailDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="CoutTravailDS" msprop:Generator_UserDSName="CoutTravailDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="CoutTravailDT" msprop:Generator_TableClassName="CoutTravailDTDataTable" msprop:Generator_TableVarName="tableCoutTravailDT" msprop:Generator_TablePropName="CoutTravailDT" msprop:Generator_RowDeletingName="CoutTravailDTRowDeleting" msprop:Generator_RowChangingName="CoutTravailDTRowChanging" msprop:Generator_RowEvHandlerName="CoutTravailDTRowChangeEventHandler" msprop:Generator_RowDeletedName="CoutTravailDTRowDeleted" msprop:Generator_UserTableName="CoutTravailDT" msprop:Generator_RowChangedName="CoutTravailDTRowChanged" msprop:Generator_RowEvArgName="CoutTravailDTRowChangeEvent" msprop:Generator_RowClassName="CoutTravailDTRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Matricule" msprop:Generator_ColumnVarNameInTable="columnMatricule" msprop:Generator_ColumnPropNameInRow="Matricule" msprop:Generator_ColumnPropNameInTable="MatriculeColumn" msprop:Generator_UserColumnName="Matricule" type="xs:string" minOccurs="0" />
+              <xs:element name="NomPrenom" msprop:Generator_ColumnVarNameInTable="columnNomPrenom" msprop:Generator_ColumnPropNameInRow="NomPrenom" msprop:Generator_ColumnPropNameInTable="NomPrenomColumn" msprop:Generator_UserColumnName="NomPrenom" type="xs:string" minOccurs="0" />
+              <xs:element name="Fonction" msprop:Generator_ColumnVarNameInTable="columnFonction" msprop:Generator_ColumnPropNameInRow="Fonction" msprop:Generator_ColumnPropNameInTable="FonctionColumn" msprop:Generator_UserColumnName="Fonction" type="xs:string" minOccurs="0" />
+              <xs:element name="Direction" msprop:Generator_ColumnVarNameInTable="columnDirection" msprop:Generator_ColumnPropNameInRow="Direction" msprop:Generator_ColumnPropNameInTable="DirectionColumn" msprop:Generator_UserColumnName="Direction" type="xs:string" minOccurs="0" />
+              <xs:element name="Hall" msprop:Generator_ColumnVarNameInTable="columnHall" msprop:Generator_ColumnPropNameInRow="Hall" msprop:Generator_ColumnPropNameInTable="HallColumn" msprop:Generator_UserColumnName="Hall" type="xs:string" minOccurs="0" />
+              <xs:element name="SS" msprop:Generator_ColumnVarNameInTable="columnSS" msprop:Generator_ColumnPropNameInRow="SS" msprop:Generator_ColumnPropNameInTable="SSColumn" msprop:Generator_UserColumnName="SS" type="xs:string" minOccurs="0" />
+              <xs:element name="SI" msprop:Generator_ColumnVarNameInTable="columnSI" msprop:Generator_ColumnPropNameInRow="SI" msprop:Generator_ColumnPropNameInTable="SIColumn" msprop:Generator_UserColumnName="SI" type="xs:string" minOccurs="0" />
+              <xs:element name="Brute" msprop:Generator_ColumnVarNameInTable="columnBrute" msprop:Generator_ColumnPropNameInRow="Brute" msprop:Generator_ColumnPropNameInTable="BruteColumn" msprop:Generator_UserColumnName="Brute" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0032_5SS" msprop:Generator_ColumnVarNameInTable="column25SS" msprop:Generator_ColumnPropNameInRow="_25SS" msprop:Generator_ColumnPropNameInTable="_25SSColumn" msprop:Generator_UserColumnName="25SS" type="xs:string" minOccurs="0" />
+              <xs:element name="_x0033_SI" msprop:Generator_ColumnVarNameInTable="column3SI" msprop:Generator_ColumnPropNameInRow="_3SI" msprop:Generator_ColumnPropNameInTable="_3SIColumn" msprop:Generator_UserColumnName="3SI" type="xs:string" minOccurs="0" />
+              <xs:element name="Cout" msprop:Generator_ColumnVarNameInTable="columnCout" msprop:Generator_ColumnPropNameInRow="Cout" msprop:Generator_ColumnPropNameInTable="CoutColumn" msprop:Generator_UserColumnName="Cout" type="xs:string" minOccurs="0" />
+              <xs:element name="MoisAnnées" msprop:Generator_ColumnVarNameInTable="columnMoisAnnées" msprop:Generator_ColumnPropNameInRow="MoisAnnées" msprop:Generator_ColumnPropNameInTable="MoisAnnéesColumn" msprop:Generator_UserColumnName="MoisAnnées" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

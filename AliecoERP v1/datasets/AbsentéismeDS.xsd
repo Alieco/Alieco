@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="AbsentéismeDS" targetNamespace="http://tempuri.org/AbsentéismeDS.xsd" xmlns:mstns="http://tempuri.org/AbsentéismeDS.xsd" xmlns="http://tempuri.org/AbsentéismeDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="AbsentéismeDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="AbsentéismeDS" msprop:Generator_UserDSName="AbsentéismeDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PointageAbsence" msprop:Generator_TableClassName="PointageAbsenceDataTable" msprop:Generator_TableVarName="tablePointageAbsence" msprop:Generator_TablePropName="PointageAbsence" msprop:Generator_RowDeletingName="PointageAbsenceRowDeleting" msprop:Generator_RowChangingName="PointageAbsenceRowChanging" msprop:Generator_RowEvHandlerName="PointageAbsenceRowChangeEventHandler" msprop:Generator_RowDeletedName="PointageAbsenceRowDeleted" msprop:Generator_UserTableName="PointageAbsence" msprop:Generator_RowChangedName="PointageAbsenceRowChanged" msprop:Generator_RowEvArgName="PointageAbsenceRowChangeEvent" msprop:Generator_RowClassName="PointageAbsenceRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Matricule" msprop:Generator_ColumnVarNameInTable="columnMatricule" msprop:Generator_ColumnPropNameInRow="Matricule" msprop:Generator_ColumnPropNameInTable="MatriculeColumn" msprop:Generator_UserColumnName="Matricule" type="xs:double" minOccurs="0" />
+              <xs:element name="Nombre_absence" msprop:Generator_ColumnVarNameInTable="columnNombre_absence" msprop:Generator_ColumnPropNameInRow="Nombre_absence" msprop:Generator_ColumnPropNameInTable="Nombre_absenceColumn" msprop:Generator_UserColumnName="Nombre_absence" type="xs:double" minOccurs="0" />
+              <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom" type="xs:string" minOccurs="0" />
+              <xs:element name="Prénom" msprop:Generator_ColumnVarNameInTable="columnPrénom" msprop:Generator_ColumnPropNameInRow="Prénom" msprop:Generator_ColumnPropNameInTable="PrénomColumn" msprop:Generator_UserColumnName="Prénom" type="xs:string" minOccurs="0" />
+              <xs:element name="Direction" msprop:Generator_ColumnVarNameInTable="columnDirection" msprop:Generator_ColumnPropNameInRow="Direction" msprop:Generator_ColumnPropNameInTable="DirectionColumn" msprop:Generator_UserColumnName="Direction" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_pointage" msprop:Generator_ColumnVarNameInTable="columnDate_pointage" msprop:Generator_ColumnPropNameInRow="Date_pointage" msprop:Generator_ColumnPropNameInTable="Date_pointageColumn" msprop:Generator_UserColumnName="Date_pointage" type="xs:string" minOccurs="0" />
+              <xs:element name="Entree1" msprop:Generator_ColumnVarNameInTable="columnEntree1" msprop:Generator_ColumnPropNameInRow="Entree1" msprop:Generator_ColumnPropNameInTable="Entree1Column" msprop:Generator_UserColumnName="Entree1" type="xs:string" minOccurs="0" />
+              <xs:element name="Sortie1" msprop:Generator_ColumnVarNameInTable="columnSortie1" msprop:Generator_ColumnPropNameInRow="Sortie1" msprop:Generator_ColumnPropNameInTable="Sortie1Column" msprop:Generator_UserColumnName="Sortie1" type="xs:string" minOccurs="0" />
+              <xs:element name="Entree2" msprop:Generator_ColumnVarNameInTable="columnEntree2" msprop:Generator_ColumnPropNameInRow="Entree2" msprop:Generator_ColumnPropNameInTable="Entree2Column" msprop:Generator_UserColumnName="Entree2" type="xs:string" minOccurs="0" />
+              <xs:element name="Sortie2" msprop:Generator_ColumnVarNameInTable="columnSortie2" msprop:Generator_ColumnPropNameInRow="Sortie2" msprop:Generator_ColumnPropNameInTable="Sortie2Column" msprop:Generator_UserColumnName="Sortie2" type="xs:string" minOccurs="0" />
+              <xs:element name="Entree3" msprop:Generator_ColumnVarNameInTable="columnEntree3" msprop:Generator_ColumnPropNameInRow="Entree3" msprop:Generator_ColumnPropNameInTable="Entree3Column" msprop:Generator_UserColumnName="Entree3" type="xs:string" minOccurs="0" />
+              <xs:element name="Sortie3" msprop:Generator_ColumnVarNameInTable="columnSortie3" msprop:Generator_ColumnPropNameInRow="Sortie3" msprop:Generator_ColumnPropNameInTable="Sortie3Column" msprop:Generator_UserColumnName="Sortie3" type="xs:string" minOccurs="0" />
+              <xs:element name="Absence" msprop:Generator_ColumnVarNameInTable="columnAbsence" msprop:Generator_ColumnPropNameInRow="Absence" msprop:Generator_ColumnPropNameInTable="AbsenceColumn" msprop:Generator_UserColumnName="Absence" type="xs:string" minOccurs="0" />
+              <xs:element name="HeureSupplementaire" msprop:Generator_ColumnVarNameInTable="columnHeureSupplementaire" msprop:Generator_ColumnPropNameInRow="HeureSupplementaire" msprop:Generator_ColumnPropNameInTable="HeureSupplementaireColumn" msprop:Generator_UserColumnName="HeureSupplementaire" type="xs:string" minOccurs="0" />
+              <xs:element name="Motif" msprop:Generator_ColumnVarNameInTable="columnMotif" msprop:Generator_ColumnPropNameInRow="Motif" msprop:Generator_ColumnPropNameInTable="MotifColumn" msprop:Generator_UserColumnName="Motif" type="xs:string" minOccurs="0" />
+              <xs:element name="Fonction" msprop:Generator_ColumnVarNameInTable="columnFonction" msprop:Generator_ColumnPropNameInRow="Fonction" msprop:Generator_ColumnPropNameInTable="FonctionColumn" msprop:Generator_UserColumnName="Fonction" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

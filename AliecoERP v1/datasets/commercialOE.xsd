@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="commercialOE" targetNamespace="http://tempuri.org/commercialOE.xsd" xmlns:mstns="http://tempuri.org/commercialOE.xsd" xmlns="http://tempuri.org/commercialOE.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="commercialOE" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="commercialOE" msprop:Generator_UserDSName="commercialOE">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="commercial_ensemble_generalDS" msprop:Generator_TableClassName="commercial_ensemble_generalDSDataTable" msprop:Generator_TableVarName="tablecommercial_ensemble_generalDS" msprop:Generator_TablePropName="commercial_ensemble_generalDS" msprop:Generator_RowDeletingName="commercial_ensemble_generalDSRowDeleting" msprop:Generator_RowChangingName="commercial_ensemble_generalDSRowChanging" msprop:Generator_RowEvHandlerName="commercial_ensemble_generalDSRowChangeEventHandler" msprop:Generator_RowDeletedName="commercial_ensemble_generalDSRowDeleted" msprop:Generator_UserTableName="commercial_ensemble_generalDS" msprop:Generator_RowChangedName="commercial_ensemble_generalDSRowChanged" msprop:Generator_RowEvArgName="commercial_ensemble_generalDSRowChangeEvent" msprop:Generator_RowClassName="commercial_ensemble_generalDSRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ensembleG" msprop:Generator_ColumnVarNameInTable="columnensembleG" msprop:Generator_ColumnPropNameInRow="ensembleG" msprop:Generator_ColumnPropNameInTable="ensembleGColumn" msprop:Generator_UserColumnName="ensembleG" type="xs:string" minOccurs="0" />
+              <xs:element name="execution" msprop:Generator_ColumnVarNameInTable="columnexecution" msprop:Generator_ColumnPropNameInRow="execution" msprop:Generator_ColumnPropNameInTable="executionColumn" msprop:Generator_UserColumnName="execution" type="xs:string" minOccurs="0" />
+              <xs:element name="definition" msprop:Generator_ColumnVarNameInTable="columndefinition" msprop:Generator_ColumnPropNameInRow="definition" msprop:Generator_ColumnPropNameInTable="definitionColumn" msprop:Generator_UserColumnName="definition" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

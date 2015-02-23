@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="RecapDS" targetNamespace="http://tempuri.org/RecapDS.xsd" xmlns:mstns="http://tempuri.org/RecapDS.xsd" xmlns="http://tempuri.org/RecapDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="RecapDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="RecapDS" msprop:Generator_UserDSName="RecapDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Recap" msprop:Generator_TableClassName="RecapDataTable" msprop:Generator_TableVarName="tableRecap" msprop:Generator_TablePropName="Recap" msprop:Generator_RowDeletingName="RecapRowDeleting" msprop:Generator_RowChangingName="RecapRowChanging" msprop:Generator_RowEvHandlerName="RecapRowChangeEventHandler" msprop:Generator_RowDeletedName="RecapRowDeleted" msprop:Generator_UserTableName="Recap" msprop:Generator_RowChangedName="RecapRowChanged" msprop:Generator_RowEvArgName="RecapRowChangeEvent" msprop:Generator_RowClassName="RecapRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Code" msprop:Generator_ColumnVarNameInTable="columnCode" msprop:Generator_ColumnPropNameInRow="Code" msprop:Generator_ColumnPropNameInTable="CodeColumn" msprop:Generator_UserColumnName="Code" type="xs:string" minOccurs="0" />
+              <xs:element name="Libelle" msprop:Generator_ColumnVarNameInTable="columnLibelle" msprop:Generator_ColumnPropNameInRow="Libelle" msprop:Generator_ColumnPropNameInTable="LibelleColumn" msprop:Generator_UserColumnName="Libelle" type="xs:string" minOccurs="0" />
+              <xs:element name="Gain" msprop:Generator_ColumnVarNameInTable="columnGain" msprop:Generator_ColumnPropNameInRow="Gain" msprop:Generator_ColumnPropNameInTable="GainColumn" msprop:Generator_UserColumnName="Gain" type="xs:string" minOccurs="0" />
+              <xs:element name="Retenue" msprop:Generator_ColumnVarNameInTable="columnRetenue" msprop:Generator_ColumnPropNameInRow="Retenue" msprop:Generator_ColumnPropNameInTable="RetenueColumn" msprop:Generator_UserColumnName="Retenue" type="xs:string" minOccurs="0" />
+              <xs:element name="TCO" msprop:Generator_ColumnVarNameInTable="columnTCO" msprop:Generator_ColumnPropNameInRow="TCO" msprop:Generator_ColumnPropNameInTable="TCOColumn" msprop:Generator_UserColumnName="TCO" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

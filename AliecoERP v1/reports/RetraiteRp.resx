@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Text1.Text" xml:space="preserve">
+    <value>                     D E C I S I O N
+
+§	
+
+Vu la Loi 88.01 DU 12 Janvier 1988 portant Loi d’orientation sur les  Entreprises Publiques Economiques,
+§	Vu les statuts portant transformation de l’Entreprise « E.N.C.C. » en Entreprise Publique Economique constituée en société par action,
+§	Vu les statuts du 31 Octobre 2000 portant constitution d’une société par action filiale de « E.N.C.C. », dénommée « Algérian Industrial Equipment Company  ALIECO » SPA,
+§	Vu le Procés-Verbal de délibération du conseil d’administration de la  société « ALIECO » SPA, portant nomination de Monsieur LAKHDAR BARKAT  Président Directeur Général de la société « ALIECO » SPA du 07.04.2002,
+§	Vu  la Convention collective de « ALIECO.» du Décembre 2011,
+§	Vu la notification CNR N B 8 W 030881en date de la 31/12/2013portante attribution d’une pension de retraite à Monsieur BOUAFIAIbrahim, 
+
+
+D E C I D E
+
+
+ARTICLE 01  Monsieur [retraiteTB.NomPrenom], est mis en position de retraite.  
+                              
+ARTICLE 02  La présente décision prend effet à compter du [retraiteTB.DR]. 
+
+ARTICLE 03  Monsieur le Chef de Département Gestion des Ressources Humaines est chargé 
+                         de l’application de la présente décision.	 
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                       
+                                                                                                                                                                        PrintDate
+           
+                     D E C I S I O N
+  
+§	Vu la Loi 88.01 DU 12 Janvier 1988 portant Loi d’orientation sur les Entreprises Publiques Economiques,
+§	Vu les statuts portant transformation de l’Entreprise « E.N.C.C. » en Entreprise Publique Economique constituée en société par action,
+§	Vu les statuts du 31 Octobre 2000 portant constitution d’une société par action filiale de « E.N.C.C. », dénommée « Algérian Industrial Equipment Company  ALIECO » SPA,
+§	Vu le Procès-verbal de délibération  du conseil d’administration de la  société « ALIECO » SPA, portant nomination de Monsieur LAKHDAR BARKAT  Président Directeur Général de la société « ALIECO  SPA » du 07.04.2002,
+§	Vu la convention collective du 22 Décembre 2011,
+§	Vu la décision N° 440 du 23/04/2014 portant mis à la retraite de Monsieur BOUAFIA Ibrahim, 
+
+D E C I D E
+
+ARTICLE 01  Il  est  attribué  à Monsieur  [retraiteTB.NomPrenom]  l’indemnité  de départ à 
+                         la retraite soit : [retraiteTB.indemnité]  mois de salaire.
+
+   ARTICLE 02   L’indemnité de départ en retraite est composée des éléments suivants :         
+                            
+v	Salaire soumis à la  sécurité sociale après majoration.
+
+ARTICLE 03  Le paiement de cette indemnité se fera sur le bulletin de paie portant solde de tout
+                         compte de l’intéressée.
+
+ARTICLE 04 La présente décision prend effet à compter du  [retraiteTB.DR]. 
+
+ARTICLE 05  Monsieur  le Chef  de Département  Gestion des Ressources Humaines est Chargé 
+                         de l’application de la présente décision.
+
+
+
+
+
+                                                                                                               PrintDate
+
+                     D E C I S I O N
+
+§	Vu la loi 88.01 du  12 janvier 1988 portant loi d’orientation sur les entreprises publiques économiques.
+§	Vu les statuts portant transformation de l’entreprise « ENCC » en  entreprise publiques économiques constituée en société par action.
+§	Vu les statuts du 31 octobre 2000  portant constitution d’une société par action filiale de « ENCC »  dénommée  «  Algerian  Industrial  Equipment  Company »  « ALIECO » 
+§	Vu le procès - verbal de délibération  du  conseil  d’administration  de  la société «  ALIECO » S.P.A, portant nomination  de Monsieur LAKHDAR  BARKAT  Président Directeur  Général de la Société « ALIECO » S.P.A , du 07 AVRIL 2002,                                                                    
+§	Vu   les dispositions de la convention collective de ALIECO du 22 Décembre 2011,
+D E C I D E
+
+
+  ARTICLE 01  Au titre de départ a la retraite de Monsieur : [retraiteTB.NomPrenom]. Rappel des salaires soumis à cotisations sociales des {retraiteTB.cotisations_sociales} dernières années précédant son départ à la retraite sont majorés comme suit : 
+
+		          Salaires soumis à S.S.		                           Majoration	 	Rappel 
+
+                    1ére   année:   [retraiteTB.anne1]     DA             X                         05  %            =         [retraiteTB.1ere]     DA
+                    2éme   année:  [retraiteTB.anne2]     DA             X                         10  %            =       [retraiteTB.2eme]    DA
+                    3éme   année:  [retraiteTB.anne3]     DA             X                         14  %            =       [retraiteTB.3eme]    DA
+                    4éme   année:  [retraiteTB.anne4]     DA             X                         18  %            =       [retraiteTB.4eme]    DA
+	              5éme   année:  [retraiteTB.anne5]     DA             X                         22  %            =       [retraiteTB.5eme]    DA
+		
+    Soit un rappel de  [retraiteTB.rappel]  DA  au titre des  cinq (05) dernières années.
+
+
+   ARTICLE 02  La présente décision prend effet à compter du  [retraiteTB.DR], avec effet rétroactif 
+              au : 02/05/2009.
+
+  ARTICLE 03 Le chef de département Gestion des Ressources Humaines et le chef de                                  Département Finances et Comptabilité sont chargés chacun en ce qui le concerne de l’application de la présente décision.
+
+CAISSE  NATIONALE DE  RETRAITES
+
+AGENCE D’ALGER
+
+ATTESTATION DE CESSATION D’ACTIVITE SALARIEE
+
+01 IDENTIFICATION DE L’EMPLOYEUR :  Raison sociale : Algerian Industriel Equipment Company  Adresse: BP 429 Rue Aziouez Mouzaoui Hussein dey Alger  N° d’adhèrent à la CNAS: 16.131204.78	
+
+02 ATTESTATION  L’Employeur désigné ci-dessus atteste que : [retraiteTB.NomPrenom]
+
+Né (e) le : [retraiteTB.DN]        à :  [retraiteTB.LN][retraiteTB.ville]
+
+N° A/S : [retraiteTB.NA]      N° de pension : [retraiteTB.NP]
+
+A fait partie de l’entreprise du : [retraiteTB.DE]    au : [retraiteTB.DS]
+
+Est radié (e) de l’effectif de notre personnel à compter du : [retraiteTB.DR]
+
+En outre, il sera mis fin à tout forme de rémunération à son profit
+
+Postérieurement à la date de sa radiation fixée ci-dessus.	
+
+NB : Document à compléter sans rature ni surcharge.	
+
+Fait à Alger, le : PrintDate
+
+Cachet et signature de l’employeur
+
+
+
+
+
+
+
+	
+
+Tout personne ayant offert, accepté ou prêté des services en vue de contrevenir aux dispositions applicables en matière de sécurité sociale ainsi que toute personne ayant été convaincu de fraude ou de fausses déclarations, et afin d’obtenir indûment à des tiers, des prestations, sont passibles d’une amende égale ou double des prestations servies à tort par l’organisme de sécurité sociale. (Art : 78 Loi N° 83-15 du 02 Juillet 1985)	</value>
+  </data>
+  <metadata name="OleDbDataAdapter1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="OleDbCommand1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 56</value>
+  </metadata>
+  <metadata name="OleDbConnection1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 95</value>
+  </metadata>
+  <metadata name="RetraiteDSt1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 134</value>
+  </metadata>
+</root>

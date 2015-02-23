@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSet3" targetNamespace="http://tempuri.org/DataSet3.xsd" xmlns:mstns="http://tempuri.org/DataSet3.xsd" xmlns="http://tempuri.org/DataSet3.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSet3" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSet3" msprop:Generator_UserDSName="DataSet3">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="Stagiaire" msprop:Generator_TableClassName="StagiaireDataTable" msprop:Generator_TableVarName="tableStagiaire" msprop:Generator_RowChangedName="StagiaireRowChanged" msprop:Generator_TablePropName="Stagiaire" msprop:Generator_RowDeletingName="StagiaireRowDeleting" msprop:Generator_RowChangingName="StagiaireRowChanging" msprop:Generator_RowEvHandlerName="StagiaireRowChangeEventHandler" msprop:Generator_RowDeletedName="StagiaireRowDeleted" msprop:Generator_RowClassName="StagiaireRow" msprop:Generator_UserTableName="Stagiaire" msprop:Generator_RowEvArgName="StagiaireRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Matricule" msprop:Generator_ColumnVarNameInTable="columnMatricule" msprop:Generator_ColumnPropNameInRow="Matricule" msprop:Generator_ColumnPropNameInTable="MatriculeColumn" msprop:Generator_UserColumnName="Matricule" type="xs:string" minOccurs="0" />
+              <xs:element name="Nom" msprop:Generator_ColumnVarNameInTable="columnNom" msprop:Generator_ColumnPropNameInRow="Nom" msprop:Generator_ColumnPropNameInTable="NomColumn" msprop:Generator_UserColumnName="Nom" type="xs:string" minOccurs="0" />
+              <xs:element name="Prénom" msprop:Generator_ColumnVarNameInTable="columnPrénom" msprop:Generator_ColumnPropNameInRow="Prénom" msprop:Generator_ColumnPropNameInTable="PrénomColumn" msprop:Generator_UserColumnName="Prénom" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_de_naissance" msprop:Generator_ColumnVarNameInTable="columnDate_de_naissance" msprop:Generator_ColumnPropNameInRow="Date_de_naissance" msprop:Generator_ColumnPropNameInTable="Date_de_naissanceColumn" msprop:Generator_UserColumnName="Date_de_naissance" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_dEntrée" msprop:Generator_ColumnVarNameInTable="columnDate_dEntrée" msprop:Generator_ColumnPropNameInRow="Date_dEntrée" msprop:Generator_ColumnPropNameInTable="Date_dEntréeColumn" msprop:Generator_UserColumnName="Date_dEntrée" type="xs:string" minOccurs="0" />
+              <xs:element name="Date_de_sortie" msprop:Generator_ColumnVarNameInTable="columnDate_de_sortie" msprop:Generator_ColumnPropNameInRow="Date_de_sortie" msprop:Generator_ColumnPropNameInTable="Date_de_sortieColumn" msprop:Generator_UserColumnName="Date_de_sortie" type="xs:string" minOccurs="0" />
+              <xs:element name="Spécialité" msprop:Generator_ColumnVarNameInTable="columnSpécialité" msprop:Generator_ColumnPropNameInRow="Spécialité" msprop:Generator_ColumnPropNameInTable="SpécialitéColumn" msprop:Generator_UserColumnName="Spécialité" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

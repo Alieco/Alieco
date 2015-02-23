@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="Formationdst" targetNamespace="http://tempuri.org/Formationdst.xsd" xmlns:mstns="http://tempuri.org/Formationdst.xsd" xmlns="http://tempuri.org/Formationdst.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="Formationdst" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="Formationdst" msprop:Generator_UserDSName="Formationdst">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="PFormation" msprop:Generator_TableClassName="PFormationDataTable" msprop:Generator_TableVarName="tablePFormation" msprop:Generator_TablePropName="PFormation" msprop:Generator_RowDeletingName="PFormationRowDeleting" msprop:Generator_RowChangingName="PFormationRowChanging" msprop:Generator_RowEvHandlerName="PFormationRowChangeEventHandler" msprop:Generator_RowDeletedName="PFormationRowDeleted" msprop:Generator_UserTableName="PFormation" msprop:Generator_RowChangedName="PFormationRowChanged" msprop:Generator_RowEvArgName="PFormationRowChangeEvent" msprop:Generator_RowClassName="PFormationRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Specialite" msprop:Generator_ColumnVarNameInTable="columnSpecialite" msprop:Generator_ColumnPropNameInRow="Specialite" msprop:Generator_ColumnPropNameInTable="SpecialiteColumn" msprop:Generator_UserColumnName="Specialite" type="xs:string" minOccurs="0" />
+              <xs:element name="NatureFormation" msprop:Generator_ColumnVarNameInTable="columnNatureFormation" msprop:Generator_ColumnPropNameInRow="NatureFormation" msprop:Generator_ColumnPropNameInTable="NatureFormationColumn" msprop:Generator_UserColumnName="NatureFormation" type="xs:string" minOccurs="0" />
+              <xs:element name="EffectifPrevu" msprop:Generator_ColumnVarNameInTable="columnEffectifPrevu" msprop:Generator_ColumnPropNameInRow="EffectifPrevu" msprop:Generator_ColumnPropNameInTable="EffectifPrevuColumn" msprop:Generator_UserColumnName="EffectifPrevu" type="xs:short" minOccurs="0" />
+              <xs:element name="Alternance" msprop:Generator_ColumnVarNameInTable="columnAlternance" msprop:Generator_ColumnPropNameInRow="Alternance" msprop:Generator_ColumnPropNameInTable="AlternanceColumn" msprop:Generator_UserColumnName="Alternance" type="xs:string" minOccurs="0" />
+              <xs:element name="Duree" msprop:Generator_ColumnVarNameInTable="columnDuree" msprop:Generator_ColumnPropNameInRow="Duree" msprop:Generator_ColumnPropNameInTable="DureeColumn" msprop:Generator_UserColumnName="Duree" type="xs:string" minOccurs="0" />
+              <xs:element name="DateDebut" msprop:Generator_ColumnVarNameInTable="columnDateDebut" msprop:Generator_ColumnPropNameInRow="DateDebut" msprop:Generator_ColumnPropNameInTable="DateDebutColumn" msprop:Generator_UserColumnName="DateDebut" type="xs:string" minOccurs="0" />
+              <xs:element name="CoutTTC" msprop:Generator_ColumnVarNameInTable="columnCoutTTC" msprop:Generator_ColumnPropNameInRow="CoutTTC" msprop:Generator_ColumnPropNameInTable="CoutTTCColumn" msprop:Generator_UserColumnName="CoutTTC" type="xs:double" minOccurs="0" />
+              <xs:element name="Lieu" msprop:Generator_ColumnVarNameInTable="columnLieu" msprop:Generator_ColumnPropNameInRow="Lieu" msprop:Generator_ColumnPropNameInTable="LieuColumn" msprop:Generator_UserColumnName="Lieu" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

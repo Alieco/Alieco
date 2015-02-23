@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="prestationDS" targetNamespace="http://tempuri.org/prestationDS.xsd" xmlns:mstns="http://tempuri.org/prestationDS.xsd" xmlns="http://tempuri.org/prestationDS.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="prestationDS" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="prestationDS" msprop:Generator_UserDSName="prestationDS">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tab_comparative" msprop:Generator_TableClassName="tab_comparativeDataTable" msprop:Generator_TableVarName="tabletab_comparative" msprop:Generator_TablePropName="tab_comparative" msprop:Generator_RowDeletingName="tab_comparativeRowDeleting" msprop:Generator_RowChangingName="tab_comparativeRowChanging" msprop:Generator_RowEvHandlerName="tab_comparativeRowChangeEventHandler" msprop:Generator_RowDeletedName="tab_comparativeRowDeleted" msprop:Generator_UserTableName="tab_comparative" msprop:Generator_RowChangedName="tab_comparativeRowChanged" msprop:Generator_RowEvArgName="tab_comparativeRowChangeEvent" msprop:Generator_RowClassName="tab_comparativeRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Description" msprop:Generator_ColumnVarNameInTable="columnDescription" msprop:Generator_ColumnPropNameInRow="Description" msprop:Generator_ColumnPropNameInTable="DescriptionColumn" msprop:Generator_UserColumnName="Description" type="xs:string" minOccurs="0" />
+              <xs:element name="Prestataire" msprop:Generator_ColumnVarNameInTable="columnPrestataire" msprop:Generator_ColumnPropNameInRow="Prestataire" msprop:Generator_ColumnPropNameInTable="PrestataireColumn" msprop:Generator_UserColumnName="Prestataire" type="xs:string" minOccurs="0" />
+              <xs:element name="Prestataire_consulter" msprop:Generator_ColumnVarNameInTable="columnPrestataire_consulter" msprop:Generator_ColumnPropNameInRow="Prestataire_consulter" msprop:Generator_ColumnPropNameInTable="Prestataire_consulterColumn" msprop:Generator_UserColumnName="Prestataire_consulter" type="xs:string" minOccurs="0" />
+              <xs:element name="Delai" msprop:Generator_ColumnVarNameInTable="columnDelai" msprop:Generator_ColumnPropNameInRow="Delai" msprop:Generator_ColumnPropNameInTable="DelaiColumn" msprop:Generator_UserColumnName="Delai" type="xs:string" minOccurs="0" />
+              <xs:element name="PrixHT" msprop:Generator_ColumnVarNameInTable="columnPrixHT" msprop:Generator_ColumnPropNameInRow="PrixHT" msprop:Generator_ColumnPropNameInTable="PrixHTColumn" msprop:Generator_UserColumnName="PrixHT" type="xs:string" minOccurs="0" />
+              <xs:element name="PrixTTC" msprop:Generator_ColumnVarNameInTable="columnPrixTTC" msprop:Generator_ColumnPropNameInRow="PrixTTC" msprop:Generator_ColumnPropNameInTable="PrixTTCColumn" msprop:Generator_UserColumnName="PrixTTC" type="xs:string" minOccurs="0" />
+              <xs:element name="Modalite_paiement" msprop:Generator_ColumnVarNameInTable="columnModalite_paiement" msprop:Generator_ColumnPropNameInRow="Modalite_paiement" msprop:Generator_ColumnPropNameInTable="Modalite_paiementColumn" msprop:Generator_UserColumnName="Modalite_paiement" type="xs:string" minOccurs="0" />
+              <xs:element name="Observation" msprop:Generator_ColumnVarNameInTable="columnObservation" msprop:Generator_ColumnPropNameInRow="Observation" msprop:Generator_ColumnPropNameInTable="ObservationColumn" msprop:Generator_UserColumnName="Observation" type="xs:string" minOccurs="0" />
+              <xs:element name="Titre_formation" msprop:Generator_ColumnVarNameInTable="columnTitre_formation" msprop:Generator_ColumnPropNameInRow="Titre_formation" msprop:Generator_ColumnPropNameInTable="Titre_formationColumn" msprop:Generator_UserColumnName="Titre_formation" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

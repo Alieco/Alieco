@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SortByGender" targetNamespace="http://tempuri.org/SortByGender.xsd" xmlns:mstns="http://tempuri.org/SortByGender.xsd" xmlns="http://tempuri.org/SortByGender.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SortByGender" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="SortByGender" msprop:Generator_UserDSName="SortByGender">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="SomeGender" msprop:Generator_TableClassName="SomeGenderDataTable" msprop:Generator_TableVarName="tableSomeGender" msprop:Generator_TablePropName="SomeGender" msprop:Generator_RowDeletingName="SomeGenderRowDeleting" msprop:Generator_RowChangingName="SomeGenderRowChanging" msprop:Generator_RowEvHandlerName="SomeGenderRowChangeEventHandler" msprop:Generator_RowDeletedName="SomeGenderRowDeleted" msprop:Generator_UserTableName="SomeGender" msprop:Generator_RowChangedName="SomeGenderRowChanged" msprop:Generator_RowEvArgName="SomeGenderRowChangeEvent" msprop:Generator_RowClassName="SomeGenderRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre_x0020_de_x0020_Femme" msprop:Generator_ColumnVarNameInTable="columnNombre_de_Femme" msprop:Generator_ColumnPropNameInRow="Nombre_de_Femme" msprop:Generator_ColumnPropNameInTable="Nombre_de_FemmeColumn" msprop:Generator_UserColumnName="Nombre de Femme" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_x0020_d_x0027__x0020_Homme" msprop:Generator_ColumnVarNameInTable="_columnNombre_d__Homme" msprop:Generator_ColumnPropNameInRow="_Nombre_d__Homme" msprop:Generator_ColumnPropNameInTable="_Nombre_d__HommeColumn" msprop:Generator_UserColumnName="Nombre d' Homme" type="xs:string" minOccurs="0" />
+              <xs:element name="nf" msprop:Generator_ColumnVarNameInTable="columnnf" msprop:Generator_ColumnPropNameInRow="nf" msprop:Generator_ColumnPropNameInTable="nfColumn" msprop:Generator_UserColumnName="nf" type="xs:string" minOccurs="0" />
+              <xs:element name="nh" msprop:Generator_ColumnVarNameInTable="columnnh" msprop:Generator_ColumnPropNameInRow="nh" msprop:Generator_ColumnPropNameInTable="nhColumn" msprop:Generator_UserColumnName="nh" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="GenderByYear" msprop:Generator_TableClassName="GenderByYearDataTable" msprop:Generator_TableVarName="tableGenderByYear" msprop:Generator_TablePropName="GenderByYear" msprop:Generator_RowDeletingName="GenderByYearRowDeleting" msprop:Generator_RowChangingName="GenderByYearRowChanging" msprop:Generator_RowEvHandlerName="GenderByYearRowChangeEventHandler" msprop:Generator_RowDeletedName="GenderByYearRowDeleted" msprop:Generator_UserTableName="GenderByYear" msprop:Generator_RowChangedName="GenderByYearRowChanged" msprop:Generator_RowEvArgName="GenderByYearRowChangeEvent" msprop:Generator_RowClassName="GenderByYearRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Nombre_x0020_de_x0020_Femme" msprop:Generator_ColumnVarNameInTable="columnNombre_de_Femme" msprop:Generator_ColumnPropNameInRow="Nombre_de_Femme" msprop:Generator_ColumnPropNameInTable="Nombre_de_FemmeColumn" msprop:Generator_UserColumnName="Nombre de Femme" type="xs:string" minOccurs="0" />
+              <xs:element name="Nombre_x0020_d_x0027__x0020_Homme" msprop:Generator_ColumnVarNameInTable="_columnNombre_d__Homme" msprop:Generator_ColumnPropNameInRow="_Nombre_d__Homme" msprop:Generator_ColumnPropNameInTable="_Nombre_d__HommeColumn" msprop:Generator_UserColumnName="Nombre d' Homme" type="xs:string" minOccurs="0" />
+              <xs:element name="Year" msprop:Generator_ColumnVarNameInTable="columnYear" msprop:Generator_ColumnPropNameInRow="Year" msprop:Generator_ColumnPropNameInTable="YearColumn" msprop:Generator_UserColumnName="Year" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
