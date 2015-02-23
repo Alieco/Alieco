@@ -138,15 +138,7 @@ Public Class AttestationDeTravail
 
     Private Sub ButtonX2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonX2.Click
         matr = ListMatNom.Value
-        'Dim dsObj As AttestationDS = New AttestationDS
-        'FillDataSet(dsObj)
-        'Dim cr As AttestationRp = New AttestationRp
-        '' Set the report DataSet   
-        ''cr.SetDataSource(ds)
-        ''CrystalReportViewer1.ReportSource = cr
-        'cr.DataSource = dsObj
-        'DocumentViewer1.DocumentSource = cr
-        'cr.CreateDocument(True)
+       
         IsConnected("SELECT Matricule,Nom,Prénom,Date_de_Naissance,Lieux_de_Naissance,Ville,Date_entrée,Date_fin_de_contrat,Fonction,Sexe FROM Employes WHERE Matricule ='" & matr & "'", False)
         If myDR.HasRows Then
             While myDR.Read
