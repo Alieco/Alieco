@@ -39,6 +39,7 @@ Partial Class GestionArretTravail
         Me.ModifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.StatImageList = New System.Windows.Forms.ImageList(Me.components)
+        Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
         Me.GroupBox1.SuspendLayout()
         CType(Me.au, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.du, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -51,6 +52,7 @@ Partial Class GestionArretTravail
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
+        Me.GroupBox1.Controls.Add(Me.LabelX3)
         Me.GroupBox1.Controls.Add(Me.au)
         Me.GroupBox1.Controls.Add(Me.du)
         Me.GroupBox1.Controls.Add(Me.LabelX2)
@@ -63,7 +65,7 @@ Partial Class GestionArretTravail
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(1308, 107)
+        Me.GroupBox1.Size = New System.Drawing.Size(1336, 107)
         Me.GroupBox1.TabIndex = 0
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Controle des Arréts"
@@ -246,7 +248,7 @@ Partial Class GestionArretTravail
         Me.arretDgv.LookAndFeel.UseDefaultLookAndFeel = False
         Me.arretDgv.MainView = Me.GridView1
         Me.arretDgv.Name = "arretDgv"
-        Me.arretDgv.Size = New System.Drawing.Size(1308, 809)
+        Me.arretDgv.Size = New System.Drawing.Size(1336, 823)
         Me.arretDgv.TabIndex = 1
         Me.arretDgv.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -306,11 +308,23 @@ Partial Class GestionArretTravail
         Me.StatImageList.Images.SetKeyName(3, "warning.png")
         Me.StatImageList.Images.SetKeyName(4, "user_id2.png")
         '
+        'LabelX3
+        '
+        '
+        '
+        '
+        Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.LabelX3.ForeColor = System.Drawing.Color.DarkRed
+        Me.LabelX3.Location = New System.Drawing.Point(533, 29)
+        Me.LabelX3.Name = "LabelX3"
+        Me.LabelX3.Size = New System.Drawing.Size(488, 23)
+        Me.LabelX3.TabIndex = 277
+        '
         'GestionArretTravail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1308, 916)
+        Me.ClientSize = New System.Drawing.Size(1336, 930)
         Me.Controls.Add(Me.arretDgv)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True
@@ -348,4 +362,5 @@ Partial Class GestionArretTravail
     Friend WithEvents LabelX1 As DevComponents.DotNetBar.LabelX
     Friend WithEvents au As DevComponents.Editors.DateTimeAdv.DateTimeInput
     Friend WithEvents du As DevComponents.Editors.DateTimeAdv.DateTimeInput
+    Friend WithEvents LabelX3 As DevComponents.DotNetBar.LabelX
 End Class

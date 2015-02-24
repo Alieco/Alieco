@@ -130,7 +130,7 @@ Partial Class ListOE
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1326, 130)
+        Me.GroupBox1.Size = New System.Drawing.Size(1354, 130)
         Me.GroupBox1.TabIndex = 124
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "La liste des Offres :"
@@ -318,7 +318,7 @@ Partial Class ListOE
         Me.dgoe.LookAndFeel.UseDefaultLookAndFeel = False
         Me.dgoe.MainView = Me.GridView1
         Me.dgoe.Name = "dgoe"
-        Me.dgoe.Size = New System.Drawing.Size(1326, 728)
+        Me.dgoe.Size = New System.Drawing.Size(1354, 742)
         Me.dgoe.TabIndex = 126
         Me.dgoe.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -384,7 +384,7 @@ Partial Class ListOE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1326, 858)
+        Me.ClientSize = New System.Drawing.Size(1354, 872)
         Me.Controls.Add(Me.dgoe)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True

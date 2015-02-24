@@ -3,6 +3,8 @@ Imports DevExpress.XtraEditors.Controls
 Public Class GestionArretTravail
     Dim sql As New SQLControl
     Dim val As Integer = 0
+    Dim nb
+    Dim nb1
 #Region "Fonctions"
     Private Sub load_Matricule_Nom()
         ListMatNom.Properties.Items.Clear()
@@ -145,20 +147,41 @@ Public Class GestionArretTravail
         If du.Value = Nothing Or au.Value = Nothing Then
             MessageBoxEx.Show("Veuillez saisir la date!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Else
+            Dim a As Date = au.Value.ToString("dd-MM-yyyy")
+            a = a.AddDays(+1)
             If ListMatNom.SelectedIndex <> -1 Then
                 If sql.VerifiyConnection = True Then
                     'MessageBoxEx.Show("Vous devez sélectionner un matricule avant de cliquer ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    sql.RunQuery("SELECT idArret_de_travail as 'Numero de referance',employes.Matricule,Nom,Prénom,Date_de_Naissance as 'Date de Naissance',lieux_de_naissance as 'Lieu de Naissance',arret_du as 'Arrét du',arret_au as 'Arrét au',nb_jours as 'Nombre de jours',date_reprise as 'Date de Reprise',nature_conge as 'Nature de Congé',siege_lesion as 'Siege des liaisions',nature_lesion as 'Nature des liaisions',Observation FROM social_arret_de_travail,employes WHERE employes.Matricule = social_arret_de_travail.matricule and employes.Matricule ='" & ListMatNom.Value & "'and (social_arret_de_travail.arret_du>= '" & du.Value.ToString("dd-MM-yyyy") & "' and social_arret_de_travail.arret_du<='" & au.Value.ToString("dd-MM-yyyy") & "')")
+                    sql.RunQuery("SELECT idArret_de_travail as 'Numero de referance',employes.Matricule,Nom,Prénom,Date_de_Naissance as 'Date de Naissance',lieux_de_naissance as 'Lieu de Naissance',arret_du as 'Arrét du',arret_au as 'Arrét au',nb_jours as 'Nombre de jours',date_reprise as 'Date de Reprise',nature_conge as 'Nature de Congé',siege_lesion as 'Siege des liaisions',nature_lesion as 'Nature des liaisions',Observation FROM social_arret_de_travail,employes WHERE employes.Matricule = social_arret_de_travail.matricule and employes.Matricule ='" & ListMatNom.Value & "'and (social_arret_de_travail.arret_du>= '" & du.Value.ToString("dd-MM-yyyy") & "' and social_arret_de_travail.arret_du<='" & a.ToString("dd-MM-yyyy") & "')")
                 End If
                 If sql.SQLDS.Tables.Count > 0 Then
+                    nb = sql.SQLDS.Tables(0).Rows.Count
                     arretDgv.DataSource = sql.SQLDS.Tables(0)
+                End If
+                LabelX3.Text = ""
+                If nb = 0 Then
+                    MessageBox.Show("il n'y a pas des donneés sur l'arret de travail entre les 2 Date", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    LabelX3.Text = ""
+                ElseIf nb = 1 Then
+                    LabelX3.Text = "Le nombre de ligne est : " & nb
+                Else
+                    LabelX3.Text = "Le nombre des lignes sont : " & nb
                 End If
             Else
                 If sql.VerifiyConnection = True Then
-                    sql.RunQuery("SELECT idArret_de_travail as 'Numero de referance',employes.Matricule,Nom,Prénom,Date_de_Naissance as 'Date de Naissance',lieux_de_naissance as 'Lieu de Naissance',arret_du as 'Arrét du',arret_au as 'Arrét au',nb_jours as 'Nombre de jours',date_reprise as 'Date de Reprise',nature_conge as 'Nature de Congé',siege_lesion as 'Siege des liaisions',nature_lesion as 'Nature des liaisions',Observation FROM social_arret_de_travail,employes WHERE employes.Matricule = social_arret_de_travail.matricule and (social_arret_de_travail.arret_du>= '" & du.Value.ToString("dd-MM-yyyy") & "' and social_arret_de_travail.arret_du<='" & au.Value.ToString("dd-MM-yyyy") & "')")
+                    sql.RunQuery("SELECT idArret_de_travail as 'Numero de referance',employes.Matricule,Nom,Prénom,Date_de_Naissance as 'Date de Naissance',lieux_de_naissance as 'Lieu de Naissance',arret_du as 'Arrét du',arret_au as 'Arrét au',nb_jours as 'Nombre de jours',date_reprise as 'Date de Reprise',nature_conge as 'Nature de Congé',siege_lesion as 'Siege des liaisions',nature_lesion as 'Nature des liaisions',Observation FROM social_arret_de_travail,employes WHERE employes.Matricule = social_arret_de_travail.matricule and (social_arret_de_travail.arret_du>= '" & du.Value.ToString("dd-MM-yyyy") & "' and social_arret_de_travail.arret_du<='" & a.ToString("dd-MM-yyyy") & "')")
                 End If
                 If sql.SQLDS.Tables.Count > 0 Then
+                    nb1 = sql.SQLDS.Tables(0).Rows.Count
                     arretDgv.DataSource = sql.SQLDS.Tables(0)
+                End If
+                If nb1 = 0 Then
+                    MessageBox.Show("il n'y a pas des donneés sur l'arret de travail ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                    LabelX3.Text = ""
+                ElseIf nb1 = 1 Then
+                    LabelX3.Text = "Le nombre de ligne est : " & nb1
+                Else
+                    LabelX3.Text = "Le nombre des lignes sont : " & nb1
                 End If
             End If
             End If
