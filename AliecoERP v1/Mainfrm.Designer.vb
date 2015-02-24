@@ -4172,6 +4172,7 @@ Partial Class Mainfrm
         Me.ButtonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.ButtonX3.Location = New System.Drawing.Point(218, 13)
         Me.ButtonX3.Name = "ButtonX3"
+        Me.ButtonX3.Shortcuts.Add(DevComponents.DotNetBar.eShortcut.CtrlShiftD)
         Me.ButtonX3.Size = New System.Drawing.Size(75, 21)
         Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ButtonX3.TabIndex = 35

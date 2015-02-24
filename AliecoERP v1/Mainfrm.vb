@@ -16,7 +16,7 @@ Public Class Mainfrm
         RibbonStateCommand.Checked = Not RibbonStateCommand.Checked
     End Sub
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-
+        Me.KeyPreview = True
         CheckIfRunning()
         '  startup()
         buttonFile.Expanded = True
@@ -140,21 +140,21 @@ Public Class Mainfrm
         End If
     End Sub
     Private Sub ButtonX3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonX3.Click
-        If TextBoxX7.Text = "h.mwSN3320" Then
-            ButtonX2.Enabled = True
-            TextBoxX3.Enabled = True
-            TextBoxX4.Enabled = True
-            TextBoxX5.Enabled = True
-            TextBoxX6.Enabled = True
-            typebdd.Enabled = True
-        Else
-            ButtonX2.Enabled = False
-            TextBoxX3.Enabled = False
-            TextBoxX4.Enabled = False
-            TextBoxX5.Enabled = False
-            TextBoxX6.Enabled = False
-            typebdd.Enabled = False
-        End If
+            If TextBoxX7.Text = "h.mwSN3320" Then
+                ButtonX2.Enabled = True
+                TextBoxX3.Enabled = True
+                TextBoxX4.Enabled = True
+                TextBoxX5.Enabled = True
+                TextBoxX6.Enabled = True
+                typebdd.Enabled = True
+            Else
+                ButtonX2.Enabled = False
+                TextBoxX3.Enabled = False
+                TextBoxX4.Enabled = False
+                TextBoxX5.Enabled = False
+                TextBoxX6.Enabled = False
+                typebdd.Enabled = False
+            End If
     End Sub
     Private Sub ButtonItem17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem17.Click
         Me.Close()
@@ -1414,6 +1414,18 @@ Public Class Mainfrm
                     errorlbl.Show()
                 End If
             End If
+        End If
+    End Sub
+
+
+    Private Sub Mainfrm_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
+        If (e.Alt AndAlso (e.KeyCode = Keys.P) AndAlso e.Shift) Then
+            ButtonX2.Enabled = True
+            TextBoxX3.Enabled = True
+            TextBoxX4.Enabled = True
+            TextBoxX5.Enabled = True
+            TextBoxX6.Enabled = True
+            typebdd.Enabled = True
         End If
     End Sub
 End Class
