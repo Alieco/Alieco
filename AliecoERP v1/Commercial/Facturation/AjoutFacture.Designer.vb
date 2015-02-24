@@ -172,7 +172,7 @@ Partial Class AjoutFacture
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1284, 148)
+        Me.GroupBox1.Size = New System.Drawing.Size(1312, 148)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Information du facture"
@@ -434,7 +434,7 @@ Partial Class AjoutFacture
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedTabFont = New System.Drawing.Font("Segoe UI", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TabControl1.SelectedTabIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1284, 430)
+        Me.TabControl1.Size = New System.Drawing.Size(1312, 444)
         Me.TabControl1.Style = DevComponents.DotNetBar.eTabStripStyle.Metro
         Me.TabControl1.TabIndex = 2
         Me.TabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox
@@ -472,7 +472,7 @@ Partial Class AjoutFacture
         Me.TabControlPanel1.Location = New System.Drawing.Point(0, 29)
         Me.TabControlPanel1.Name = "TabControlPanel1"
         Me.TabControlPanel1.Padding = New System.Windows.Forms.Padding(1)
-        Me.TabControlPanel1.Size = New System.Drawing.Size(1284, 401)
+        Me.TabControlPanel1.Size = New System.Drawing.Size(1312, 415)
         Me.TabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.White
         Me.TabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
         Me.TabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer))
@@ -835,7 +835,7 @@ Partial Class AjoutFacture
         Me.TabControlPanel2.Location = New System.Drawing.Point(0, 29)
         Me.TabControlPanel2.Name = "TabControlPanel2"
         Me.TabControlPanel2.Padding = New System.Windows.Forms.Padding(1)
-        Me.TabControlPanel2.Size = New System.Drawing.Size(1284, 401)
+        Me.TabControlPanel2.Size = New System.Drawing.Size(1312, 415)
         Me.TabControlPanel2.Style.BackColor1.Color = System.Drawing.Color.White
         Me.TabControlPanel2.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
         Me.TabControlPanel2.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer))
@@ -1147,7 +1147,7 @@ Partial Class AjoutFacture
         Me.TabControlPanel3.Location = New System.Drawing.Point(0, 29)
         Me.TabControlPanel3.Name = "TabControlPanel3"
         Me.TabControlPanel3.Padding = New System.Windows.Forms.Padding(1)
-        Me.TabControlPanel3.Size = New System.Drawing.Size(1284, 401)
+        Me.TabControlPanel3.Size = New System.Drawing.Size(1312, 415)
         Me.TabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.White
         Me.TabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
         Me.TabControlPanel3.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer))
@@ -1371,7 +1371,7 @@ Partial Class AjoutFacture
         Me.TabControlPanel4.Location = New System.Drawing.Point(0, 29)
         Me.TabControlPanel4.Name = "TabControlPanel4"
         Me.TabControlPanel4.Padding = New System.Windows.Forms.Padding(1)
-        Me.TabControlPanel4.Size = New System.Drawing.Size(1284, 401)
+        Me.TabControlPanel4.Size = New System.Drawing.Size(1312, 415)
         Me.TabControlPanel4.Style.BackColor1.Color = System.Drawing.Color.White
         Me.TabControlPanel4.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
         Me.TabControlPanel4.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer))
@@ -1544,7 +1544,7 @@ Partial Class AjoutFacture
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1284, 578)
+        Me.ClientSize = New System.Drawing.Size(1312, 592)
         Me.Controls.Add(Me.TabControl1)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True

@@ -44,6 +44,7 @@ Partial Class ListOE
         Me.ImprimerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimerModifToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.SupprimerLMOEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1.SuspendLayout()
         CType(Me.au, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.du, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -326,9 +327,9 @@ Partial Class ListOE
         '
         Me.ContextMenuStrip1.BackColor = System.Drawing.Color.White
         Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoogleToolStripMenuItem, Me.ModifierToolStripMenuItem, Me.SupprimerToolStripMenuItem, Me.ImprimerToolStripMenuItem1, Me.ImprimerModifToolStripMenuItem})
+        Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoogleToolStripMenuItem, Me.ModifierToolStripMenuItem, Me.SupprimerToolStripMenuItem, Me.ImprimerToolStripMenuItem1, Me.ImprimerModifToolStripMenuItem, Me.SupprimerLMOEToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(330, 114)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(330, 158)
         '
         'GoogleToolStripMenuItem
         '
@@ -380,6 +381,13 @@ Partial Class ListOE
         Me.GridView1.OptionsDetail.SmartDetailHeight = True
         Me.GridView1.OptionsView.RowAutoHeight = True
         '
+        'SupprimerLMOEToolStripMenuItem
+        '
+        Me.SupprimerLMOEToolStripMenuItem.Image = Global.MBA.My.Resources.Resources.vendors_remove
+        Me.SupprimerLMOEToolStripMenuItem.Name = "SupprimerLMOEToolStripMenuItem"
+        Me.SupprimerLMOEToolStripMenuItem.Size = New System.Drawing.Size(329, 22)
+        Me.SupprimerLMOEToolStripMenuItem.Text = "     Supprimer l'MOE"
+        '
         'ListOE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -427,4 +435,5 @@ Partial Class ListOE
     Friend WithEvents MOERadio As System.Windows.Forms.RadioButton
     Friend WithEvents OERadio As System.Windows.Forms.RadioButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
+    Friend WithEvents SupprimerLMOEToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
 End Class
