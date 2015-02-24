@@ -15,20 +15,20 @@ Public Class AttestationDeTravail
                 While myDR.Read
                     If IO.File.Exists(Application.StartupPath & "/Docs/ATTESTATION DE TRAVAIL.rtf") Then IO.File.Copy(Application.StartupPath & "/Docs/ATTESTATION DE TRAVAIL.rtf", Application.StartupPath & "/Docs/Temporaire/ATTESTATION DE TRAVAIL.rtf", True)
                     RichEditControl1.LoadDocument(Application.StartupPath & "/Docs/Temporaire/ATTESTATION DE TRAVAIL.rtf", DocumentFormat.Rtf)
-                    If myDR("Sexe") = "Homme" Or myDR("Sexe") = "H" Then
+                    If myDR("Sexe").ToString = "Homme" Or myDR("Sexe").ToString = "H" Then
                         RichEditControl1.Document.ReplaceAll("[Sexe]", "Monsieur", API.Native.SearchOptions.CaseSensitive)
-                    ElseIf myDR("Sexe") = "Femme" Or myDR("Sexe") = "F" Then
+                    ElseIf myDR("Sexe").ToString = "Femme" Or myDR("Sexe").ToString = "F" Then
                         RichEditControl1.Document.ReplaceAll("[Sexe]", "Madame", API.Native.SearchOptions.CaseSensitive)
                     Else
-                        RichEditControl1.Document.ReplaceAll("[Sexe]", myDR("Sexe"), API.Native.SearchOptions.CaseSensitive)
+                        RichEditControl1.Document.ReplaceAll("[Sexe]", myDR("Sexe").ToString, API.Native.SearchOptions.CaseSensitive)
                     End If
-                    RichEditControl1.Document.ReplaceAll("[Nom]", myDR("Nom"), API.Native.SearchOptions.CaseSensitive)
-                    RichEditControl1.Document.ReplaceAll("[Prénom]", myDR("Prénom"), API.Native.SearchOptions.CaseSensitive)
-                    RichEditControl1.Document.ReplaceAll("[DN]", myDR("Date_de_Naissance"), API.Native.SearchOptions.CaseSensitive)
-                    RichEditControl1.Document.ReplaceAll("[LN]", myDR("Lieux_de_Naissance"), API.Native.SearchOptions.CaseSensitive)
-                    RichEditControl1.Document.ReplaceAll("[VN]", myDR("Ville"), API.Native.SearchOptions.CaseSensitive)
-                    RichEditControl1.Document.ReplaceAll("[DE]", myDR("Date_entrée"), API.Native.SearchOptions.CaseSensitive)
-                    RichEditControl1.Document.ReplaceAll("[Fonction]", myDR("Fonction"), API.Native.SearchOptions.CaseSensitive)
+                    RichEditControl1.Document.ReplaceAll("[Nom]", myDR("Nom").ToString, API.Native.SearchOptions.CaseSensitive)
+                    RichEditControl1.Document.ReplaceAll("[Prénom]", myDR("Prénom").ToString, API.Native.SearchOptions.CaseSensitive)
+                    RichEditControl1.Document.ReplaceAll("[DN]", myDR("Date_de_Naissance").ToString("dd/MM/yyyy"), API.Native.SearchOptions.CaseSensitive)
+                    RichEditControl1.Document.ReplaceAll("[LN]", myDR("Lieux_de_Naissance").ToString, API.Native.SearchOptions.CaseSensitive)
+                    RichEditControl1.Document.ReplaceAll("[VN]", myDR("Ville").ToString, API.Native.SearchOptions.CaseSensitive)
+                    RichEditControl1.Document.ReplaceAll("[DE]", myDR("Date_entrée").ToString("dd/MM/yyyy"), API.Native.SearchOptions.CaseSensitive)
+                    RichEditControl1.Document.ReplaceAll("[Fonction]", myDR("Fonction").ToString, API.Native.SearchOptions.CaseSensitive)
                     RichEditControl1.Document.ReplaceAll("[Date]", Date.Now.ToString("dd/MM/yyyy"), API.Native.SearchOptions.None)
                     RichEditControl1.Document.ReplaceAll("[Ref]", ref.Text, API.Native.SearchOptions.None)
                 End While
@@ -150,20 +150,20 @@ Public Class AttestationDeTravail
             While myDR.Read
                 If IO.File.Exists(Application.StartupPath & "/Docs/ATTESTATION DE TRAVAIL.rtf") Then IO.File.Copy(Application.StartupPath & "/Docs/ATTESTATION DE TRAVAIL.rtf", Application.StartupPath & "/Docs/Temporaire/ATTESTATION DE TRAVAIL.rtf", True)
                 RichEditControl1.LoadDocument(Application.StartupPath & "/Docs/Temporaire/ATTESTATION DE TRAVAIL.rtf", DocumentFormat.Rtf)
-                If myDR("Sexe") = "Homme" Or myDR("Sexe") = "H" Then
+                If myDR("Sexe").ToString = "Homme" Or myDR("Sexe").ToString = "H" Then
                     RichEditControl1.Document.ReplaceAll("[Sexe]", "Monsieur", API.Native.SearchOptions.CaseSensitive)
-                ElseIf myDR("Sexe") = "Femme" Or myDR("Sexe") = "F" Then
+                ElseIf myDR("Sexe").ToString = "Femme" Or myDR("Sexe").ToString = "F" Then
                     RichEditControl1.Document.ReplaceAll("[Sexe]", "Madame", API.Native.SearchOptions.CaseSensitive)
                 Else
-                    RichEditControl1.Document.ReplaceAll("[Sexe]", myDR("Sexe"), API.Native.SearchOptions.CaseSensitive)
+                    RichEditControl1.Document.ReplaceAll("[Sexe]", myDR("Sexe").ToString, API.Native.SearchOptions.CaseSensitive)
                 End If
-                RichEditControl1.Document.ReplaceAll("[Nom]", myDR("Nom"), API.Native.SearchOptions.CaseSensitive)
-                RichEditControl1.Document.ReplaceAll("[Prénom]", myDR("Prénom"), API.Native.SearchOptions.CaseSensitive)
-                RichEditControl1.Document.ReplaceAll("[DN]", myDR("Date_de_Naissance"), API.Native.SearchOptions.CaseSensitive)
-                RichEditControl1.Document.ReplaceAll("[LN]", myDR("Lieux_de_Naissance"), API.Native.SearchOptions.CaseSensitive)
-                RichEditControl1.Document.ReplaceAll("[VN]", myDR("Ville"), API.Native.SearchOptions.CaseSensitive)
-                RichEditControl1.Document.ReplaceAll("[DE]", myDR("Date_entrée"), API.Native.SearchOptions.CaseSensitive)
-                RichEditControl1.Document.ReplaceAll("[Fonction]", myDR("Fonction"), API.Native.SearchOptions.CaseSensitive)
+                RichEditControl1.Document.ReplaceAll("[Nom]", myDR("Nom").ToString, API.Native.SearchOptions.CaseSensitive)
+                RichEditControl1.Document.ReplaceAll("[Prénom]", myDR("Prénom").ToString, API.Native.SearchOptions.CaseSensitive)
+                RichEditControl1.Document.ReplaceAll("[DN]", myDR("Date_de_Naissance").ToString("dd/MM/yyyy"), API.Native.SearchOptions.CaseSensitive)
+                RichEditControl1.Document.ReplaceAll("[LN]", myDR("Lieux_de_Naissance").ToString, API.Native.SearchOptions.CaseSensitive)
+                RichEditControl1.Document.ReplaceAll("[VN]", myDR("Ville").ToString, API.Native.SearchOptions.CaseSensitive)
+                RichEditControl1.Document.ReplaceAll("[DE]", myDR("Date_entrée").ToString("dd/MM/yyyy"), API.Native.SearchOptions.CaseSensitive)
+                RichEditControl1.Document.ReplaceAll("[Fonction]", myDR("Fonction").ToString, API.Native.SearchOptions.CaseSensitive)
                 RichEditControl1.Document.ReplaceAll("[Date]", Date.Now.ToString("dd/MM/yyyy"), API.Native.SearchOptions.None)
                 'MsgBox(myDR("Matricule"))
                 'Dim nref = 
