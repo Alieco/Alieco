@@ -17,6 +17,7 @@ Public Class Mainfrm
     End Sub
     Private Sub Form1_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
 
+        CheckIfRunning()
         '  startup()
         buttonFile.Expanded = True
         Initialized()
@@ -317,6 +318,14 @@ Public Class Mainfrm
 #End Region
 
 #Region "Fonctions"
+    Private Sub CheckIfRunning()
+        Dim p() As Process
+        p = Process.GetProcessesByName("AliecoERP")
+        If p.Count > 1 Then
+            MessageBoxEx.Show("Le programme est déja lancé ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Me.Close()
+        End If
+    End Sub
     Sub startup()
         Dim regStartUp As RegistryKey = Registry.LocalMachine.OpenSubKey("SOFTWARE\Microsoft\Windows\CurrentVersion\Run", True)
         Dim value As String
@@ -450,7 +459,7 @@ Public Class Mainfrm
                 End If
             End If
         End If
-       
+
     End Sub
     Private Sub login()
         Try
