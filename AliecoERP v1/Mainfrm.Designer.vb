@@ -28,6 +28,18 @@ Partial Class Mainfrm
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Mainfrm))
         Me.StyleManager1 = New DevComponents.DotNetBar.StyleManager(Me.components)
         Me.ribbonControl1 = New DevComponents.DotNetBar.RibbonControl()
+        Me.RibbonPanel9 = New DevComponents.DotNetBar.RibbonPanel()
+        Me.RibbonBar32 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem44 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem46 = New DevComponents.DotNetBar.ButtonItem()
+        Me.RibbonBar30 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem54 = New DevComponents.DotNetBar.ButtonItem()
+        Me.listOrdre = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem53 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem126 = New DevComponents.DotNetBar.ButtonItem()
+        Me.RibbonBar31 = New DevComponents.DotNetBar.RibbonBar()
+        Me.ButtonItem127 = New DevComponents.DotNetBar.ButtonItem()
+        Me.ButtonItem129 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonPanel18 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar53 = New DevComponents.DotNetBar.RibbonBar()
         Me.ButtonItem137 = New DevComponents.DotNetBar.ButtonItem()
@@ -57,18 +69,6 @@ Partial Class Mainfrm
         Me.ButtonItem33 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem37 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem38 = New DevComponents.DotNetBar.ButtonItem()
-        Me.RibbonPanel9 = New DevComponents.DotNetBar.RibbonPanel()
-        Me.RibbonBar32 = New DevComponents.DotNetBar.RibbonBar()
-        Me.ButtonItem44 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem46 = New DevComponents.DotNetBar.ButtonItem()
-        Me.RibbonBar30 = New DevComponents.DotNetBar.RibbonBar()
-        Me.ButtonItem54 = New DevComponents.DotNetBar.ButtonItem()
-        Me.listOrdre = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem53 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem126 = New DevComponents.DotNetBar.ButtonItem()
-        Me.RibbonBar31 = New DevComponents.DotNetBar.RibbonBar()
-        Me.ButtonItem127 = New DevComponents.DotNetBar.ButtonItem()
-        Me.ButtonItem129 = New DevComponents.DotNetBar.ButtonItem()
         Me.ribbonPanel1 = New DevComponents.DotNetBar.RibbonPanel()
         Me.RibbonBar50 = New DevComponents.DotNetBar.RibbonBar()
         Me.ButtonItem151 = New DevComponents.DotNetBar.ButtonItem()
@@ -355,8 +355,8 @@ Partial Class Mainfrm
         Me.ButtonItem70 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem98 = New DevComponents.DotNetBar.ButtonItem()
         Me.ribbonControl1.SuspendLayout()
-        Me.RibbonPanel18.SuspendLayout()
         Me.RibbonPanel9.SuspendLayout()
+        Me.RibbonPanel18.SuspendLayout()
         Me.ribbonPanel1.SuspendLayout()
         Me.RibbonPanel5.SuspendLayout()
         Me.RibbonPanel17.SuspendLayout()
@@ -438,6 +438,194 @@ Partial Class Mainfrm
         Me.ribbonControl1.TabGroupsVisible = True
         Me.ribbonControl1.TabIndex = 9
         Me.ribbonControl1.Text = "Alieco ERP v1"
+        '
+        'RibbonPanel9
+        '
+        Me.RibbonPanel9.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonPanel9.Controls.Add(Me.RibbonBar32)
+        Me.RibbonPanel9.Controls.Add(Me.RibbonBar30)
+        Me.RibbonPanel9.Controls.Add(Me.RibbonBar31)
+        Me.RibbonPanel9.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.RibbonPanel9.Location = New System.Drawing.Point(0, 55)
+        Me.RibbonPanel9.Name = "RibbonPanel9"
+        Me.RibbonPanel9.Padding = New System.Windows.Forms.Padding(3, 0, 3, 3)
+        Me.RibbonPanel9.Size = New System.Drawing.Size(1386, 114)
+        '
+        '
+        '
+        Me.RibbonPanel9.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonPanel9.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonPanel9.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonPanel9.TabIndex = 10
+        '
+        'RibbonBar32
+        '
+        Me.RibbonBar32.AutoOverflowEnabled = True
+        Me.RibbonBar32.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.RibbonBar32.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar32.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonBar32.ContainerControlProcessDialogKey = True
+        Me.RibbonBar32.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RibbonBar32.Enabled = False
+        Me.RibbonBar32.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RibbonBar32.ForeColor = System.Drawing.Color.Black
+        Me.RibbonBar32.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem44, Me.ButtonItem46})
+        Me.RibbonBar32.Location = New System.Drawing.Point(454, 0)
+        Me.RibbonBar32.Name = "RibbonBar32"
+        Me.RibbonBar32.Size = New System.Drawing.Size(122, 111)
+        Me.RibbonBar32.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonBar32.TabIndex = 10
+        Me.RibbonBar32.Text = "Rapport"
+        '
+        '
+        '
+        Me.RibbonBar32.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar32.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem44
+        '
+        Me.ButtonItem44.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem44.Image = CType(resources.GetObject("ButtonItem44.Image"), System.Drawing.Image)
+        Me.ButtonItem44.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem44.Name = "ButtonItem44"
+        Me.ButtonItem44.NotificationMarkColor = System.Drawing.Color.Red
+        Me.ButtonItem44.Text = "Impréssion de facture"
+        '
+        'ButtonItem46
+        '
+        Me.ButtonItem46.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem46.Image = CType(resources.GetObject("ButtonItem46.Image"), System.Drawing.Image)
+        Me.ButtonItem46.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem46.Name = "ButtonItem46"
+        Me.ButtonItem46.Text = "Fiche suiveuse"
+        '
+        'RibbonBar30
+        '
+        Me.RibbonBar30.AutoOverflowEnabled = True
+        Me.RibbonBar30.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.RibbonBar30.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar30.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonBar30.ContainerControlProcessDialogKey = True
+        Me.RibbonBar30.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RibbonBar30.Enabled = False
+        Me.RibbonBar30.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RibbonBar30.ForeColor = System.Drawing.Color.Black
+        Me.RibbonBar30.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem54, Me.listOrdre, Me.ButtonItem53, Me.ButtonItem126})
+        Me.RibbonBar30.Location = New System.Drawing.Point(176, 0)
+        Me.RibbonBar30.Name = "RibbonBar30"
+        Me.RibbonBar30.Size = New System.Drawing.Size(278, 111)
+        Me.RibbonBar30.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonBar30.TabIndex = 9
+        Me.RibbonBar30.Text = "Facture"
+        '
+        '
+        '
+        Me.RibbonBar30.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar30.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem54
+        '
+        Me.ButtonItem54.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem54.Image = CType(resources.GetObject("ButtonItem54.Image"), System.Drawing.Image)
+        Me.ButtonItem54.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem54.Name = "ButtonItem54"
+        Me.ButtonItem54.Text = "Ajouter une Facture"
+        '
+        'listOrdre
+        '
+        Me.listOrdre.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.listOrdre.Image = CType(resources.GetObject("listOrdre.Image"), System.Drawing.Image)
+        Me.listOrdre.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.listOrdre.Name = "listOrdre"
+        Me.listOrdre.NotificationMarkColor = System.Drawing.Color.Red
+        Me.listOrdre.Text = "Ordre de facturation non facturé"
+        '
+        'ButtonItem53
+        '
+        Me.ButtonItem53.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem53.Image = CType(resources.GetObject("ButtonItem53.Image"), System.Drawing.Image)
+        Me.ButtonItem53.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem53.Name = "ButtonItem53"
+        Me.ButtonItem53.Text = "Suivi facturation"
+        '
+        'ButtonItem126
+        '
+        Me.ButtonItem126.Image = CType(resources.GetObject("ButtonItem126.Image"), System.Drawing.Image)
+        Me.ButtonItem126.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem126.Name = "ButtonItem126"
+        Me.ButtonItem126.Text = "Liste des factures"
+        '
+        'RibbonBar31
+        '
+        Me.RibbonBar31.AutoOverflowEnabled = True
+        Me.RibbonBar31.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.RibbonBar31.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar31.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RibbonBar31.ContainerControlProcessDialogKey = True
+        Me.RibbonBar31.Dock = System.Windows.Forms.DockStyle.Left
+        Me.RibbonBar31.Enabled = False
+        Me.RibbonBar31.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RibbonBar31.ForeColor = System.Drawing.Color.Black
+        Me.RibbonBar31.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem127, Me.ButtonItem129})
+        Me.RibbonBar31.Location = New System.Drawing.Point(3, 0)
+        Me.RibbonBar31.Name = "RibbonBar31"
+        Me.RibbonBar31.Size = New System.Drawing.Size(173, 111)
+        Me.RibbonBar31.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.RibbonBar31.TabIndex = 8
+        Me.RibbonBar31.Text = "Client"
+        '
+        '
+        '
+        Me.RibbonBar31.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        '
+        '
+        Me.RibbonBar31.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'ButtonItem127
+        '
+        Me.ButtonItem127.Image = CType(resources.GetObject("ButtonItem127.Image"), System.Drawing.Image)
+        Me.ButtonItem127.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem127.Name = "ButtonItem127"
+        Me.ButtonItem127.Text = "&Ajouter un Nouveau client"
+        '
+        'ButtonItem129
+        '
+        Me.ButtonItem129.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
+        Me.ButtonItem129.Image = CType(resources.GetObject("ButtonItem129.Image"), System.Drawing.Image)
+        Me.ButtonItem129.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.ButtonItem129.Name = "ButtonItem129"
+        Me.ButtonItem129.Text = "Consultation des clients"
         '
         'RibbonPanel18
         '
@@ -782,194 +970,6 @@ Partial Class Mainfrm
         Me.ButtonItem38.Image = CType(resources.GetObject("ButtonItem38.Image"), System.Drawing.Image)
         Me.ButtonItem38.Name = "ButtonItem38"
         Me.ButtonItem38.Text = "Relance des Offres"
-        '
-        'RibbonPanel9
-        '
-        Me.RibbonPanel9.ColorSchemeStyle = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonPanel9.Controls.Add(Me.RibbonBar32)
-        Me.RibbonPanel9.Controls.Add(Me.RibbonBar30)
-        Me.RibbonPanel9.Controls.Add(Me.RibbonBar31)
-        Me.RibbonPanel9.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RibbonPanel9.Location = New System.Drawing.Point(0, 55)
-        Me.RibbonPanel9.Name = "RibbonPanel9"
-        Me.RibbonPanel9.Padding = New System.Windows.Forms.Padding(3, 0, 3, 3)
-        Me.RibbonPanel9.Size = New System.Drawing.Size(1386, 114)
-        '
-        '
-        '
-        Me.RibbonPanel9.Style.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonPanel9.StyleMouseDown.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonPanel9.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonPanel9.TabIndex = 10
-        '
-        'RibbonBar32
-        '
-        Me.RibbonBar32.AutoOverflowEnabled = True
-        Me.RibbonBar32.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.RibbonBar32.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar32.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonBar32.ContainerControlProcessDialogKey = True
-        Me.RibbonBar32.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RibbonBar32.Enabled = False
-        Me.RibbonBar32.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RibbonBar32.ForeColor = System.Drawing.Color.Black
-        Me.RibbonBar32.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem44, Me.ButtonItem46})
-        Me.RibbonBar32.Location = New System.Drawing.Point(454, 0)
-        Me.RibbonBar32.Name = "RibbonBar32"
-        Me.RibbonBar32.Size = New System.Drawing.Size(122, 111)
-        Me.RibbonBar32.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonBar32.TabIndex = 10
-        Me.RibbonBar32.Text = "Rapport"
-        '
-        '
-        '
-        Me.RibbonBar32.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar32.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        'ButtonItem44
-        '
-        Me.ButtonItem44.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem44.Image = CType(resources.GetObject("ButtonItem44.Image"), System.Drawing.Image)
-        Me.ButtonItem44.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem44.Name = "ButtonItem44"
-        Me.ButtonItem44.NotificationMarkColor = System.Drawing.Color.Red
-        Me.ButtonItem44.Text = "Impréssion de facture"
-        '
-        'ButtonItem46
-        '
-        Me.ButtonItem46.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem46.Image = CType(resources.GetObject("ButtonItem46.Image"), System.Drawing.Image)
-        Me.ButtonItem46.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem46.Name = "ButtonItem46"
-        Me.ButtonItem46.Text = "Fiche suiveuse"
-        '
-        'RibbonBar30
-        '
-        Me.RibbonBar30.AutoOverflowEnabled = True
-        Me.RibbonBar30.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.RibbonBar30.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar30.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonBar30.ContainerControlProcessDialogKey = True
-        Me.RibbonBar30.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RibbonBar30.Enabled = False
-        Me.RibbonBar30.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RibbonBar30.ForeColor = System.Drawing.Color.Black
-        Me.RibbonBar30.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem54, Me.listOrdre, Me.ButtonItem53, Me.ButtonItem126})
-        Me.RibbonBar30.Location = New System.Drawing.Point(176, 0)
-        Me.RibbonBar30.Name = "RibbonBar30"
-        Me.RibbonBar30.Size = New System.Drawing.Size(278, 111)
-        Me.RibbonBar30.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonBar30.TabIndex = 9
-        Me.RibbonBar30.Text = "Facture"
-        '
-        '
-        '
-        Me.RibbonBar30.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar30.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        'ButtonItem54
-        '
-        Me.ButtonItem54.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem54.Image = CType(resources.GetObject("ButtonItem54.Image"), System.Drawing.Image)
-        Me.ButtonItem54.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem54.Name = "ButtonItem54"
-        Me.ButtonItem54.Text = "Ajouter une Facture"
-        '
-        'listOrdre
-        '
-        Me.listOrdre.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.listOrdre.Image = CType(resources.GetObject("listOrdre.Image"), System.Drawing.Image)
-        Me.listOrdre.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.listOrdre.Name = "listOrdre"
-        Me.listOrdre.NotificationMarkColor = System.Drawing.Color.Red
-        Me.listOrdre.Text = "Ordre de facturation non facturé"
-        '
-        'ButtonItem53
-        '
-        Me.ButtonItem53.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem53.Image = CType(resources.GetObject("ButtonItem53.Image"), System.Drawing.Image)
-        Me.ButtonItem53.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem53.Name = "ButtonItem53"
-        Me.ButtonItem53.Text = "Suivi facturation"
-        '
-        'ButtonItem126
-        '
-        Me.ButtonItem126.Image = CType(resources.GetObject("ButtonItem126.Image"), System.Drawing.Image)
-        Me.ButtonItem126.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem126.Name = "ButtonItem126"
-        Me.ButtonItem126.Text = "Liste des factures"
-        '
-        'RibbonBar31
-        '
-        Me.RibbonBar31.AutoOverflowEnabled = True
-        Me.RibbonBar31.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.RibbonBar31.BackgroundMouseOverStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar31.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RibbonBar31.ContainerControlProcessDialogKey = True
-        Me.RibbonBar31.Dock = System.Windows.Forms.DockStyle.Left
-        Me.RibbonBar31.Enabled = False
-        Me.RibbonBar31.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RibbonBar31.ForeColor = System.Drawing.Color.Black
-        Me.RibbonBar31.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem127, Me.ButtonItem129})
-        Me.RibbonBar31.Location = New System.Drawing.Point(3, 0)
-        Me.RibbonBar31.Name = "RibbonBar31"
-        Me.RibbonBar31.Size = New System.Drawing.Size(173, 111)
-        Me.RibbonBar31.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.RibbonBar31.TabIndex = 8
-        Me.RibbonBar31.Text = "Client"
-        '
-        '
-        '
-        Me.RibbonBar31.TitleStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        '
-        '
-        Me.RibbonBar31.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        '
-        'ButtonItem127
-        '
-        Me.ButtonItem127.Image = CType(resources.GetObject("ButtonItem127.Image"), System.Drawing.Image)
-        Me.ButtonItem127.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem127.Name = "ButtonItem127"
-        Me.ButtonItem127.Text = "&Ajouter un Nouveau client"
-        '
-        'ButtonItem129
-        '
-        Me.ButtonItem129.ButtonStyle = DevComponents.DotNetBar.eButtonStyle.ImageAndText
-        Me.ButtonItem129.Image = CType(resources.GetObject("ButtonItem129.Image"), System.Drawing.Image)
-        Me.ButtonItem129.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
-        Me.ButtonItem129.Name = "ButtonItem129"
-        Me.ButtonItem129.Text = "Consultation des clients"
         '
         'ribbonPanel1
         '
@@ -4940,8 +4940,8 @@ Partial Class Mainfrm
         Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.ribbonControl1.ResumeLayout(False)
         Me.ribbonControl1.PerformLayout()
-        Me.RibbonPanel18.ResumeLayout(False)
         Me.RibbonPanel9.ResumeLayout(False)
+        Me.RibbonPanel18.ResumeLayout(False)
         Me.ribbonPanel1.ResumeLayout(False)
         Me.RibbonPanel5.ResumeLayout(False)
         Me.RibbonPanel17.ResumeLayout(False)

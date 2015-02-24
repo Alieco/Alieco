@@ -1377,4 +1377,43 @@ Public Class Mainfrm
         AjoutFourniss.MdiParent = Me
         AjoutFourniss.Show()
     End Sub
+
+    Private Sub TextBoxX2_KeyDown(sender As Object, e As KeyEventArgs) Handles TextBoxX2.KeyDown
+        If e.KeyCode = Keys.Enter Then
+            If ButtonX1.Text = "Connexion" Then
+                If TextBoxX1.Text <> "" And TextBoxX2.Text <> "" Then
+                    user = TextBoxX1.Text
+                    If CheckBox1.Checked = True Then
+                        Dim ini As New IniFile
+                        If File.Exists(Application.StartupPath & "\Config.ini") Then
+                            ini.Load(Application.StartupPath & "\Config.ini")
+                        End If
+                        Dim wrapper As New Simple3Des("h.mwSN3320")
+                        Dim passEnc As String = wrapper.EncryptData(TextBoxX2.Text)
+                        Try
+                            ini.AddSection("Login").AddKey("user").Value = TextBoxX1.Text
+                            ini.AddSection("Login").AddKey("pass").Value = passEnc
+                            'Save the INI
+                            ini.Save(Application.StartupPath & "\Config.ini")
+                        Catch ex As Exception
+                        End Try
+                    End If
+                    Try
+                        loaderImg.Visible = True
+                        ' ButtonX1.Enabled = False
+
+                        Dim loginThread As Thread = New Thread(AddressOf login)
+                        loginThread.Start()
+                    Catch ex As Exception
+                        loaderImg.Visible = False
+                        'ButtonX1.Enabled = True
+                        ButtonX1.Text = "Connexion"
+                    End Try
+                Else
+                    errorlbl.Width = 305
+                    errorlbl.Show()
+                End If
+            End If
+        End If
+    End Sub
 End Class
