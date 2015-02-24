@@ -15,7 +15,13 @@ Public Class AttestationDeTravail
                 While myDR.Read
                     If IO.File.Exists(Application.StartupPath & "/Docs/ATTESTATION DE TRAVAIL.rtf") Then IO.File.Copy(Application.StartupPath & "/Docs/ATTESTATION DE TRAVAIL.rtf", Application.StartupPath & "/Docs/Temporaire/ATTESTATION DE TRAVAIL.rtf", True)
                     RichEditControl1.LoadDocument(Application.StartupPath & "/Docs/Temporaire/ATTESTATION DE TRAVAIL.rtf", DocumentFormat.Rtf)
-                    RichEditControl1.Document.ReplaceAll("[Sexe]", myDR("Sexe"), API.Native.SearchOptions.CaseSensitive)
+                    If myDR("Sexe") = "Homme" Or myDR("Sexe") = "H" Then
+                        RichEditControl1.Document.ReplaceAll("[Sexe]", "Monsieur", API.Native.SearchOptions.CaseSensitive)
+                    ElseIf myDR("Sexe") = "Femme" Or myDR("Sexe") = "F" Then
+                        RichEditControl1.Document.ReplaceAll("[Sexe]", "Madame", API.Native.SearchOptions.CaseSensitive)
+                    Else
+                        RichEditControl1.Document.ReplaceAll("[Sexe]", myDR("Sexe"), API.Native.SearchOptions.CaseSensitive)
+                    End If
                     RichEditControl1.Document.ReplaceAll("[Nom]", myDR("Nom"), API.Native.SearchOptions.CaseSensitive)
                     RichEditControl1.Document.ReplaceAll("[Prénom]", myDR("Prénom"), API.Native.SearchOptions.CaseSensitive)
                     RichEditControl1.Document.ReplaceAll("[DN]", myDR("Date_de_Naissance"), API.Native.SearchOptions.CaseSensitive)
@@ -144,8 +150,10 @@ Public Class AttestationDeTravail
             While myDR.Read
                 If IO.File.Exists(Application.StartupPath & "/Docs/ATTESTATION DE TRAVAIL.rtf") Then IO.File.Copy(Application.StartupPath & "/Docs/ATTESTATION DE TRAVAIL.rtf", Application.StartupPath & "/Docs/Temporaire/ATTESTATION DE TRAVAIL.rtf", True)
                 RichEditControl1.LoadDocument(Application.StartupPath & "/Docs/Temporaire/ATTESTATION DE TRAVAIL.rtf", DocumentFormat.Rtf)
-                If myDR("Sexe") = "Homme" Then
+                If myDR("Sexe") = "Homme" Or myDR("Sexe") = "H" Then
                     RichEditControl1.Document.ReplaceAll("[Sexe]", "Monsieur", API.Native.SearchOptions.CaseSensitive)
+                ElseIf myDR("Sexe") = "Femme" Or myDR("Sexe") = "F" Then
+                    RichEditControl1.Document.ReplaceAll("[Sexe]", "Madame", API.Native.SearchOptions.CaseSensitive)
                 Else
                     RichEditControl1.Document.ReplaceAll("[Sexe]", myDR("Sexe"), API.Native.SearchOptions.CaseSensitive)
                 End If
