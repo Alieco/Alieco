@@ -397,7 +397,7 @@ Public Class Mainfrm
                 ContractCheck()
             Case 15
                 For Each rib As RibbonBar In RibbonPanel12.Controls
-                    rib.Enabled = False
+                    rib.Enabled = True
                 Next
             Case 20
                 For Each rib As RibbonBar In RibbonPanel9.Controls

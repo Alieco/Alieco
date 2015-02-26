@@ -170,4 +170,21 @@
             montant = ListView2.SelectedItems(0).SubItems(4).Text
         End If
     End Sub
+
+    Private Sub EnregistrerButtonX6_Click(sender As Object, e As EventArgs) Handles EnregistrerButtonX6.Click
+        IsConnected("INSERT INTO logistique_appro_bonachat (`nature`,`type`,`synthese`,`DateBA`,`ref`,`demandeur`,`monnaie`,`delaiexe`,`modeexpe`,`modepaiem`,`ref_offre`,`imputation`,`dateEnreg`,`client`,`user`) (SELECT nature,type,synthese,DateBC,ref,demandeur,monnaie,delaiexe,modeexpe,modepaiem,ref_offre,imputation,dateEnreg,client,user FROM logistique_appro_bondecommande WHERE codebc ='" & num.Text & "' limit 1)", True)
+        IsConnected("SELECT idlogistique_appro_bonachat FROM logistique_appro_bonachat order by idlogistique_appro_bonachat desc limit1", False)
+        IsConnected(" UPDATE `logistique_appro_bonachat` SET `codeba` = <{codeba: }>,`reference` = <{reference: }>,`oe` = <{oe: }>,`codestruc` = <{codestruc: }>,`namestruc` = <{namestruc: }> WHERE `idlogistique_appro_bonachat` = <{expr}>;", True)
+
+        '`codeba`,`oe`,`codestruc`,`namestruc`,`reference`,
+        ' IsConnected("INSERT INTO logistique_appro_bonachat (`codeba`,`oe`,`codestruc`,`namestruc`,`reference`,`nature`,`type`,`synthese`,`DateBA`,`ref`,`demandeur`,`monnaie`,`delaiexe`,`modeexpe`,`modepaiem`,`ref_offre`,`imputation`,`dateEnreg`,`client`,`user`) ('" & NumeroTextBoxX5.Text & "','" & OEComboBoxEx2.Text & "','" & codeStruct.Text & "','" & NameStructTextBoxX1.Text & "',SELECT nature,type,synthese,DateBC,ref,demandeur,monnaie,delaiexe,modeexpe,modepaiem,ref_offre,imputation,dateEnreg,client,user FROM logistique_appro_bondecommande WHERE codebc =" & m & " limit 1)", True)
+        '' ''IsConnected("INSERT INTO logistique_appro_badesig (`codeba`,`desigba`,`Qte`,`poids`,`pu`,`montantbc`,`totalht`,`tva`,`timbre`,`montanttotal`,`tauxva`,`codefour`) (SELECT codebc,desigbc,Qte,poids,pu,montantbc,totalht,tva,timbre,montanttotal,tauxva,codefour FROM logistique_appro_bcdesig WHERE codebc =" & m & ")", True)
+
+        'INSERT INTO `logistique_appro_badesig`(`idlogistique_appro_badesig`,`codeba`,`desigba`,`Qte`,`poids`,`pu`,`montantbc`,`totalht`,`tva`,`timbre`,`montanttotal`,`tauxva`,`codefour`)VALUES(<{idlogistique_appro_badesig: }>,<{codeba: }>,<{desigba: }>,<{Qte: }>,<{poids: }>,<{pu: }>,<{montantbc: }>,<{totalht: }>,<{tva: }>,<{timbre: }>,<{montanttotal: }>,<{tauxva: }>,<{codefour: }>);
+
+    End Sub
+
+    Private Sub EnregistrementtotalButtonX1_Click(sender As Object, e As EventArgs) Handles EnregistrementtotalButtonX1.Click
+        'INSERT INTO `logistique_appro_badesig`(`idlogistique_appro_badesig`,`codeba`,`desigba`,`Qte`,`poids`,`pu`,`montantbc`,`totalht`,`tva`,`timbre`,`montanttotal`,`tauxva`,`codefour`)VALUES(<{idlogistique_appro_badesig: }>,<{codeba: }>,<{desigba: }>,<{Qte: }>,<{poids: }>,<{pu: }>,<{montantbc: }>,<{totalht: }>,<{tva: }>,<{timbre: }>,<{montanttotal: }>,<{tauxva: }>,<{codefour: }>);
+    End Sub
 End Class

@@ -29,8 +29,8 @@ Partial Class DivisonnerBonCommande
         Me.CodestructTextBoxX3 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.NameStructTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.codeStruct = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
-        Me.ButtonX6 = New DevComponents.DotNetBar.ButtonX()
+        Me.EnregistrementtotalButtonX1 = New DevComponents.DotNetBar.ButtonX()
+        Me.EnregistrerButtonX6 = New DevComponents.DotNetBar.ButtonX()
         Me.timbreTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.ttcTextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -71,19 +71,25 @@ Partial Class DivisonnerBonCommande
         Me.OEComboBoxEx1 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
+        Me.RefTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.RefTextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
+        Me.TextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.GroupBox1.SuspendLayout()
         CType(Me.QTNumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
+        Me.GroupBox1.Controls.Add(Me.TextBoxX1)
+        Me.GroupBox1.Controls.Add(Me.RefTextBoxX2)
+        Me.GroupBox1.Controls.Add(Me.RefTextBoxX1)
         Me.GroupBox1.Controls.Add(Me.RetourButton1)
         Me.GroupBox1.Controls.Add(Me.NameStructTextBoxX2)
         Me.GroupBox1.Controls.Add(Me.CodestructTextBoxX3)
         Me.GroupBox1.Controls.Add(Me.NameStructTextBoxX1)
         Me.GroupBox1.Controls.Add(Me.codeStruct)
-        Me.GroupBox1.Controls.Add(Me.ButtonX1)
-        Me.GroupBox1.Controls.Add(Me.ButtonX6)
+        Me.GroupBox1.Controls.Add(Me.EnregistrementtotalButtonX1)
+        Me.GroupBox1.Controls.Add(Me.EnregistrerButtonX6)
         Me.GroupBox1.Controls.Add(Me.timbreTextBoxX1)
         Me.GroupBox1.Controls.Add(Me.ttcTextBoxX2)
         Me.GroupBox1.Controls.Add(Me.Label1)
@@ -187,33 +193,33 @@ Partial Class DivisonnerBonCommande
         Me.codeStruct.Size = New System.Drawing.Size(94, 20)
         Me.codeStruct.TabIndex = 339
         '
-        'ButtonX1
+        'EnregistrementtotalButtonX1
         '
-        Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX1.Image = CType(resources.GetObject("ButtonX1.Image"), System.Drawing.Image)
-        Me.ButtonX1.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right
-        Me.ButtonX1.Location = New System.Drawing.Point(241, 553)
-        Me.ButtonX1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(261, 24)
-        Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX1.TabIndex = 338
-        Me.ButtonX1.Text = "Enregistrer les modifs du bon"
+        Me.EnregistrementtotalButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.EnregistrementtotalButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.EnregistrementtotalButtonX1.Image = CType(resources.GetObject("EnregistrementtotalButtonX1.Image"), System.Drawing.Image)
+        Me.EnregistrementtotalButtonX1.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right
+        Me.EnregistrementtotalButtonX1.Location = New System.Drawing.Point(241, 520)
+        Me.EnregistrementtotalButtonX1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.EnregistrementtotalButtonX1.Name = "EnregistrementtotalButtonX1"
+        Me.EnregistrementtotalButtonX1.Size = New System.Drawing.Size(261, 24)
+        Me.EnregistrementtotalButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.EnregistrementtotalButtonX1.TabIndex = 338
+        Me.EnregistrementtotalButtonX1.Text = "Enregistrer les modifs du bon"
         '
-        'ButtonX6
+        'EnregistrerButtonX6
         '
-        Me.ButtonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.ButtonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX6.Image = CType(resources.GetObject("ButtonX6.Image"), System.Drawing.Image)
-        Me.ButtonX6.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right
-        Me.ButtonX6.Location = New System.Drawing.Point(945, 520)
-        Me.ButtonX6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.ButtonX6.Name = "ButtonX6"
-        Me.ButtonX6.Size = New System.Drawing.Size(261, 24)
-        Me.ButtonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.ButtonX6.TabIndex = 337
-        Me.ButtonX6.Text = "Enregistrer"
+        Me.EnregistrerButtonX6.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
+        Me.EnregistrerButtonX6.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
+        Me.EnregistrerButtonX6.Image = CType(resources.GetObject("EnregistrerButtonX6.Image"), System.Drawing.Image)
+        Me.EnregistrerButtonX6.ImagePosition = DevComponents.DotNetBar.eImagePosition.Right
+        Me.EnregistrerButtonX6.Location = New System.Drawing.Point(945, 520)
+        Me.EnregistrerButtonX6.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.EnregistrerButtonX6.Name = "EnregistrerButtonX6"
+        Me.EnregistrerButtonX6.Size = New System.Drawing.Size(261, 24)
+        Me.EnregistrerButtonX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.EnregistrerButtonX6.TabIndex = 337
+        Me.EnregistrerButtonX6.Text = "Enregistrer"
         '
         'timbreTextBoxX1
         '
@@ -463,12 +469,12 @@ Partial Class DivisonnerBonCommande
         Me.NumeroTextBoxX5.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.NumeroTextBoxX5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.NumeroTextBoxX5.ForeColor = System.Drawing.Color.Black
-        Me.NumeroTextBoxX5.Location = New System.Drawing.Point(800, 63)
+        Me.NumeroTextBoxX5.Location = New System.Drawing.Point(715, 63)
         Me.NumeroTextBoxX5.Multiline = True
         Me.NumeroTextBoxX5.Name = "NumeroTextBoxX5"
-        Me.NumeroTextBoxX5.Size = New System.Drawing.Size(283, 32)
+        Me.NumeroTextBoxX5.Size = New System.Drawing.Size(111, 32)
         Me.NumeroTextBoxX5.TabIndex = 316
-        Me.NumeroTextBoxX5.WatermarkText = "                      Numero"
+        Me.NumeroTextBoxX5.WatermarkText = "  Numero"
         '
         'LabelX5
         '
@@ -607,12 +613,12 @@ Partial Class DivisonnerBonCommande
         Me.num.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.num.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.num.ForeColor = System.Drawing.Color.Black
-        Me.num.Location = New System.Drawing.Point(79, 63)
+        Me.num.Location = New System.Drawing.Point(12, 63)
         Me.num.Multiline = True
         Me.num.Name = "num"
-        Me.num.Size = New System.Drawing.Size(283, 32)
+        Me.num.Size = New System.Drawing.Size(110, 32)
         Me.num.TabIndex = 306
-        Me.num.WatermarkText = "                      Numero"
+        Me.num.WatermarkText = "  Numero"
         '
         'OEComboBoxEx1
         '
@@ -649,6 +655,57 @@ Partial Class DivisonnerBonCommande
         Me.LabelX2.Size = New System.Drawing.Size(111, 23)
         Me.LabelX2.TabIndex = 301
         Me.LabelX2.Text = "N°Ordre d'execution :"
+        '
+        'RefTextBoxX1
+        '
+        Me.RefTextBoxX1.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.RefTextBoxX1.Border.Class = "TextBoxBorder"
+        Me.RefTextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RefTextBoxX1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RefTextBoxX1.ForeColor = System.Drawing.Color.Black
+        Me.RefTextBoxX1.Location = New System.Drawing.Point(137, 63)
+        Me.RefTextBoxX1.Multiline = True
+        Me.RefTextBoxX1.Name = "RefTextBoxX1"
+        Me.RefTextBoxX1.Size = New System.Drawing.Size(110, 32)
+        Me.RefTextBoxX1.TabIndex = 344
+        Me.RefTextBoxX1.WatermarkText = "  Reference"
+        '
+        'RefTextBoxX2
+        '
+        Me.RefTextBoxX2.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.RefTextBoxX2.Border.Class = "TextBoxBorder"
+        Me.RefTextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.RefTextBoxX2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RefTextBoxX2.ForeColor = System.Drawing.Color.Black
+        Me.RefTextBoxX2.Location = New System.Drawing.Point(841, 63)
+        Me.RefTextBoxX2.Multiline = True
+        Me.RefTextBoxX2.Name = "RefTextBoxX2"
+        Me.RefTextBoxX2.Size = New System.Drawing.Size(116, 32)
+        Me.RefTextBoxX2.TabIndex = 345
+        Me.RefTextBoxX2.WatermarkText = "Reference"
+        '
+        'TextBoxX1
+        '
+        Me.TextBoxX1.BackColor = System.Drawing.Color.White
+        '
+        '
+        '
+        Me.TextBoxX1.Border.Class = "TextBoxBorder"
+        Me.TextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        Me.TextBoxX1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.TextBoxX1.ForeColor = System.Drawing.Color.Black
+        Me.TextBoxX1.Location = New System.Drawing.Point(335, 19)
+        Me.TextBoxX1.Multiline = True
+        Me.TextBoxX1.Name = "TextBoxX1"
+        Me.TextBoxX1.Size = New System.Drawing.Size(452, 32)
+        Me.TextBoxX1.TabIndex = 346
+        Me.TextBoxX1.WatermarkText = "  Numero"
         '
         'DivisonnerBonCommande
         '
@@ -707,11 +764,14 @@ Partial Class DivisonnerBonCommande
     Friend WithEvents ColumnHeader3 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader4 As System.Windows.Forms.ColumnHeader
     Friend WithEvents ColumnHeader5 As System.Windows.Forms.ColumnHeader
-    Friend WithEvents ButtonX1 As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents ButtonX6 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents EnregistrementtotalButtonX1 As DevComponents.DotNetBar.ButtonX
+    Friend WithEvents EnregistrerButtonX6 As DevComponents.DotNetBar.ButtonX
     Friend WithEvents NameStructTextBoxX2 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents CodestructTextBoxX3 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents NameStructTextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents codeStruct As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents RetourButton1 As System.Windows.Forms.Button
+    Friend WithEvents RefTextBoxX2 As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents RefTextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
+    Friend WithEvents TextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
 End Class
