@@ -803,6 +803,7 @@ Public Class ficheDePaie
     End Sub
 
     Private Sub ButtonX1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles EnregistrBtn.Click
+        'Mohamed hadi c pour toi "rani nkol wache men zmane rana 3aychine fihe" chah chah chah
         Try
             If VerouillerCheck.Checked = True Then
                 IsConnected("INSERT INTO `paie_blockage`(`id`,`matricule`,`moi_annee`,`blockage`,`entry_date`)VALUES(NULL,'" & mat.Text & "','" & datej.Text & "','1',NOW());", True)

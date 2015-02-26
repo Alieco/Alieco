@@ -3,6 +3,7 @@ Imports DevComponents.DotNetBar
 Public Class AjoutCompte
     Dim erreur As Boolean = False
     Private Sub ajout_Click(sender As System.Object, e As System.EventArgs) Handles ajout.Click
+        'Kache climatiseur??!!!!!
         Dim quary = "INSERT INTO logistique_gestionstock_catcompt VALUES(NULL,'" & compte.Text & "','" & sousfamille.Text & "','" & famille.Text & "')"
         Clipboard.SetText(quary)
         If IsConnected(quary, True) = False Then

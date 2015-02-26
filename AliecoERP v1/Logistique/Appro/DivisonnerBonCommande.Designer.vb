@@ -71,18 +71,12 @@ Partial Class DivisonnerBonCommande
         Me.OEComboBoxEx1 = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
-        Me.RefTextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.RefTextBoxX2 = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.TextBoxX1 = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.GroupBox1.SuspendLayout()
         CType(Me.QTNumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.TextBoxX1)
-        Me.GroupBox1.Controls.Add(Me.RefTextBoxX2)
-        Me.GroupBox1.Controls.Add(Me.RefTextBoxX1)
         Me.GroupBox1.Controls.Add(Me.RetourButton1)
         Me.GroupBox1.Controls.Add(Me.NameStructTextBoxX2)
         Me.GroupBox1.Controls.Add(Me.CodestructTextBoxX3)
@@ -656,57 +650,6 @@ Partial Class DivisonnerBonCommande
         Me.LabelX2.TabIndex = 301
         Me.LabelX2.Text = "N°Ordre d'execution :"
         '
-        'RefTextBoxX1
-        '
-        Me.RefTextBoxX1.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.RefTextBoxX1.Border.Class = "TextBoxBorder"
-        Me.RefTextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RefTextBoxX1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RefTextBoxX1.ForeColor = System.Drawing.Color.Black
-        Me.RefTextBoxX1.Location = New System.Drawing.Point(137, 63)
-        Me.RefTextBoxX1.Multiline = True
-        Me.RefTextBoxX1.Name = "RefTextBoxX1"
-        Me.RefTextBoxX1.Size = New System.Drawing.Size(110, 32)
-        Me.RefTextBoxX1.TabIndex = 344
-        Me.RefTextBoxX1.WatermarkText = "  Reference"
-        '
-        'RefTextBoxX2
-        '
-        Me.RefTextBoxX2.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.RefTextBoxX2.Border.Class = "TextBoxBorder"
-        Me.RefTextBoxX2.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.RefTextBoxX2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RefTextBoxX2.ForeColor = System.Drawing.Color.Black
-        Me.RefTextBoxX2.Location = New System.Drawing.Point(841, 63)
-        Me.RefTextBoxX2.Multiline = True
-        Me.RefTextBoxX2.Name = "RefTextBoxX2"
-        Me.RefTextBoxX2.Size = New System.Drawing.Size(116, 32)
-        Me.RefTextBoxX2.TabIndex = 345
-        Me.RefTextBoxX2.WatermarkText = "Reference"
-        '
-        'TextBoxX1
-        '
-        Me.TextBoxX1.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.TextBoxX1.Border.Class = "TextBoxBorder"
-        Me.TextBoxX1.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.TextBoxX1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxX1.ForeColor = System.Drawing.Color.Black
-        Me.TextBoxX1.Location = New System.Drawing.Point(335, 19)
-        Me.TextBoxX1.Multiline = True
-        Me.TextBoxX1.Name = "TextBoxX1"
-        Me.TextBoxX1.Size = New System.Drawing.Size(452, 32)
-        Me.TextBoxX1.TabIndex = 346
-        Me.TextBoxX1.WatermarkText = "  Numero"
-        '
         'DivisonnerBonCommande
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -771,7 +714,4 @@ Partial Class DivisonnerBonCommande
     Friend WithEvents NameStructTextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents codeStruct As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents RetourButton1 As System.Windows.Forms.Button
-    Friend WithEvents RefTextBoxX2 As DevComponents.DotNetBar.Controls.TextBoxX
-    Friend WithEvents RefTextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
-    Friend WithEvents TextBoxX1 As DevComponents.DotNetBar.Controls.TextBoxX
 End Class
