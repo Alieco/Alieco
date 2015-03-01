@@ -1,4 +1,6 @@
-﻿Public Class DivisonnerBonCommande
+﻿Imports DevComponents.DotNetBar
+
+Public Class DivisonnerBonCommande
     Public codebcDiv As String = ""
     Dim desig As String = ""
     Dim qt As String = ""
@@ -55,6 +57,9 @@
     End Sub
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles TransfereButton1.Click
         If QTNumericUpDown1.Value = 0 Then
+            'J'ai mis MsgBox parceke je voulais faire vite, Je vous laisse le privillege de le changer ;)
+            'Hade les messages bache tachfaw 3liya lollll
+            'j'espere marakoumeche tkolou chehal sameta :P
             MsgBox("Veuillez choisir une designation avant de cliquer sur le bouton!")
         Else
             qt1 = ""
@@ -168,6 +173,105 @@
             poids = ListView2.SelectedItems(0).SubItems(2).Text
             pu = ListView2.SelectedItems(0).SubItems(3).Text
             montant = ListView2.SelectedItems(0).SubItems(4).Text
+        End If
+    End Sub
+
+    Private Sub EnregistrerButtonX6_Click(sender As Object, e As EventArgs) Handles EnregistrerButtonX6.Click
+        'On ce moment la ou je vous ecris Amina rahi tkoli oui normalement matrohiche tu restes ici
+        Dim id
+        Dim erreur As Boolean = False
+        Dim codefour As String = ""
+        Dim tvaa As String = ""
+        IsConnected("INSERT INTO logistique_appro_bonachat(`nature`,`type`,`synthese`,`DateBA`,`ref`,`demandeur`,`monnaie`,`delaiexe`,`modeexpe`,`modepaiem`,`ref_offre`,`imputation`,`dateEnreg`,`client`,`user`) (SELECT nature,type,synthese,DateBC,ref,demandeur,monnaie,delaiexe,modeexpe,modepaiem,ref_offre,imputation,dateEnreg,client,user FROM logistique_appro_bondecommande WHERE reference ='" & num.Text & "' limit 1)", True)
+        Dim code = NumeroTextBoxX5.Text.Split("/")
+        Dim c = code(0).ToString.Substring(1)
+        IsConnected("UPDATE `logistique_appro_bondecommande` SET `etatCommande` ='1' WHERE `codebc` =" & c & " limit 1; ", True)
+        IsConnected("SELECT idlogistique_appro_bonachat FROM logistique_appro_bonachat WHERE codeba='" & c & "'", False)
+        If myDR.HasRows Then
+            While myDR.Read
+                id = myDR("idlogistique_appro_bonachat").ToString
+            End While
+        End If
+        If IsConnected("UPDATE `logistique_appro_bonachat` SET `codeba` = '" & c & "',`reference` = '" & NumeroTextBoxX5.Text & "',`oe` = '" & OEComboBoxEx2.Text & "',`codestruc` = '" & codeStruct.Text & "',`namestruc` ='" & NameStructTextBoxX1.Text & "' WHERE `idlogistique_appro_bonachat` = '" & id & "';", True) = True Then
+            erreur = True
+        Else
+            erreur = False
+        End If
+        'Mohamed je sais que tu vas dire que c de la merde (et moi je te dirais mais ca fonctionne ca marche ;) n'est ce pas farid
+        IsConnected("SELECT * FROM logistique_appro_badesig WHERE codeba='" & c & "'", False)
+        If myDR.HasRows Then
+            While myDR.Read
+                codefour = myDR("codefour").ToString
+                tvaa = myDR("tva").ToString
+            End While
+        End If
+        For i = 0 To ListView2.Items.Count - 1
+            Dim q1 = "INSERT INTO logistique_appro_badesig VALUES(NULL,'" & c & "','" & mysql_escape_string(ListView2.Items(i).SubItems(0).Text) & "','" & ListView2.Items(i).SubItems(1).Text & "','" & ListView2.Items(i).SubItems(2).Text & "','" & ListView2.Items(i).SubItems(3).Text & "','" & ListView2.Items(i).SubItems(4).Text & "','" & totalTextBoxX4.Text & "','" & tvaa & "','" & timbreTextBoxX1.Text & "','" & ttcTextBoxX2.Text & "','" & tvaTextBoxX3.Text & "','" & codefour & "')"
+            If IsConnected(q1, True) = True Then
+                erreur = True
+            End If
+        Next
+        If erreur = True Then
+            MessageBoxEx.Show("Le bon a bien ete enregistre", "Succés", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ListView2.Items.Clear()
+            totalTextBoxX4.Clear()
+            tvaTextBoxX3.Clear()
+            timbreTextBoxX1.Clear()
+            ttcTextBoxX2.Clear()
+            NameStructTextBoxX1.Clear()
+            codeStruct.Clear()
+            NumeroTextBoxX5.Clear()
+            OEComboBoxEx2.Text = ""
+        Else : MessageBoxEx.Show("Le bon n'a pas été enregistre", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
+        End If
+    End Sub
+
+    Private Sub EnregistrementtotalButtonX1_Click(sender As Object, e As EventArgs) Handles EnregistrementtotalButtonX1.Click
+        'il est 13:16 et je demande a mohamed et farid de se lever pour aller faire la priere comme tout les jours !!!!!
+        'de passage mohamed rouh djawez l'armé hihihihihi
+        Dim id
+        Dim erreur As Boolean = False
+        Dim codefour As String = ""
+        Dim tvaa As String = ""
+        IsConnected("INSERT INTO logistique_appro_bonachat(`nature`,`type`,`synthese`,`DateBA`,`ref`,`demandeur`,`monnaie`,`delaiexe`,`modeexpe`,`modepaiem`,`ref_offre`,`imputation`,`dateEnreg`,`client`,`user`) (SELECT nature,type,synthese,DateBC,ref,demandeur,monnaie,delaiexe,modeexpe,modepaiem,ref_offre,imputation,dateEnreg,client,user FROM logistique_appro_bondecommande WHERE reference ='" & num.Text & "' limit 1)", True)
+        Dim code = num.Text.Split("/")
+        Dim c = code(0).ToString.Substring(1)
+        IsConnected("SELECT idlogistique_appro_bonachat FROM logistique_appro_bonachat WHERE codeba='" & c & "'", False)
+        If myDR.HasRows Then
+            While myDR.Read
+                id = myDR("idlogistique_appro_bonachat").ToString
+            End While
+        End If
+        If IsConnected("UPDATE `logistique_appro_bonachat` SET `codeba` = '" & c & "',`reference` = '" & num.Text & "',`oe` = '" & OEComboBoxEx1.Text & "',`codestruc` = '" & CodestructTextBoxX3.Text & "',`namestruc` ='" & NameStructTextBoxX2.Text & "' WHERE `idlogistique_appro_bonachat` = '" & id & "';", True) = True Then
+            erreur = True
+        Else
+            erreur = False
+        End If
+        IsConnected("SELECT * FROM logistique_appro_badesig WHERE codeba='" & c & "'", False)
+        If myDR.HasRows Then
+            While myDR.Read
+                codefour = myDR("codefour").ToString
+                tvaa = myDR("tva").ToString
+            End While
+        End If
+        For i = 0 To ListView1.Items.Count - 1
+            Dim q1 = "INSERT INTO logistique_appro_badesig VALUES(NULL,'" & c & "','" & mysql_escape_string(ListView1.Items(i).SubItems(0).Text) & "','" & ListView1.Items(i).SubItems(1).Text & "','" & ListView1.Items(i).SubItems(2).Text & "','" & ListView1.Items(i).SubItems(3).Text & "','" & ListView1.Items(i).SubItems(4).Text & "','" & totalTextBoxX4.Text & "','" & tvaa & "','" & timbreTextBoxX1.Text & "','" & ttcTextBoxX2.Text & "','" & tvaTextBoxX3.Text & "','" & codefour & "')"
+            If IsConnected(q1, True) = True Then
+                erreur = True
+            End If
+        Next
+        If erreur = True Then
+            MessageBoxEx.Show("Le bon a bien ete enregistre", "Succés", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            ListView1.Items.Clear()
+            total.Clear()
+            tva.Clear()
+            timbre.Clear()
+            ttc.Clear()
+            NameStructTextBoxX2.Clear()
+            CodestructTextBoxX3.Clear()
+            num.Clear()
+            OEComboBoxEx1.Text = ""
+        Else : MessageBoxEx.Show("Le bon n'a pas été enregistre", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
         End If
     End Sub
 End Class

@@ -83,6 +83,7 @@ Public Class BonCommande
     End Sub
 
     Private Sub ButtonX6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonX6.Click
+        'C encore moi alors alors Amina kolilhoume ikhalouk tsali sameti comme je faisais ;)
         If ListView2.Items.Count > 0 Then
             If num.Text <> "" Or reference.Text <> "" Or demandeur.Text <> "" Or imputation.Text <> "" Or monnaie.Text <> "" Or modeexpe.Text <> "" Or modepaiem.Text <> "" Then
                 If ButtonX6.Text = "Enregistrer" Then

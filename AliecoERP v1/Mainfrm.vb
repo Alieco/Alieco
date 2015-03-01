@@ -397,7 +397,7 @@ Public Class Mainfrm
                 ContractCheck()
             Case 15
                 For Each rib As RibbonBar In RibbonPanel12.Controls
-                    rib.Enabled = False
+                    rib.Enabled = True
                 Next
             Case 20
                 For Each rib As RibbonBar In RibbonPanel9.Controls
@@ -1416,8 +1416,6 @@ Public Class Mainfrm
             End If
         End If
     End Sub
-
-
     Private Sub Mainfrm_KeyDown(sender As Object, e As KeyEventArgs) Handles MyBase.KeyDown
         If (e.Alt AndAlso (e.KeyCode = Keys.P) AndAlso e.Shift) Then
             ButtonX2.Enabled = True
@@ -1428,4 +1426,6 @@ Public Class Mainfrm
             typebdd.Enabled = True
         End If
     End Sub
+    'Coucou encore je suis la et oui ya partout ce genre de message pour ne pas m'oublié
+    'j'imagine wache klitou fel ftour amina fritte escalope mohamed triangle et farid une pizza kastha wela lala
 End Class
