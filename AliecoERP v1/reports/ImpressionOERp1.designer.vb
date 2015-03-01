@@ -23,20 +23,19 @@ Partial Public Class ImpressionOERp1
         Me.TopMargin = New DevExpress.XtraReports.UI.TopMarginBand()
         Me.BottomMargin = New DevExpress.XtraReports.UI.BottomMarginBand()
         Me.ReportHeader = New DevExpress.XtraReports.UI.ReportHeaderBand()
-        Me.XrLabel40 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel36 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel45 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel44 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel42 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel41 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel43 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel37 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel49 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel48 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel50 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel48 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel49 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel46 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel47 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.XrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel37 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel45 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel36 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel40 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel44 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel43 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel41 = New DevExpress.XtraReports.UI.XRLabel()
+        Me.XrLabel42 = New DevExpress.XtraReports.UI.XRLabel()
         CType(Me, System.ComponentModel.ISupportInitialize).BeginInit()
         '
         'Detail
@@ -62,99 +61,19 @@ Partial Public Class ImpressionOERp1
         '
         'ReportHeader
         '
-        Me.ReportHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel1, Me.XrLabel40, Me.XrLabel36, Me.XrLabel45, Me.XrLabel44, Me.XrLabel42, Me.XrLabel41, Me.XrLabel43, Me.XrLabel37, Me.XrLabel49, Me.XrLabel48, Me.XrLabel50, Me.XrLabel46, Me.XrLabel47})
+        Me.ReportHeader.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrLabel40, Me.XrLabel36, Me.XrLabel45, Me.XrLabel44, Me.XrLabel42, Me.XrLabel41, Me.XrLabel43, Me.XrLabel37, Me.XrLabel49, Me.XrLabel48, Me.XrLabel50, Me.XrLabel46, Me.XrLabel47})
         Me.ReportHeader.HeightF = 1209.062!
         Me.ReportHeader.Name = "ReportHeader"
         '
-        'XrLabel40
+        'XrLabel50
         '
-        Me.XrLabel40.AutoWidth = True
-        Me.XrLabel40.CanShrink = True
-        Me.XrLabel40.LocationFloat = New DevExpress.Utils.PointFloat(470.1248!, 174.6875!)
-        Me.XrLabel40.Multiline = True
-        Me.XrLabel40.Name = "XrLabel40"
-        Me.XrLabel40.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel40.SizeF = New System.Drawing.SizeF(146.8751!, 56.16682!)
-        '
-        'XrLabel36
-        '
-        Me.XrLabel36.AutoWidth = True
-        Me.XrLabel36.CanShrink = True
-        Me.XrLabel36.LocationFloat = New DevExpress.Utils.PointFloat(55.20833!, 27.89574!)
-        Me.XrLabel36.Multiline = True
-        Me.XrLabel36.Name = "XrLabel36"
-        Me.XrLabel36.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel36.SizeF = New System.Drawing.SizeF(258.3333!, 66.58347!)
-        '
-        'XrLabel45
-        '
-        Me.XrLabel45.AutoWidth = True
-        Me.XrLabel45.CanShrink = True
-        Me.XrLabel45.LocationFloat = New DevExpress.Utils.PointFloat(313.5422!, 667.2296!)
-        Me.XrLabel45.Multiline = True
-        Me.XrLabel45.Name = "XrLabel45"
-        Me.XrLabel45.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel45.SizeF = New System.Drawing.SizeF(286.4584!, 70.75003!)
-        '
-        'XrLabel44
-        '
-        Me.XrLabel44.AutoWidth = True
-        Me.XrLabel44.CanShrink = True
-        Me.XrLabel44.LocationFloat = New DevExpress.Utils.PointFloat(55.20849!, 667.2296!)
-        Me.XrLabel44.Multiline = True
-        Me.XrLabel44.Name = "XrLabel44"
-        Me.XrLabel44.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel44.SizeF = New System.Drawing.SizeF(258.3333!, 70.75003!)
-        '
-        'XrLabel42
-        '
-        Me.XrLabel42.AutoWidth = True
-        Me.XrLabel42.CanShrink = True
-        Me.XrLabel42.LocationFloat = New DevExpress.Utils.PointFloat(344.083!, 375.2294!)
-        Me.XrLabel42.Multiline = True
-        Me.XrLabel42.Name = "XrLabel42"
-        Me.XrLabel42.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel42.SizeF = New System.Drawing.SizeF(272.9168!, 68.91687!)
-        '
-        'XrLabel41
-        '
-        Me.XrLabel41.AutoWidth = True
-        Me.XrLabel41.CanShrink = True
-        Me.XrLabel41.LocationFloat = New DevExpress.Utils.PointFloat(55.20808!, 417.0628!)
-        Me.XrLabel41.Multiline = True
-        Me.XrLabel41.Name = "XrLabel41"
-        Me.XrLabel41.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel41.SizeF = New System.Drawing.SizeF(258.3333!, 90.62515!)
-        '
-        'XrLabel43
-        '
-        Me.XrLabel43.AutoWidth = True
-        Me.XrLabel43.CanShrink = True
-        Me.XrLabel43.LocationFloat = New DevExpress.Utils.PointFloat(313.5418!, 531.9796!)
-        Me.XrLabel43.Multiline = True
-        Me.XrLabel43.Name = "XrLabel43"
-        Me.XrLabel43.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel43.SizeF = New System.Drawing.SizeF(286.4584!, 31.08337!)
-        '
-        'XrLabel37
-        '
-        Me.XrLabel37.AutoWidth = True
-        Me.XrLabel37.CanShrink = True
-        Me.XrLabel37.LocationFloat = New DevExpress.Utils.PointFloat(55.20833!, 200.7292!)
-        Me.XrLabel37.Multiline = True
-        Me.XrLabel37.Name = "XrLabel37"
-        Me.XrLabel37.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel37.SizeF = New System.Drawing.SizeF(258.3333!, 56.16683!)
-        '
-        'XrLabel49
-        '
-        Me.XrLabel49.AutoWidth = True
-        Me.XrLabel49.CanShrink = True
-        Me.XrLabel49.LocationFloat = New DevExpress.Utils.PointFloat(55.20859!, 1049.145!)
-        Me.XrLabel49.Multiline = True
-        Me.XrLabel49.Name = "XrLabel49"
-        Me.XrLabel49.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel49.SizeF = New System.Drawing.SizeF(258.3332!, 29.08325!)
+        Me.XrLabel50.AutoWidth = True
+        Me.XrLabel50.CanShrink = True
+        Me.XrLabel50.LocationFloat = New DevExpress.Utils.PointFloat(384.3752!, 1131.437!)
+        Me.XrLabel50.Multiline = True
+        Me.XrLabel50.Name = "XrLabel50"
+        Me.XrLabel50.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel50.SizeF = New System.Drawing.SizeF(215.625!, 29.08337!)
         '
         'XrLabel48
         '
@@ -166,15 +85,15 @@ Partial Public Class ImpressionOERp1
         Me.XrLabel48.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel48.SizeF = New System.Drawing.SizeF(146.8751!, 29.08325!)
         '
-        'XrLabel50
+        'XrLabel49
         '
-        Me.XrLabel50.AutoWidth = True
-        Me.XrLabel50.CanShrink = True
-        Me.XrLabel50.LocationFloat = New DevExpress.Utils.PointFloat(384.3752!, 1131.437!)
-        Me.XrLabel50.Multiline = True
-        Me.XrLabel50.Name = "XrLabel50"
-        Me.XrLabel50.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel50.SizeF = New System.Drawing.SizeF(215.625!, 29.08337!)
+        Me.XrLabel49.AutoWidth = True
+        Me.XrLabel49.CanShrink = True
+        Me.XrLabel49.LocationFloat = New DevExpress.Utils.PointFloat(55.20859!, 1049.145!)
+        Me.XrLabel49.Multiline = True
+        Me.XrLabel49.Name = "XrLabel49"
+        Me.XrLabel49.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel49.SizeF = New System.Drawing.SizeF(258.3332!, 29.08325!)
         '
         'XrLabel46
         '
@@ -196,15 +115,85 @@ Partial Public Class ImpressionOERp1
         Me.XrLabel47.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
         Me.XrLabel47.SizeF = New System.Drawing.SizeF(258.3332!, 95.74991!)
         '
-        'XrLabel1
+        'XrLabel37
         '
-        Me.XrLabel1.AutoWidth = True
-        Me.XrLabel1.CanShrink = True
-        Me.XrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(341.6669!, 27.89574!)
-        Me.XrLabel1.Multiline = True
-        Me.XrLabel1.Name = "XrLabel1"
-        Me.XrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
-        Me.XrLabel1.SizeF = New System.Drawing.SizeF(258.3333!, 66.58347!)
+        Me.XrLabel37.AutoWidth = True
+        Me.XrLabel37.CanShrink = True
+        Me.XrLabel37.LocationFloat = New DevExpress.Utils.PointFloat(55.20833!, 200.7292!)
+        Me.XrLabel37.Multiline = True
+        Me.XrLabel37.Name = "XrLabel37"
+        Me.XrLabel37.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel37.SizeF = New System.Drawing.SizeF(258.3333!, 56.16683!)
+        '
+        'XrLabel45
+        '
+        Me.XrLabel45.AutoWidth = True
+        Me.XrLabel45.CanShrink = True
+        Me.XrLabel45.LocationFloat = New DevExpress.Utils.PointFloat(313.5422!, 667.2296!)
+        Me.XrLabel45.Multiline = True
+        Me.XrLabel45.Name = "XrLabel45"
+        Me.XrLabel45.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel45.SizeF = New System.Drawing.SizeF(286.4584!, 70.75003!)
+        '
+        'XrLabel36
+        '
+        Me.XrLabel36.AutoWidth = True
+        Me.XrLabel36.CanShrink = True
+        Me.XrLabel36.LocationFloat = New DevExpress.Utils.PointFloat(55.20833!, 27.89574!)
+        Me.XrLabel36.Multiline = True
+        Me.XrLabel36.Name = "XrLabel36"
+        Me.XrLabel36.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel36.SizeF = New System.Drawing.SizeF(258.3333!, 66.58347!)
+        '
+        'XrLabel40
+        '
+        Me.XrLabel40.AutoWidth = True
+        Me.XrLabel40.CanShrink = True
+        Me.XrLabel40.LocationFloat = New DevExpress.Utils.PointFloat(470.1248!, 174.6875!)
+        Me.XrLabel40.Multiline = True
+        Me.XrLabel40.Name = "XrLabel40"
+        Me.XrLabel40.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel40.SizeF = New System.Drawing.SizeF(146.8751!, 56.16682!)
+        '
+        'XrLabel44
+        '
+        Me.XrLabel44.AutoWidth = True
+        Me.XrLabel44.CanShrink = True
+        Me.XrLabel44.LocationFloat = New DevExpress.Utils.PointFloat(55.20849!, 667.2296!)
+        Me.XrLabel44.Multiline = True
+        Me.XrLabel44.Name = "XrLabel44"
+        Me.XrLabel44.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel44.SizeF = New System.Drawing.SizeF(258.3333!, 70.75003!)
+        '
+        'XrLabel43
+        '
+        Me.XrLabel43.AutoWidth = True
+        Me.XrLabel43.CanShrink = True
+        Me.XrLabel43.LocationFloat = New DevExpress.Utils.PointFloat(313.5418!, 531.9796!)
+        Me.XrLabel43.Multiline = True
+        Me.XrLabel43.Name = "XrLabel43"
+        Me.XrLabel43.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel43.SizeF = New System.Drawing.SizeF(286.4584!, 31.08337!)
+        '
+        'XrLabel41
+        '
+        Me.XrLabel41.AutoWidth = True
+        Me.XrLabel41.CanShrink = True
+        Me.XrLabel41.LocationFloat = New DevExpress.Utils.PointFloat(55.20808!, 417.0628!)
+        Me.XrLabel41.Multiline = True
+        Me.XrLabel41.Name = "XrLabel41"
+        Me.XrLabel41.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel41.SizeF = New System.Drawing.SizeF(258.3333!, 90.62515!)
+        '
+        'XrLabel42
+        '
+        Me.XrLabel42.AutoWidth = True
+        Me.XrLabel42.CanShrink = True
+        Me.XrLabel42.LocationFloat = New DevExpress.Utils.PointFloat(344.083!, 375.2294!)
+        Me.XrLabel42.Multiline = True
+        Me.XrLabel42.Name = "XrLabel42"
+        Me.XrLabel42.Padding = New DevExpress.XtraPrinting.PaddingInfo(2, 2, 0, 0, 100.0!)
+        Me.XrLabel42.SizeF = New System.Drawing.SizeF(272.9168!, 68.91687!)
         '
         'ImpressionOERp1
         '
@@ -214,7 +203,7 @@ Partial Public Class ImpressionOERp1
         Me.PageWidth = 827
         Me.PaperKind = System.Drawing.Printing.PaperKind.A4
         Me.ScriptLanguage = DevExpress.XtraReports.ScriptLanguage.VisualBasic
-        Me.Version = "14.2"
+        Me.Version = "14.1"
         CType(Me, System.ComponentModel.ISupportInitialize).EndInit()
 
     End Sub
@@ -235,5 +224,4 @@ Partial Public Class ImpressionOERp1
     Friend WithEvents XrLabel50 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel46 As DevExpress.XtraReports.UI.XRLabel
     Friend WithEvents XrLabel47 As DevExpress.XtraReports.UI.XRLabel
-    Friend WithEvents XrLabel1 As DevExpress.XtraReports.UI.XRLabel
 End Class

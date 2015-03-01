@@ -237,7 +237,7 @@ Partial Class ImpeimerFacture
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(0, 93)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1474, 65)
+        Me.GroupBox1.Size = New System.Drawing.Size(1348, 65)
         Me.GroupBox1.TabIndex = 2
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "veuillez saisir la date  :"
@@ -353,7 +353,7 @@ Partial Class ImpeimerFacture
         Me.treelist1.LookAndFeel.UseDefaultLookAndFeel = False
         Me.treelist1.Name = "treelist1"
         Me.treelist1.SelectImageList = Me.ImageList1
-        Me.treelist1.Size = New System.Drawing.Size(186, 671)
+        Me.treelist1.Size = New System.Drawing.Size(186, 608)
         Me.treelist1.StateImageList = Me.ImageList1
         Me.treelist1.TabIndex = 5
         '
@@ -378,7 +378,7 @@ Partial Class ImpeimerFacture
         Me.RichFacture.LookAndFeel.UseDefaultLookAndFeel = False
         Me.RichFacture.MenuManager = Me.BarManager1
         Me.RichFacture.Name = "RichFacture"
-        Me.RichFacture.Size = New System.Drawing.Size(1288, 671)
+        Me.RichFacture.Size = New System.Drawing.Size(1162, 608)
         Me.RichFacture.TabIndex = 6
         '
         'BarManager1
@@ -1049,15 +1049,15 @@ Partial Class ImpeimerFacture
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.ForeColor = System.Drawing.Color.Black
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(1474, 93)
+        Me.barDockControlTop.Size = New System.Drawing.Size(1348, 93)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
         Me.barDockControlBottom.ForeColor = System.Drawing.Color.Black
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 829)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1474, 0)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 766)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(1348, 0)
         '
         'barDockControlLeft
         '
@@ -1065,15 +1065,15 @@ Partial Class ImpeimerFacture
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.ForeColor = System.Drawing.Color.Black
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 93)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 736)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 673)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
         Me.barDockControlRight.ForeColor = System.Drawing.Color.Black
-        Me.barDockControlRight.Location = New System.Drawing.Point(1474, 93)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 736)
+        Me.barDockControlRight.Location = New System.Drawing.Point(1348, 93)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 673)
         '
         'RichEditBarController1
         '
@@ -1183,7 +1183,7 @@ Partial Class ImpeimerFacture
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1474, 829)
+        Me.ClientSize = New System.Drawing.Size(1348, 766)
         Me.Controls.Add(Me.RichFacture)
         Me.Controls.Add(Me.treelist1)
         Me.Controls.Add(Me.GroupBox1)

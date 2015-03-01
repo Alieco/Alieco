@@ -174,17 +174,6 @@ Partial Class OE
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
         Me.TabItem2 = New DevComponents.DotNetBar.TabItem(Me.components)
-        Me.TabControlPanel3 = New DevComponents.DotNetBar.TabControlPanel()
-        Me.RichFacture = New DevExpress.XtraRichEdit.RichEditControl()
-        Me.treelist1 = New DevExpress.XtraTreeList.TreeList()
-        Me.Nom = New DevExpress.XtraTreeList.Columns.TreeListColumn()
-        Me.GroupBox5 = New System.Windows.Forms.GroupBox()
-        Me.SaveBtn = New DevComponents.DotNetBar.ButtonX()
-        Me.SerachTxt = New DevComponents.DotNetBar.ButtonX()
-        Me.nFactureTxt = New DevComponents.DotNetBar.Controls.TextBoxX()
-        Me.PrintBtn = New DevComponents.DotNetBar.ButtonX()
-        Me.LabelX5 = New DevComponents.DotNetBar.LabelX()
-        Me.TabItem3 = New DevComponents.DotNetBar.TabItem(Me.components)
         CType(Me.TabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabControlPanel1.SuspendLayout()
@@ -201,9 +190,6 @@ Partial Class OE
         Me.redevanceN.SuspendLayout()
         Me.GroupBox7.SuspendLayout()
         Me.GroupBox6.SuspendLayout()
-        Me.TabControlPanel3.SuspendLayout()
-        CType(Me.treelist1, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.GroupBox5.SuspendLayout()
         Me.SuspendLayout()
         '
         'TabControl1
@@ -212,7 +198,6 @@ Partial Class OE
         Me.TabControl1.CanReorderTabs = True
         Me.TabControl1.Controls.Add(Me.TabControlPanel1)
         Me.TabControl1.Controls.Add(Me.TabControlPanel2)
-        Me.TabControl1.Controls.Add(Me.TabControlPanel3)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.ForeColor = System.Drawing.Color.Black
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)
@@ -225,7 +210,6 @@ Partial Class OE
         Me.TabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox
         Me.TabControl1.Tabs.Add(Me.TabItem1)
         Me.TabControl1.Tabs.Add(Me.TabItem2)
-        Me.TabControl1.Tabs.Add(Me.TabItem3)
         Me.TabControl1.Text = "TabControl1"
         '
         'TabControlPanel1
@@ -371,9 +355,9 @@ Partial Class OE
         Me.ListView1.ContextMenuStrip = Me.ContextMenuStrip1
         Me.ListView1.FullRowSelect = True
         Me.ListView1.GridLines = True
-        Me.ListView1.Location = New System.Drawing.Point(353, 21)
+        Me.ListView1.Location = New System.Drawing.Point(333, 22)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(701, 342)
+        Me.ListView1.Size = New System.Drawing.Size(718, 323)
         Me.ListView1.TabIndex = 343
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -386,22 +370,22 @@ Partial Class OE
         'ColumnHeader2
         '
         Me.ColumnHeader2.Text = "S/N° d'execution"
-        Me.ColumnHeader2.Width = 99
+        Me.ColumnHeader2.Width = 97
         '
         'ColumnHeader3
         '
         Me.ColumnHeader3.Text = "Titre"
-        Me.ColumnHeader3.Width = 123
+        Me.ColumnHeader3.Width = 173
         '
         'ColumnHeader4
         '
         Me.ColumnHeader4.Text = "Sous titre"
-        Me.ColumnHeader4.Width = 158
+        Me.ColumnHeader4.Width = 107
         '
         'ColumnHeader5
         '
         Me.ColumnHeader5.Text = "Definition de la fourniture"
-        Me.ColumnHeader5.Width = 194
+        Me.ColumnHeader5.Width = 218
         '
         'ContextMenuStrip1
         '
@@ -2349,150 +2333,6 @@ Partial Class OE
         Me.TabItem2.Name = "TabItem2"
         Me.TabItem2.Text = "Details"
         '
-        'TabControlPanel3
-        '
-        Me.TabControlPanel3.Controls.Add(Me.RichFacture)
-        Me.TabControlPanel3.Controls.Add(Me.treelist1)
-        Me.TabControlPanel3.Controls.Add(Me.GroupBox5)
-        Me.TabControlPanel3.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.TabControlPanel3.Location = New System.Drawing.Point(0, 27)
-        Me.TabControlPanel3.Name = "TabControlPanel3"
-        Me.TabControlPanel3.Padding = New System.Windows.Forms.Padding(1)
-        Me.TabControlPanel3.Size = New System.Drawing.Size(1346, 622)
-        Me.TabControlPanel3.Style.BackColor1.Color = System.Drawing.Color.White
-        Me.TabControlPanel3.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
-        Me.TabControlPanel3.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer))
-        Me.TabControlPanel3.Style.BorderSide = CType(((DevComponents.DotNetBar.eBorderSide.Left Or DevComponents.DotNetBar.eBorderSide.Right) _
-            Or DevComponents.DotNetBar.eBorderSide.Bottom), DevComponents.DotNetBar.eBorderSide)
-        Me.TabControlPanel3.Style.GradientAngle = 90
-        Me.TabControlPanel3.TabIndex = 3
-        Me.TabControlPanel3.TabItem = Me.TabItem3
-        '
-        'RichFacture
-        '
-        Me.RichFacture.Appearance.Text.ForeColor = System.Drawing.Color.Black
-        Me.RichFacture.Appearance.Text.Options.UseForeColor = True
-        Me.RichFacture.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.RichFacture.EnableToolTips = True
-        Me.RichFacture.Location = New System.Drawing.Point(187, 66)
-        Me.RichFacture.LookAndFeel.SkinName = "Office 2013"
-        Me.RichFacture.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.RichFacture.Name = "RichFacture"
-        Me.RichFacture.Size = New System.Drawing.Size(1158, 555)
-        Me.RichFacture.TabIndex = 9
-        '
-        'treelist1
-        '
-        Me.treelist1.Columns.AddRange(New DevExpress.XtraTreeList.Columns.TreeListColumn() {Me.Nom})
-        Me.treelist1.Dock = System.Windows.Forms.DockStyle.Left
-        Me.treelist1.Location = New System.Drawing.Point(1, 66)
-        Me.treelist1.LookAndFeel.SkinName = "Office 2013"
-        Me.treelist1.LookAndFeel.UseDefaultLookAndFeel = False
-        Me.treelist1.Name = "treelist1"
-        Me.treelist1.Size = New System.Drawing.Size(186, 555)
-        Me.treelist1.TabIndex = 8
-        '
-        'Nom
-        '
-        Me.Nom.Caption = "Nom"
-        Me.Nom.FieldName = "Nom"
-        Me.Nom.MinWidth = 52
-        Me.Nom.Name = "Nom"
-        Me.Nom.OptionsColumn.AllowEdit = False
-        Me.Nom.Visible = True
-        Me.Nom.VisibleIndex = 0
-        '
-        'GroupBox5
-        '
-        Me.GroupBox5.BackColor = System.Drawing.Color.White
-        Me.GroupBox5.Controls.Add(Me.SaveBtn)
-        Me.GroupBox5.Controls.Add(Me.SerachTxt)
-        Me.GroupBox5.Controls.Add(Me.nFactureTxt)
-        Me.GroupBox5.Controls.Add(Me.PrintBtn)
-        Me.GroupBox5.Controls.Add(Me.LabelX5)
-        Me.GroupBox5.Dock = System.Windows.Forms.DockStyle.Top
-        Me.GroupBox5.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox5.Location = New System.Drawing.Point(1, 1)
-        Me.GroupBox5.Name = "GroupBox5"
-        Me.GroupBox5.Size = New System.Drawing.Size(1344, 65)
-        Me.GroupBox5.TabIndex = 7
-        Me.GroupBox5.TabStop = False
-        Me.GroupBox5.Text = "veuillez saisir la date  :"
-        '
-        'SaveBtn
-        '
-        Me.SaveBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.SaveBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.SaveBtn.Enabled = False
-        Me.SaveBtn.Image = Global.MBA.My.Resources.Resources.order_ok
-        Me.SaveBtn.Location = New System.Drawing.Point(595, 26)
-        Me.SaveBtn.Name = "SaveBtn"
-        Me.SaveBtn.Size = New System.Drawing.Size(148, 23)
-        Me.SaveBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.SaveBtn.TabIndex = 7
-        Me.SaveBtn.Text = "Enregistrer la facture"
-        '
-        'SerachTxt
-        '
-        Me.SerachTxt.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.SerachTxt.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.SerachTxt.Image = Global.MBA.My.Resources.Resources.order_search
-        Me.SerachTxt.Location = New System.Drawing.Point(465, 26)
-        Me.SerachTxt.Name = "SerachTxt"
-        Me.SerachTxt.Size = New System.Drawing.Size(124, 23)
-        Me.SerachTxt.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.SerachTxt.TabIndex = 6
-        Me.SerachTxt.Text = "Afficher la facture"
-        '
-        'nFactureTxt
-        '
-        Me.nFactureTxt.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.nFactureTxt.Border.Class = "TextBoxBorder"
-        Me.nFactureTxt.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.nFactureTxt.ForeColor = System.Drawing.Color.Black
-        Me.nFactureTxt.Location = New System.Drawing.Point(312, 26)
-        Me.nFactureTxt.Name = "nFactureTxt"
-        Me.nFactureTxt.Size = New System.Drawing.Size(133, 20)
-        Me.nFactureTxt.TabIndex = 5
-        Me.nFactureTxt.WatermarkText = "N° de facture ici..."
-        '
-        'PrintBtn
-        '
-        Me.PrintBtn.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
-        Me.PrintBtn.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.PrintBtn.Enabled = False
-        Me.PrintBtn.Image = Global.MBA.My.Resources.Resources.order_print1
-        Me.PrintBtn.Location = New System.Drawing.Point(749, 26)
-        Me.PrintBtn.Name = "PrintBtn"
-        Me.PrintBtn.Size = New System.Drawing.Size(124, 23)
-        Me.PrintBtn.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.PrintBtn.TabIndex = 4
-        Me.PrintBtn.Text = "Imprimer la facture"
-        '
-        'LabelX5
-        '
-        Me.LabelX5.BackColor = System.Drawing.Color.White
-        '
-        '
-        '
-        Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX5.ForeColor = System.Drawing.Color.Black
-        Me.LabelX5.Location = New System.Drawing.Point(215, 22)
-        Me.LabelX5.Name = "LabelX5"
-        Me.LabelX5.Size = New System.Drawing.Size(91, 27)
-        Me.LabelX5.TabIndex = 0
-        Me.LabelX5.Text = "N° de Facture :"
-        '
-        'TabItem3
-        '
-        Me.TabItem3.AttachedControl = Me.TabControlPanel3
-        Me.TabItem3.Name = "TabItem3"
-        Me.TabItem3.Text = "Ensemble Généraux"
-        Me.TabItem3.Visible = False
-        '
         'OE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -2528,9 +2368,6 @@ Partial Class OE
         Me.GroupBox7.PerformLayout()
         Me.GroupBox6.ResumeLayout(False)
         Me.GroupBox6.PerformLayout()
-        Me.TabControlPanel3.ResumeLayout(False)
-        CType(Me.treelist1, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.GroupBox5.ResumeLayout(False)
         Me.ResumeLayout(False)
 
     End Sub
@@ -2684,15 +2521,4 @@ Partial Class OE
     Friend WithEvents Label58 As System.Windows.Forms.Label
     Friend WithEvents protectionExterne As DevComponents.DotNetBar.Controls.TextBoxX
     Friend WithEvents protectionInterne As DevComponents.DotNetBar.Controls.TextBoxX
-    Friend WithEvents TabControlPanel3 As DevComponents.DotNetBar.TabControlPanel
-    Friend WithEvents TabItem3 As DevComponents.DotNetBar.TabItem
-    Friend WithEvents RichFacture As DevExpress.XtraRichEdit.RichEditControl
-    Friend WithEvents treelist1 As DevExpress.XtraTreeList.TreeList
-    Friend WithEvents Nom As DevExpress.XtraTreeList.Columns.TreeListColumn
-    Friend WithEvents GroupBox5 As System.Windows.Forms.GroupBox
-    Friend WithEvents SaveBtn As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents SerachTxt As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents nFactureTxt As DevComponents.DotNetBar.Controls.TextBoxX
-    Friend WithEvents PrintBtn As DevComponents.DotNetBar.ButtonX
-    Friend WithEvents LabelX5 As DevComponents.DotNetBar.LabelX
 End Class

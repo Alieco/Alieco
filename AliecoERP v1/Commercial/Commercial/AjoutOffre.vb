@@ -25,6 +25,7 @@ Public Class AjoutOffre
     End Sub
     Private Sub AjoutOffre_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Try
+            Me.WindowState = FormWindowState.Maximized
             load_prestation()
             load_NomClient()
             load_modalite()

@@ -29,7 +29,6 @@ Partial Class ListOE
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.RadioButton1 = New System.Windows.Forms.RadioButton()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.MOERadio = New System.Windows.Forms.RadioButton()
         Me.OERadio = New System.Windows.Forms.RadioButton()
@@ -44,8 +43,8 @@ Partial Class ListOE
         Me.SupprimerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimerModifToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SupprimerLMOEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
+        Me.SupprimerLMOEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GroupBox1.SuspendLayout()
         CType(Me.au, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.du, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -116,7 +115,6 @@ Partial Class ListOE
         'GroupBox1
         '
         Me.GroupBox1.BackColor = System.Drawing.Color.White
-        Me.GroupBox1.Controls.Add(Me.RadioButton1)
         Me.GroupBox1.Controls.Add(Me.Label1)
         Me.GroupBox1.Controls.Add(Me.MOERadio)
         Me.GroupBox1.Controls.Add(Me.OERadio)
@@ -133,24 +131,10 @@ Partial Class ListOE
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1438, 130)
+        Me.GroupBox1.Size = New System.Drawing.Size(1354, 130)
         Me.GroupBox1.TabIndex = 124
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "La liste des Offres :"
-        '
-        'RadioButton1
-        '
-        Me.RadioButton1.AutoSize = True
-        Me.RadioButton1.BackColor = System.Drawing.Color.White
-        Me.RadioButton1.ForeColor = System.Drawing.Color.Black
-        Me.RadioButton1.Location = New System.Drawing.Point(959, 38)
-        Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(70, 19)
-        Me.RadioButton1.TabIndex = 22
-        Me.RadioButton1.TabStop = True
-        Me.RadioButton1.Text = "OEAlieco"
-        Me.RadioButton1.UseVisualStyleBackColor = False
-        Me.RadioButton1.Visible = False
         '
         'Label1
         '
@@ -167,7 +151,7 @@ Partial Class ListOE
         Me.MOERadio.AutoSize = True
         Me.MOERadio.BackColor = System.Drawing.Color.White
         Me.MOERadio.ForeColor = System.Drawing.Color.Black
-        Me.MOERadio.Location = New System.Drawing.Point(878, 38)
+        Me.MOERadio.Location = New System.Drawing.Point(881, 36)
         Me.MOERadio.Name = "MOERadio"
         Me.MOERadio.Size = New System.Drawing.Size(50, 19)
         Me.MOERadio.TabIndex = 20
@@ -180,7 +164,7 @@ Partial Class ListOE
         Me.OERadio.BackColor = System.Drawing.Color.White
         Me.OERadio.Checked = True
         Me.OERadio.ForeColor = System.Drawing.Color.Black
-        Me.OERadio.Location = New System.Drawing.Point(811, 38)
+        Me.OERadio.Location = New System.Drawing.Point(812, 38)
         Me.OERadio.Name = "OERadio"
         Me.OERadio.Size = New System.Drawing.Size(40, 19)
         Me.OERadio.TabIndex = 19
@@ -335,7 +319,7 @@ Partial Class ListOE
         Me.dgoe.LookAndFeel.UseDefaultLookAndFeel = False
         Me.dgoe.MainView = Me.GridView1
         Me.dgoe.Name = "dgoe"
-        Me.dgoe.Size = New System.Drawing.Size(1438, 784)
+        Me.dgoe.Size = New System.Drawing.Size(1354, 742)
         Me.dgoe.TabIndex = 126
         Me.dgoe.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -345,7 +329,7 @@ Partial Class ListOE
         Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoogleToolStripMenuItem, Me.ModifierToolStripMenuItem, Me.SupprimerToolStripMenuItem, Me.ImprimerToolStripMenuItem1, Me.ImprimerModifToolStripMenuItem, Me.SupprimerLMOEToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(330, 136)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(330, 158)
         '
         'GoogleToolStripMenuItem
         '
@@ -386,13 +370,6 @@ Partial Class ListOE
         Me.ImprimerModifToolStripMenuItem.Size = New System.Drawing.Size(329, 22)
         Me.ImprimerModifToolStripMenuItem.Text = "     Imprimer la modification  d'un ordre d'execution"
         '
-        'SupprimerLMOEToolStripMenuItem
-        '
-        Me.SupprimerLMOEToolStripMenuItem.Image = Global.MBA.My.Resources.Resources.vendors_remove
-        Me.SupprimerLMOEToolStripMenuItem.Name = "SupprimerLMOEToolStripMenuItem"
-        Me.SupprimerLMOEToolStripMenuItem.Size = New System.Drawing.Size(329, 22)
-        Me.SupprimerLMOEToolStripMenuItem.Text = "     Supprimer l'MOE"
-        '
         'GridView1
         '
         Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus
@@ -404,11 +381,18 @@ Partial Class ListOE
         Me.GridView1.OptionsDetail.SmartDetailHeight = True
         Me.GridView1.OptionsView.RowAutoHeight = True
         '
+        'SupprimerLMOEToolStripMenuItem
+        '
+        Me.SupprimerLMOEToolStripMenuItem.Image = Global.MBA.My.Resources.Resources.vendors_remove
+        Me.SupprimerLMOEToolStripMenuItem.Name = "SupprimerLMOEToolStripMenuItem"
+        Me.SupprimerLMOEToolStripMenuItem.Size = New System.Drawing.Size(329, 22)
+        Me.SupprimerLMOEToolStripMenuItem.Text = "     Supprimer l'MOE"
+        '
         'ListOE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1438, 914)
+        Me.ClientSize = New System.Drawing.Size(1354, 872)
         Me.Controls.Add(Me.dgoe)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True
@@ -452,5 +436,4 @@ Partial Class ListOE
     Friend WithEvents OERadio As System.Windows.Forms.RadioButton
     Friend WithEvents Label1 As System.Windows.Forms.Label
     Friend WithEvents SupprimerLMOEToolStripMenuItem As System.Windows.Forms.ToolStripMenuItem
-    Friend WithEvents RadioButton1 As System.Windows.Forms.RadioButton
 End Class

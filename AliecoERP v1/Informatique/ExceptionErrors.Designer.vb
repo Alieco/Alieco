@@ -76,7 +76,7 @@ Partial Class ExceptionErrors
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 20, 3, 3)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 50, 3, 3)
-        Me.GroupBox1.Size = New System.Drawing.Size(1373, 69)
+        Me.GroupBox1.Size = New System.Drawing.Size(1345, 69)
         Me.GroupBox1.TabIndex = 1
         Me.GroupBox1.TabStop = False
         '
@@ -91,7 +91,7 @@ Partial Class ExceptionErrors
         Me.LabelX6.ForeColor = System.Drawing.Color.Black
         Me.LabelX6.Location = New System.Drawing.Point(571, 40)
         Me.LabelX6.Name = "LabelX6"
-        Me.LabelX6.Size = New System.Drawing.Size(790, 23)
+        Me.LabelX6.Size = New System.Drawing.Size(668, 23)
         Me.LabelX6.Style = DevComponents.DotNetBar.eDotNetBarStyle.Metro
         Me.LabelX6.TabIndex = 6
         Me.LabelX6.Text = "fullname"
@@ -203,8 +203,8 @@ Partial Class ExceptionErrors
         Me.SplitContainer1.Panel2.BackColor = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer))
         Me.SplitContainer1.Panel2.Controls.Add(Me.SplitContainer2)
         Me.SplitContainer1.Panel2.ForeColor = System.Drawing.Color.Black
-        Me.SplitContainer1.Size = New System.Drawing.Size(1373, 550)
-        Me.SplitContainer1.SplitterDistance = 261
+        Me.SplitContainer1.Size = New System.Drawing.Size(1345, 536)
+        Me.SplitContainer1.SplitterDistance = 256
         Me.SplitContainer1.TabIndex = 2
         '
         'treelist1
@@ -217,7 +217,7 @@ Partial Class ExceptionErrors
         Me.treelist1.LookAndFeel.UseDefaultLookAndFeel = False
         Me.treelist1.Name = "treelist1"
         Me.treelist1.SelectImageList = Me.ImageList1
-        Me.treelist1.Size = New System.Drawing.Size(261, 550)
+        Me.treelist1.Size = New System.Drawing.Size(256, 536)
         Me.treelist1.StateImageList = Me.ImageList1
         Me.treelist1.TabIndex = 6
         '
@@ -276,8 +276,8 @@ Partial Class ExceptionErrors
         Me.SplitContainer2.Panel2.Controls.Add(Me.ListBoxControl1)
         Me.SplitContainer2.Panel2.Controls.Add(Me.PictureBox1)
         Me.SplitContainer2.Panel2.ForeColor = System.Drawing.Color.Black
-        Me.SplitContainer2.Size = New System.Drawing.Size(1108, 550)
-        Me.SplitContainer2.SplitterDistance = 402
+        Me.SplitContainer2.Size = New System.Drawing.Size(1085, 536)
+        Me.SplitContainer2.SplitterDistance = 392
         Me.SplitContainer2.TabIndex = 0
         '
         'PicturePreview
@@ -292,7 +292,7 @@ Partial Class ExceptionErrors
         Me.PicturePreview.Properties.ShowScrollBars = True
         Me.PicturePreview.Properties.ShowZoomSubMenu = DevExpress.Utils.DefaultBoolean.[True]
         Me.PicturePreview.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze
-        Me.PicturePreview.Size = New System.Drawing.Size(1108, 402)
+        Me.PicturePreview.Size = New System.Drawing.Size(1085, 392)
         Me.PicturePreview.TabIndex = 0
         '
         'ListBoxControl1
@@ -307,7 +307,7 @@ Partial Class ExceptionErrors
         Me.ListBoxControl1.LookAndFeel.SkinName = "Office 2013"
         Me.ListBoxControl1.LookAndFeel.UseDefaultLookAndFeel = False
         Me.ListBoxControl1.Name = "ListBoxControl1"
-        Me.ListBoxControl1.Size = New System.Drawing.Size(1108, 144)
+        Me.ListBoxControl1.Size = New System.Drawing.Size(1085, 140)
         Me.ListBoxControl1.TabIndex = 1
         '
         'copier
@@ -337,7 +337,7 @@ Partial Class ExceptionErrors
         Me.PictureBox1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.PictureBox1.Location = New System.Drawing.Point(0, 0)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(1108, 144)
+        Me.PictureBox1.Size = New System.Drawing.Size(1085, 140)
         Me.PictureBox1.TabIndex = 0
         Me.PictureBox1.TabStop = False
         '
@@ -345,7 +345,7 @@ Partial Class ExceptionErrors
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1373, 619)
+        Me.ClientSize = New System.Drawing.Size(1345, 605)
         Me.Controls.Add(Me.SplitContainer1)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True

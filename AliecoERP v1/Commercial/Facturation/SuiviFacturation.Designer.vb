@@ -176,7 +176,7 @@ Partial Class SuiviFacturation
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 5, 3, 5)
-        Me.GroupBox1.Size = New System.Drawing.Size(1376, 181)
+        Me.GroupBox1.Size = New System.Drawing.Size(1348, 181)
         Me.GroupBox1.TabIndex = 128
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "ajout d'affaire :"
@@ -767,7 +767,7 @@ Partial Class SuiviFacturation
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1376, 674)
+        Me.ClientSize = New System.Drawing.Size(1348, 660)
         Me.Controls.Add(Me.ttcTxt)
         Me.Controls.Add(Me.LabelX18)
         Me.Controls.Add(Me.htTxt)
