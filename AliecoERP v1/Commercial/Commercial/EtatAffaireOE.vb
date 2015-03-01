@@ -380,221 +380,228 @@ Public Class OE
         End Try
     End Sub
     Private Sub ButtonX6_Click(sender As System.Object, e As System.EventArgs) Handles ButtonX6.Click
-        'Try
-        If ButtonX6.Text = "Enregistrer" Then
-            If nomClient.Text = "" Then
-                MessageBoxEx.Show("Vous avez laissé le champ Nom client vide !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-            End If
-            If numero.Text = "" Then
-                MessageBoxEx.Show("Vous avez laissé le champ N° vide !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-            End If
-            If nomProposition.Text = "" Then
-                MessageBoxEx.Show("Vous avez laissé le champ de Notre proposition vide !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-            End If
-            If commandecl.Text = "" Then
-                MessageBoxEx.Show("Vous avez laissé le champ N° commande client vide !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
-                Exit Sub
-            End If
-            Dim erreur As Boolean = False
-            Dim controle1 As String = ""
-            'IsConnected("SELECT * FROM commercial_affaire WHERE titre='" & affaire.Text & "'", False)
-            'If myDR.HasRows = True Then
-            '    While (myDR.Read)
-            '        aff = myDR("code_affaire")
-            '    End While
-            'End If
-            Try
-               
-                If redevanceO.Checked = True Then
-                    red = "Oui"
-                Else : red = "Non"
+        Try
+            If ButtonX6.Text = "Enregistrer" Then
+                If nomClient.Text = "" Then
+                    MessageBoxEx.Show("Vous avez laissé le champ Nom client vide !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Sub
                 End If
-                For i = 0 To CheckedComboBoxEdit1.Properties.Items.Count - 1
-                    If CheckedComboBoxEdit1.Properties.Items(i).CheckState = CheckState.Checked Then
-                        controle1 += CheckedComboBoxEdit1.Properties.Items(i).ToString & "|"
+                If numero.Text = "" Then
+                    MessageBoxEx.Show("Vous avez laissé le champ N° vide !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Sub
+                End If
+                If nomProposition.Text = "" Then
+                    MessageBoxEx.Show("Vous avez laissé le champ de Notre proposition vide !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Sub
+                End If
+                If commandecl.Text = "" Then
+                    MessageBoxEx.Show("Vous avez laissé le champ N° commande client vide !", "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error)
+                    Exit Sub
+                End If
+                Dim erreur As Boolean = False
+                Dim controle1 As String = ""
+                'IsConnected("SELECT * FROM commercial_affaire WHERE titre='" & affaire.Text & "'", False)
+                'If myDR.HasRows = True Then
+                '    While (myDR.Read)
+                '        aff = myDR("code_affaire")
+                '    End While
+                'End If
+                Try
+
+                    If redevanceO.Checked = True Then
+                        red = "Oui"
+                    Else : red = "Non"
                     End If
-                Next
-                MsgBox(controle1)
-                Dim quary = "INSERT INTO commercial_oe VALUES(NULL,'" & numero.Text & "','" & c1.Text & "','" & c2.Text & "','" & c3.Text & "', '" & c4.Text & "', '" & c5.Text & "', '" & nclassement.Text & "','" & mysql_escape_string(nomProposition.Text) & "', '" & duPropo.Value.ToString("yyyy-MM-dd") & "','" & mysql_escape_string(commandecl.Text) & "','" & duCl.Value.ToString("yyyy-MM-dd") & "','" & codeTravaux.Text & "','" & mysql_escape_string(controle1) & "','" & mysql_escape_string(chantierEtabli.Text) & "','" & mysql_escape_string(etabli.Text) & "','" & mysql_escape_string(vise.Text) & "','" & mysql_escape_string(cliche.Text) & "','" & mysql_escape_string(protectionInterne.Text) & "','" & mysql_escape_string(protectionExterne.Text) & "','" & mysql_escape_string(emballage.Text) & "','" & mysql_escape_string(marquage.Text) & "', '" & mysql_escape_string(destina.Text) & "','" & mysql_escape_string(modeEnvoi.Text) & "','" & mysql_escape_string(assurrance.Text) & "', '" & mysql_escape_string(revision.Text) & "','" & mysql_escape_string(taxe.Text) & "','" & mysql_escape_string(docExpediCl.Text) & "', '" & mysql_escape_string(docExpeditier.Text) & "', '" & mysql_escape_string(red) & "','" & mysql_escape_string(montanPrevisionnel.Text) & "','" & mysql_escape_string(penalite.Text) & "','Dossier correspondance | " & dossiercorres.Text & ",Service Ordonnancement | " & serviceordennancement.Text & ", Service commercial | " & commercial.Text & ", Comptabilite | " & comptabilite.Text & ", BE | " & be.Text & ", Approvisionnement | " & approvisionnement.Text & ",Mise en chantier | " & miseEnChantier.Text & ", Mecanique | " & mecanique.Text & ", Chaudronnerie | " & chaudronnerie.Text & ", Service generaux | " & generaux.Text & ", Magasin | " & magasin.Text & ", Expedition | " & expedition.Text & ", Montage | " & montage.Text & ", Service Prix de revient | " & revient.Text & "','" & datediff.Value.ToString("yyyy-MM-dd") & "','" & poid.Text & "','" & user_id & "', Now());"
-                If IsConnected(quary, True) = False Then
-                    erreur = True
-                End If
-                For i = 0 To ListView1.Items.Count - 1
-                    Try
-                        Dim quary1 = "INSERT INTO commercial_oe_ensemble_general VALUES(NULL,'" & ListView1.Items(i).SubItems(0).Text & "','" & ListView1.Items(i).SubItems(1).Text & "','" & ListView1.Items(i).SubItems(2).Text & "','" & "','" & ListView1.Items(i).SubItems(3).Text & "','" & ListView1.Items(i).SubItems(4).Text & "',(SELECT idcommercial_OE FROM commercial_oe order by idcommercial_OE desc limit 1));"
-                        'SELECT idcommercial_OE FROM commercial_oe where idcommercial_OE='" & idcommercialOE & "'
-                        If IsConnected(quary1, True) = False Then
-                            erreur = True
+                    For i = 0 To CheckedComboBoxEdit1.Properties.Items.Count - 1
+                        If CheckedComboBoxEdit1.Properties.Items(i).CheckState = CheckState.Checked Then
+                            controle1 += CheckedComboBoxEdit1.Properties.Items(i).ToString & "|"
                         End If
-                    Catch ex As Exception
-                        EnvoiError(ex.Message)
-                    End Try
-                Next
-                If erreur = False Then
-                    MessageBoxEx.Show("L'OE a bien été enregistrer", "Succés", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                    datediff.Value = Nothing
-                    etabli.Clear()
-                    vise.Clear()
-                    cliche.Clear()
-                    dossiercorres.Clear()
-                    serviceordennancement.Clear()
-                    commercial.Clear()
-                    comptabilite.Clear()
-                    be.Clear()
-                    approvisionnement.Clear()
-                    miseEnChantier.Clear()
-                    mecanique.Clear()
-                    chaudronnerie.Clear()
-                    generaux.Clear()
-                    magasin.Clear()
-                    expedition.Clear()
-                    montage.Clear()
-                    revient.Clear()
-                    nomClient.Text = ""
-                    affaire.Text = ""
-                    nclassement.Clear()
-                    numero.Text = ""
-                    c1.Clear()
-                    c2.Clear()
-                    c3.Clear()
-                    c4.Clear()
-                    c5.Clear()
-                    nomProposition.Clear()
-                    duPropo.Value = Nothing
-                    commandecl.Clear()
-                    duCl.Value = Nothing
-                    poid.Clear()
-                    delais.Clear()
-                    controle.Clear()
-                    chantierEtabli.Clear()
-                    ListView1.Items.Clear()
-                    protectionInterne.Clear()
-                    protectionExterne.Clear()
-                    emballage.Clear()
-                    marquage.Clear()
-                    destina.Clear()
-                    modeEnvoi.Items.Clear()
-                    docExpediCl.Clear()
-                    docExpeditier.Clear()
-                    assurrance.Clear()
-                    ht.Clear()
-                    tva.Clear()
-                    ttc.Clear()
-                    modePaiement.Clear()
-                    revision.Clear()
-                    montanPrevisionnel.Clear()
-                    penalite.Clear()
-                    taxe.Clear()
-                    codeTravaux.Clear()
-                    ButtonX6.Enabled = False
-                    ' reload()
+                    Next
+                    ' MsgBox(controle1)
+                    Dim quary = "INSERT INTO commercial_oe VALUES(NULL,'" & numero.Text & "','" & c1.Text & "','" & c2.Text & "','" & c3.Text & "', '" & c4.Text & "', '" & c5.Text & "', '" & nclassement.Text & "','" & mysql_escape_string(nomProposition.Text) & "', '" & duPropo.Value.ToString("yyyy-MM-dd") & "','" & mysql_escape_string(commandecl.Text) & "','" & duCl.Value.ToString("yyyy-MM-dd") & "','" & codeTravaux.Text & "','" & mysql_escape_string(controle1) & "','" & mysql_escape_string(chantierEtabli.Text) & "','" & mysql_escape_string(etabli.Text) & "','" & mysql_escape_string(vise.Text) & "','" & mysql_escape_string(cliche.Text) & "','" & mysql_escape_string(protectionInterne.Text) & "','" & mysql_escape_string(protectionExterne.Text) & "','" & mysql_escape_string(emballage.Text) & "','" & mysql_escape_string(marquage.Text) & "', '" & mysql_escape_string(destina.Text) & "','" & mysql_escape_string(modeEnvoi.Text) & "','" & mysql_escape_string(assurrance.Text) & "', '" & mysql_escape_string(revision.Text) & "','" & mysql_escape_string(taxe.Text) & "','" & mysql_escape_string(docExpediCl.Text) & "', '" & mysql_escape_string(docExpeditier.Text) & "', '" & mysql_escape_string(red) & "','" & mysql_escape_string(montanPrevisionnel.Text) & "','" & mysql_escape_string(penalite.Text) & "','Dossier correspondance | " & dossiercorres.Text & ",Service Ordonnancement | " & serviceordennancement.Text & ", Service commercial | " & commercial.Text & ", Comptabilite | " & comptabilite.Text & ", BE | " & be.Text & ", Approvisionnement | " & approvisionnement.Text & ",Mise en chantier | " & miseEnChantier.Text & ", Mecanique | " & mecanique.Text & ", Chaudronnerie | " & chaudronnerie.Text & ", Service generaux | " & generaux.Text & ", Magasin | " & magasin.Text & ", Expedition | " & expedition.Text & ", Montage | " & montage.Text & ", Service Prix de revient | " & revient.Text & "','" & datediff.Value.ToString("yyyy-MM-dd") & "','" & poid.Text & "','" & user_id & "', Now());"
+                    If IsConnected(quary, True) = False Then
+                        erreur = True
+                    End If
+                    'MsgBox("ok2")
+                    For i = 0 To ListView1.Items.Count - 1
+                        Try
+                            Dim quary1 = "INSERT INTO commercial_oe_ensemble_general VALUES(NULL,'" & ListView1.Items(i).SubItems(0).Text & "','" & ListView1.Items(i).SubItems(1).Text & "','" & ListView1.Items(i).SubItems(2).Text & "','" & ListView1.Items(i).SubItems(3).Text & "','" & ListView1.Items(i).SubItems(4).Text & "',(SELECT idcommercial_OE FROM commercial_oe order by idcommercial_OE desc limit 1))"
+                            'TextBoxX1.Text = "INSERT INTO commercial_oe_ensemble_general VALUES(NULL,'" & ListView1.Items(i).SubItems(0).Text & "','" & ListView1.Items(i).SubItems(1).Text & "','" & ListView1.Items(i).SubItems(2).Text & "','" & ListView1.Items(i).SubItems(3).Text & "','" & ListView1.Items(i).SubItems(4).Text & "',(SELECT idcommercial_OE FROM commercial_oe order by idcommercial_OE desc limit 1))"
+                            If IsConnected(quary1, True) = False Then
+                                erreur = True
+                                ' MsgBox("ok3")
+                            End If
+                            'MsgBox("ok4")
+                        Catch ex As Exception
+                            EnvoiError(ex.Message)
+                        End Try
+                    Next
+                    'MsgBox("ok5")
+                    If erreur = False Then
+                        'MsgBox("ok6")
+                        MessageBoxEx.Show("L'OE a bien été enregistrer", "Succés", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        datediff.Value = Nothing
+                        etabli.Clear()
+                        vise.Clear()
+                        cliche.Clear()
+                        dossiercorres.Clear()
+                        serviceordennancement.Clear()
+                        commercial.Clear()
+                        comptabilite.Clear()
+                        be.Clear()
+                        approvisionnement.Clear()
+                        miseEnChantier.Clear()
+                        mecanique.Clear()
+                        chaudronnerie.Clear()
+                        generaux.Clear()
+                        magasin.Clear()
+                        expedition.Clear()
+                        montage.Clear()
+                        revient.Clear()
+                        nomClient.Text = ""
+                        affaire.Text = ""
+                        nclassement.Clear()
+                        numero.Text = ""
+                        c1.Clear()
+                        c2.Clear()
+                        c3.Clear()
+                        c4.Clear()
+                        c5.Clear()
+                        nomProposition.Clear()
+                        duPropo.Value = Nothing
+                        commandecl.Clear()
+                        duCl.Value = Nothing
+                        poid.Clear()
+                        delais.Clear()
+                        controle.Clear()
+                        chantierEtabli.Clear()
+                        ListView1.Items.Clear()
+                        protectionInterne.Clear()
+                        protectionExterne.Clear()
+                        emballage.Clear()
+                        marquage.Clear()
+                        destina.Clear()
+                        modeEnvoi.Items.Clear()
+                        docExpediCl.Clear()
+                        docExpeditier.Clear()
+                        assurrance.Clear()
+                        ht.Clear()
+                        tva.Clear()
+                        ttc.Clear()
+                        modePaiement.Clear()
+                        revision.Clear()
+                        montanPrevisionnel.Clear()
+                        penalite.Clear()
+                        taxe.Clear()
+                        codeTravaux.Clear()
+                        CheckedComboBoxEdit1.Properties.Items.Clear()
+                        ButtonX6.Enabled = False
+                        ' reload()
+                    End If
+                Catch ex As Exception
+                    EnvoiError(ex.Message)
+                End Try
+            Else
+                Dim cmd
+                IsConnected("SELECT MAX(commande) as commande FROM commercial_moe", False)
+                If myDR.HasRows Then
+                    While myDR.Read
+                        cmd = myDR("commande").ToString
+                        'MsgBox(cmd)
+                    End While
                 End If
-            Catch ex As Exception
-                EnvoiError(ex.Message)
-            End Try
-        Else
-            Dim cmd
-            IsConnected("SELECT MAX(commande) as commande FROM commercial_moe", False)
-            If myDR.HasRows Then
-                While myDR.Read
-                    cmd = myDR("commande").ToString
-                    'MsgBox(cmd)
-                End While
-            End If
-            Dim erreur As Boolean = False
-            Dim red As String = ""
-            ' Try
-            If redevanceO.Checked = True Then
-                red = "Oui"
-            Else : red = "Non"
-            End If
-            ' MsgBox("aff 2 =" & aff)
-            Dim quary = "INSERT INTO commercial_moe VALUES(NULL,'" & aff & "','" & c1.Text & "','" & c2.Text & "','" & c3.Text & "', '" & c4.Text & "', '" & c5.Text & "', '" & nclassement.Text & "','" & mysql_escape_string(nomProposition.Text) & "', '" & duPropo.Value.ToString("yyyy-MM-dd") & "','" & cmd + 1 & "','" & duCl.Value.ToString("yyyy-MM-dd") & "','" & codeTravaux.Text & "','" & mysql_escape_string(controle.Text) & "','" & mysql_escape_string(chantierEtabli.Text) & "','" & mysql_escape_string(etabli.Text) & "','" & mysql_escape_string(vise.Text) & "','" & mysql_escape_string(cliche.Text) & "','" & mysql_escape_string(protectionInterne.Text) & "','" & mysql_escape_string(protectionExterne.Text) & "','" & mysql_escape_string(emballage.Text) & "','" & mysql_escape_string(marquage.Text) & "', '" & mysql_escape_string(destina.Text) & "','" & mysql_escape_string(modeEnvoi.Text) & "','" & mysql_escape_string(assurrance.Text) & "', '" & mysql_escape_string(revision.Text) & "','" & mysql_escape_string(taxe.Text) & "','" & mysql_escape_string(docExpediCl.Text) & "', '" & mysql_escape_string(docExpeditier.Text) & "', '" & mysql_escape_string(red) & "','" & mysql_escape_string(montanPrevisionnel.Text) & "','" & mysql_escape_string(penalite.Text) & "','Dossier correspondance | " & dossiercorres.Text & ",Service Ordonnancement | " & serviceordennancement.Text & ", Service commercial | " & commercial.Text & ", Comptabilite | " & comptabilite.Text & ", BE | " & be.Text & ", Approvisionnement | " & approvisionnement.Text & ",Mise en chantier | " & miseEnChantier.Text & ", Mecanique | " & mecanique.Text & ", Chaudronnerie | " & chaudronnerie.Text & ", Service generaux | " & generaux.Text & ", Magasin | " & magasin.Text & ", Expedition | " & expedition.Text & ", Montage | " & montage.Text & ", Service Prix de revient | " & revient.Text & "','" & datediff.Value.ToString("yyyy-MM-dd") & "','" & poid.Text & "','" & user_id & "', Now());"
-            If IsConnected(quary, True) = False Then
-                erreur = True
-            End If
-            For i = 0 To ListView1.Items.Count - 1
-                'Try
-                Dim quary1 = " INSERT INTO commercial_moe_ensemble_general VALUES(NULL,'" & ListView1.Items(i).SubItems(0).Text & "','" & ListView1.Items(i).SubItems(1).Text & "','" & ListView1.Items(i).SubItems(2).Text & "','" & ListView1.Items(i).SubItems(3).Text & "','" & ListView1.Items(i).SubItems(4).Text & "',(SELECT idcommercial_MOE FROM commercial_moe order by idcommercial_MOE desc limit 1));"
-                If IsConnected(quary1, True) = False Then
-                    erreur = True
-                End If
-                'Catch ex As Exception
-                '    EnvoiError(ex.Message)
-                'End Try
-            Next
-            If erreur = False Then
-                MessageBoxEx.Show("L'OE a bien été modifier", "Succés", MessageBoxButtons.OK, MessageBoxIcon.Information)
-                datediff.Value = Nothing
-                etabli.Clear()
-                vise.Clear()
-                cliche.Clear()
-                dossiercorres.Clear()
-                serviceordennancement.Clear()
-                commercial.Clear()
-                comptabilite.Clear()
-                be.Clear()
-                approvisionnement.Clear()
-                miseEnChantier.Clear()
-                mecanique.Clear()
-                chaudronnerie.Clear()
-                generaux.Clear()
-                magasin.Clear()
-                expedition.Clear()
-                montage.Clear()
-                revient.Clear()
-                nomClient.Text = ""
-                affaire.Text = ""
-                nclassement.Clear()
-                numero.Text = ""
-                c1.Clear()
-                c2.Clear()
-                c3.Clear()
-                c4.Clear()
-                c5.Clear()
-                nomProposition.Clear()
-                duPropo.Value = Nothing
-                commandecl.Clear()
-                duCl.Value = Nothing
-                poid.Clear()
-                delais.Clear()
-                controle.Clear()
-                chantierEtabli.Clear()
-                ListView1.Items.Clear()
-                protectionInterne.Clear()
-                protectionExterne.Clear()
-                emballage.Clear()
-                marquage.Clear()
-                destina.Clear()
-                modeEnvoi.Items.Clear()
-                docExpediCl.Clear()
-                docExpeditier.Clear()
-                assurrance.Clear()
-                ht.Clear()
-                tva.Clear()
-                ttc.Clear()
-                modePaiement.Clear()
-                revision.Clear()
-                montanPrevisionnel.Clear()
-                penalite.Clear()
-                taxe.Clear()
-                codeTravaux.Clear()
-                ' reload1()
-                ButtonX6.Text = "Enregistrer"
-                ButtonX6.Image = My.Resources.secure_ok
-                Me.Close()
-            End If
-            reload()
-            '        Catch ex As Exception
-            '    EnvoiError(ex.Message)
-            'End Try
+                Dim erreur As Boolean = False
+                Dim red As String = ""
+                Try
+                    If redevanceO.Checked = True Then
+                        red = "Oui"
+                    Else : red = "Non"
+                    End If
+                    ' MsgBox("aff 2 =" & aff)
+                    Dim quary = "INSERT INTO commercial_moe VALUES(NULL,'" & aff & "','" & c1.Text & "','" & c2.Text & "','" & c3.Text & "', '" & c4.Text & "', '" & c5.Text & "', '" & nclassement.Text & "','" & mysql_escape_string(nomProposition.Text) & "', '" & duPropo.Value.ToString("yyyy-MM-dd") & "','" & cmd + 1 & "','" & duCl.Value.ToString("yyyy-MM-dd") & "','" & codeTravaux.Text & "','" & mysql_escape_string(controle.Text) & "','" & mysql_escape_string(chantierEtabli.Text) & "','" & mysql_escape_string(etabli.Text) & "','" & mysql_escape_string(vise.Text) & "','" & mysql_escape_string(cliche.Text) & "','" & mysql_escape_string(protectionInterne.Text) & "','" & mysql_escape_string(protectionExterne.Text) & "','" & mysql_escape_string(emballage.Text) & "','" & mysql_escape_string(marquage.Text) & "', '" & mysql_escape_string(destina.Text) & "','" & mysql_escape_string(modeEnvoi.Text) & "','" & mysql_escape_string(assurrance.Text) & "', '" & mysql_escape_string(revision.Text) & "','" & mysql_escape_string(taxe.Text) & "','" & mysql_escape_string(docExpediCl.Text) & "', '" & mysql_escape_string(docExpeditier.Text) & "', '" & mysql_escape_string(red) & "','" & mysql_escape_string(montanPrevisionnel.Text) & "','" & mysql_escape_string(penalite.Text) & "','Dossier correspondance | " & dossiercorres.Text & ",Service Ordonnancement | " & serviceordennancement.Text & ", Service commercial | " & commercial.Text & ", Comptabilite | " & comptabilite.Text & ", BE | " & be.Text & ", Approvisionnement | " & approvisionnement.Text & ",Mise en chantier | " & miseEnChantier.Text & ", Mecanique | " & mecanique.Text & ", Chaudronnerie | " & chaudronnerie.Text & ", Service generaux | " & generaux.Text & ", Magasin | " & magasin.Text & ", Expedition | " & expedition.Text & ", Montage | " & montage.Text & ", Service Prix de revient | " & revient.Text & "','" & datediff.Value.ToString("yyyy-MM-dd") & "','" & poid.Text & "','" & user_id & "', Now());"
+                    If IsConnected(quary, True) = False Then
+                        erreur = True
+                    End If
+                    For i = 0 To ListView1.Items.Count - 1
+                        Try
+                            Dim quary1 = " INSERT INTO commercial_moe_ensemble_general VALUES(NULL,'" & ListView1.Items(i).SubItems(0).Text & "','" & ListView1.Items(i).SubItems(1).Text & "','" & ListView1.Items(i).SubItems(2).Text & "','" & ListView1.Items(i).SubItems(3).Text & "','" & ListView1.Items(i).SubItems(4).Text & "',(SELECT idcommercial_MOE FROM commercial_moe order by idcommercial_MOE desc limit 1));"
+                            If IsConnected(quary1, True) = False Then
+                                erreur = True
+                            End If
+                        Catch ex As Exception
+                            EnvoiError(ex.Message)
+                        End Try
+                    Next
+                    If erreur = False Then
+                        MessageBoxEx.Show("L'OE a bien été modifier", "Succés", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                        datediff.Value = Nothing
+                        etabli.Clear()
+                        vise.Clear()
+                        cliche.Clear()
+                        dossiercorres.Clear()
+                        serviceordennancement.Clear()
+                        commercial.Clear()
+                        comptabilite.Clear()
+                        be.Clear()
+                        approvisionnement.Clear()
+                        miseEnChantier.Clear()
+                        mecanique.Clear()
+                        chaudronnerie.Clear()
+                        generaux.Clear()
+                        magasin.Clear()
+                        expedition.Clear()
+                        montage.Clear()
+                        revient.Clear()
+                        nomClient.Text = ""
+                        affaire.Text = ""
+                        nclassement.Clear()
+                        numero.Text = ""
+                        c1.Clear()
+                        c2.Clear()
+                        c3.Clear()
+                        c4.Clear()
+                        c5.Clear()
+                        nomProposition.Clear()
+                        duPropo.Value = Nothing
+                        commandecl.Clear()
+                        duCl.Value = Nothing
+                        poid.Clear()
+                        delais.Clear()
+                        controle.Clear()
+                        chantierEtabli.Clear()
+                        ListView1.Items.Clear()
+                        protectionInterne.Clear()
+                        protectionExterne.Clear()
+                        emballage.Clear()
+                        marquage.Clear()
+                        destina.Clear()
+                        modeEnvoi.Items.Clear()
+                        docExpediCl.Clear()
+                        docExpeditier.Clear()
+                        assurrance.Clear()
+                        ht.Clear()
+                        tva.Clear()
+                        ttc.Clear()
+                        modePaiement.Clear()
+                        revision.Clear()
+                        montanPrevisionnel.Clear()
+                        penalite.Clear()
+                        taxe.Clear()
+                        codeTravaux.Clear()
+                        CheckedComboBoxEdit1.Properties.Items.Clear()
+                        ' reload1()
+                        ButtonX6.Text = "Enregistrer"
+                        ButtonX6.Image = My.Resources.secure_ok
+                        Me.Close()
+                    End If
+                    reload()
+                Catch ex As Exception
+                    EnvoiError(ex.Message)
+                End Try
         End If
-        'Catch ex As Exception
-        '    EnvoiError(ex.Message)
-        'End Try
+        Catch ex As Exception
+            EnvoiError(ex.Message)
+        End Try
     End Sub
 
     Private Sub ButtonX3_Click(sender As System.Object, e As System.EventArgs) Handles ButtonX3.Click
@@ -618,7 +625,7 @@ Public Class OE
             titre.Clear()
             soustitre.Clear()
             defFournit.Clear()
-            ButtonX7.Enabled = False
+            ' ButtonX7.Enabled = False
         Catch ex As Exception
             EnvoiError(ex.Message)
         End Try
@@ -681,7 +688,9 @@ Public Class OE
                 If ListView1.Items(i).Selected = True Then
                     ensembleGeneraux.Text = ListView1.Items(i).Text
                     exe.Text = ListView1.Items(i).SubItems(1).Text
-                    defFournit.Text = ListView1.Items(i).SubItems(2).Text
+                    titre.Text = ListView1.Items(i).SubItems(2).Text
+                    soustitre.Text = ListView1.Items(i).SubItems(3).Text
+                    defFournit.Text = ListView1.Items(i).SubItems(4).Text
                     ListView1.Items(i).Remove()
                 End If
             Next
@@ -706,7 +715,11 @@ Public Class OE
     Private Sub ensembleGeneraux_TextChanged(sender As System.Object, e As System.EventArgs) Handles ensembleGeneraux.TextChanged
         If exe.Text <> "" And defFournit.Text <> "" And ensembleGeneraux.Text <> "" Then
             ButtonX7.Enabled = True
+            titre.Enabled = False
+            soustitre.Enabled = False
         Else
+            titre.Enabled = True
+            soustitre.Enabled = True
             ButtonX7.Enabled = False
         End If
     End Sub
@@ -714,7 +727,11 @@ Public Class OE
     Private Sub exe_TextChanged(sender As System.Object, e As System.EventArgs) Handles exe.TextChanged
         If exe.Text <> "" And defFournit.Text <> "" And ensembleGeneraux.Text <> "" Then
             ButtonX7.Enabled = True
+            titre.Enabled = False
+            soustitre.Enabled = False
         Else
+            titre.Enabled = True
+            soustitre.Enabled = True
             ButtonX7.Enabled = False
         End If
     End Sub
@@ -737,7 +754,39 @@ Public Class OE
     Private Sub defFournit_TextChanged(sender As System.Object, e As System.EventArgs) Handles defFournit.TextChanged
         If exe.Text <> "" And defFournit.Text <> "" And ensembleGeneraux.Text <> "" Then
             ButtonX7.Enabled = True
+            titre.Enabled = False
+            soustitre.Enabled = False
         Else
+            titre.Enabled = True
+            soustitre.Enabled = True
+            ButtonX7.Enabled = False
+        End If
+    End Sub
+
+    Private Sub titre_TextChanged(sender As Object, e As EventArgs) Handles titre.TextChanged
+        If titre.Text <> "" And soustitre.Text <> "" Then
+            defFournit.Enabled = False
+            exe.Enabled = False
+            ensembleGeneraux.Enabled = False
+            ButtonX7.Enabled = True
+        Else
+            defFournit.Enabled = True
+            exe.Enabled = True
+            ensembleGeneraux.Enabled = True
+            ButtonX7.Enabled = False
+        End If
+    End Sub
+
+    Private Sub soustitre_TextChanged(sender As Object, e As EventArgs) Handles soustitre.TextChanged
+        If titre.Text <> "" And soustitre.Text <> "" Then
+            defFournit.Enabled = False
+            exe.Enabled = False
+            ensembleGeneraux.Enabled = False
+            ButtonX7.Enabled = True
+        Else
+            defFournit.Enabled = True
+            exe.Enabled = True
+            ensembleGeneraux.Enabled = True
             ButtonX7.Enabled = False
         End If
     End Sub

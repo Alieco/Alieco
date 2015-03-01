@@ -140,21 +140,21 @@ Public Class Mainfrm
         End If
     End Sub
     Private Sub ButtonX3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonX3.Click
-            If TextBoxX7.Text = "h.mwSN3320" Then
-                ButtonX2.Enabled = True
-                TextBoxX3.Enabled = True
-                TextBoxX4.Enabled = True
-                TextBoxX5.Enabled = True
-                TextBoxX6.Enabled = True
-                typebdd.Enabled = True
-            Else
-                ButtonX2.Enabled = False
-                TextBoxX3.Enabled = False
-                TextBoxX4.Enabled = False
-                TextBoxX5.Enabled = False
-                TextBoxX6.Enabled = False
-                typebdd.Enabled = False
-            End If
+        If TextBoxX7.Text = "h.mwSN3320" Then
+            ButtonX2.Enabled = True
+            TextBoxX3.Enabled = True
+            TextBoxX4.Enabled = True
+            TextBoxX5.Enabled = True
+            TextBoxX6.Enabled = True
+            typebdd.Enabled = True
+        Else
+            ButtonX2.Enabled = False
+            TextBoxX3.Enabled = False
+            TextBoxX4.Enabled = False
+            TextBoxX5.Enabled = False
+            TextBoxX6.Enabled = False
+            typebdd.Enabled = False
+        End If
     End Sub
     Private Sub ButtonItem17_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem17.Click
         Me.Close()
@@ -1181,7 +1181,7 @@ Public Class Mainfrm
         Ajoutfonctionnaire.Show()
     End Sub
 
-  
+
     Private Sub ButtonItem133_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem133.Click
         EnvoiError("gggggggggggg")
         Try

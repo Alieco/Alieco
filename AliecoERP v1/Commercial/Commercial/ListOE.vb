@@ -4,7 +4,42 @@ Public Class ListOE
     Dim sql As New SQLControl
     Dim nb
     Dim nb1
+    Dim nb2
 #Region "Fonctions"
+    'Sub reload2()
+    '    Try
+    '        Dim a As Date = au.Value.ToString("yyyy-MM-dd")
+    '        a = a.AddDays(+1)
+    '        Dim utilisateur As String = ""
+    '        If user_id = 20 Or user_id = 1 Then
+    '            If chargeaffaire.Text = "" Then
+    '                utilisateur = ""
+    '            Else
+    '                utilisateur = "fullname= '" & chargeaffaire.Text & "' and "
+    '            End If
+    '        Else
+    '            utilisateur = "user_id= '" & user_id & "' and "
+    '        End If
+    '        If sql.VerifiyConnection = True Then
+    '            sql.RunQuery("SELECT distinct commercial_oealieco.code_affaire as 'code affaire',nomcl as 'Nom client',destinataire,titre,users.fullname as 'Chargé d\'affaire',NClassement as 'N° Classement',commande as 'N° Modification',EtabliPar as 'Etabli Par',entry_date as 'Date d\'enregistrement',idcommercial_OEAlieco as 'Code OEAlieco' FROM commercial_oealieco left join users on commercial_oealieco.charge_affaire=users.user_id left join commercial_affaire on commercial_oealieco.code_affaire=commercial_affaire.code_affaire WHERE " & utilisateur & " commercial_oealieco.entry_date>= '" & du.Value.ToString("yyyy-MM-dd") & "' and commercial_oealieco.entry_date <='" & a.ToString("yyyy-MM-dd") & "'")
+    '            If sql.SQLDS.Tables.Count > 0 Then
+    '                nb2 = sql.SQLDS.Tables(0).Rows.Count
+    '                dgoe.DataSource = sql.SQLDS.Tables(0)
+    '            End If
+    '            Label1.Text = ""
+    '            If nb2 = 0 Then
+    '                MessageBox.Show("il n'y a pas des donneés sur OEAlieco ", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information)
+    '                Label1.Text = ""
+    '            ElseIf nb2 = 1 Then
+    '                Label1.Text = "Le nombre de ligne est : " & nb2
+    '            Else
+    '                Label1.Text = "Le nombre des lignes sont : " & nb2
+    '            End If
+    '        End If
+    '    Catch ex As Exception
+    '        EnvoiError(ex.Message)
+    '    End Try
+    'End Sub
     Sub reload1()
         Try
             Dim a As Date = au.Value.ToString("yyyy-MM-dd")
@@ -104,13 +139,15 @@ Public Class ListOE
         du.Value = d
         load_chargeaffaire()
     End Sub
-
     Private Sub ActualiserToolStripMenuItem_Click(sender As System.Object, e As System.EventArgs) Handles GoogleToolStripMenuItem.Click
         Try
             If OERadio.Checked = True Then
                 reload()
             Else
+                'If MOERadio.Checked = True
                 reload1()
+                'Else
+                '    reload2()
             End If
         Catch ex As Exception
             EnvoiError(ex.Message)
@@ -171,6 +208,9 @@ Public Class ListOE
             Else
                 ImpressionOE.Text = "L'ordre d'execution de " & GridView1.GetFocusedRowCellValue("destinataire").ToString()
                 ImpressionOE.affaire.Text = GridView1.GetFocusedRowCellValue("code affaire").ToString()
+                MsgBox("code affaire =" & GridView1.GetFocusedRowCellValue("code affaire").ToString())
+                ImpressionOE.codeoe = GridView1.GetFocusedRowCellValue("Code OE").ToString()
+                MsgBox("Code OE =" & GridView1.GetFocusedRowCellValue("Code OE").ToString())
                 ImpressionOE.ButtonX1.PerformClick()
                 ImpressionOE.MdiParent = Mainfrm
                 ImpressionOE.Show()
