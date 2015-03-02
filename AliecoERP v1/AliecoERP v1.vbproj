@@ -2508,6 +2508,10 @@
     <Content Include="bin\Debug\DevExpress.XtraPrinting.v14.2.dll" />
     <Content Include="bin\Debug\DevExpress.XtraReports.v14.2.dll" />
     <Content Include="bin\Debug\DevExpress.XtraReports.v14.2.Extensions.dll" />
+    <Content Include="bin\Debug\DevExpress.XtraRichEdit.v14.2.dll" />
+    <Content Include="bin\Debug\DevExpress.XtraRichEdit.v14.2.Extensions.dll" />
+    <Content Include="bin\Debug\DevExpress.XtraSpreadsheet.v14.2.dll" />
+    <Content Include="bin\Debug\DevExpress.XtraTreeList.v14.2.dll" />
     <Content Include="bin\Debug\icons\ap.ico" />
     <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll" />
     <Content Include="bin\Debug\MySql.Data.dll" />
