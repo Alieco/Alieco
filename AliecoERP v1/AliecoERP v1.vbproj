@@ -2183,11 +2183,6 @@
     <None Include="bin\Debug\Docs\ATTESTATION DE TRAVAIL.rtf" />
     <None Include="bin\Debug\Docs\AttestationRp.rtf" />
     <None Include="bin\Debug\Docs\CERTIFICATDETRAVAIL.rtf" />
-    <None Include="bin\Debug\Docs\facturationBackups\BIDA0006\facture-BIDA0006-123456.rtf" />
-    <None Include="bin\Debug\Docs\facturationBackups\BIDA0007\facture-BIDA0007-12365.rtf" />
-    <None Include="bin\Debug\Docs\facturationBackups\BIDA0007\facture-BIDA0007-740001.rtf" />
-    <None Include="bin\Debug\Docs\facturationBackups\BIDA0007\facture-bida0007-740005.rtf" />
-    <None Include="bin\Debug\Docs\facturationBackups\facture-BIDA0006-123456.rtf" />
     <None Include="bin\Debug\Docs\facturations\Facture.rtf" />
     <None Include="bin\Debug\Docs\facture.rtf" />
     <None Include="bin\Debug\Docs\FicheSuiveuse.rtf" />
@@ -2506,15 +2501,13 @@
     <Content Include="bin\Debug\DevExpress.XtraEditors.v14.2.dll" />
     <Content Include="bin\Debug\DevExpress.XtraGrid.v14.2.dll" />
     <Content Include="bin\Debug\DevExpress.XtraLayout.v14.2.dll" />
-    <Content Include="bin\Debug\DevExpress.XtraNavBar.v14.2.dll" />
+    <Content Include="bin\Debug\DevExpress.XtraNavBar.v14.2.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="bin\Debug\DevExpress.XtraPivotGrid.v14.2.dll" />
     <Content Include="bin\Debug\DevExpress.XtraPrinting.v14.2.dll" />
     <Content Include="bin\Debug\DevExpress.XtraReports.v14.2.dll" />
     <Content Include="bin\Debug\DevExpress.XtraReports.v14.2.Extensions.dll" />
-    <Content Include="bin\Debug\DevExpress.XtraRichEdit.v14.2.dll" />
-    <Content Include="bin\Debug\DevExpress.XtraRichEdit.v14.2.Extensions.dll" />
-    <Content Include="bin\Debug\DevExpress.XtraSpreadsheet.v14.2.dll" />
-    <Content Include="bin\Debug\DevExpress.XtraTreeList.v14.2.dll" />
     <Content Include="bin\Debug\icons\ap.ico" />
     <Content Include="bin\Debug\Microsoft.VisualBasic.PowerPacks.Vs.dll" />
     <Content Include="bin\Debug\MySql.Data.dll" />
@@ -2987,6 +2980,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\Debug\Docs\errors\" />
+    <Folder Include="bin\Debug\Docs\facturationBackups\" />
     <Folder Include="bin\Debug\fr\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
