@@ -22,7 +22,6 @@ Partial Class ListOE
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(ListOE))
         Me.chargeaffaire = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.LabelX3 = New DevComponents.DotNetBar.LabelX()
@@ -37,14 +36,14 @@ Partial Class ListOE
         Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.dgoe = New DevExpress.XtraGrid.GridControl()
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip()
         Me.GoogleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ModifierToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SupprimerToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimerToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ImprimerModifToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.SupprimerLMOEToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GridView1 = New DevExpress.XtraGrid.Views.Grid.GridView()
         Me.GroupBox1.SuspendLayout()
         CType(Me.au, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.du, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -131,7 +130,7 @@ Partial Class ListOE
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
         Me.GroupBox1.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1354, 130)
+        Me.GroupBox1.Size = New System.Drawing.Size(1382, 130)
         Me.GroupBox1.TabIndex = 124
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "La liste des Offres :"
@@ -319,7 +318,7 @@ Partial Class ListOE
         Me.dgoe.LookAndFeel.UseDefaultLookAndFeel = False
         Me.dgoe.MainView = Me.GridView1
         Me.dgoe.Name = "dgoe"
-        Me.dgoe.Size = New System.Drawing.Size(1354, 742)
+        Me.dgoe.Size = New System.Drawing.Size(1382, 756)
         Me.dgoe.TabIndex = 126
         Me.dgoe.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -329,7 +328,7 @@ Partial Class ListOE
         Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoogleToolStripMenuItem, Me.ModifierToolStripMenuItem, Me.SupprimerToolStripMenuItem, Me.ImprimerToolStripMenuItem1, Me.ImprimerModifToolStripMenuItem, Me.SupprimerLMOEToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(330, 158)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(330, 136)
         '
         'GoogleToolStripMenuItem
         '
@@ -370,6 +369,13 @@ Partial Class ListOE
         Me.ImprimerModifToolStripMenuItem.Size = New System.Drawing.Size(329, 22)
         Me.ImprimerModifToolStripMenuItem.Text = "     Imprimer la modification  d'un ordre d'execution"
         '
+        'SupprimerLMOEToolStripMenuItem
+        '
+        Me.SupprimerLMOEToolStripMenuItem.Image = Global.MBA.My.Resources.Resources.vendors_remove
+        Me.SupprimerLMOEToolStripMenuItem.Name = "SupprimerLMOEToolStripMenuItem"
+        Me.SupprimerLMOEToolStripMenuItem.Size = New System.Drawing.Size(329, 22)
+        Me.SupprimerLMOEToolStripMenuItem.Text = "     Supprimer l'MOE"
+        '
         'GridView1
         '
         Me.GridView1.FocusRectStyle = DevExpress.XtraGrid.Views.Grid.DrawFocusRectStyle.RowFullFocus
@@ -381,18 +387,11 @@ Partial Class ListOE
         Me.GridView1.OptionsDetail.SmartDetailHeight = True
         Me.GridView1.OptionsView.RowAutoHeight = True
         '
-        'SupprimerLMOEToolStripMenuItem
-        '
-        Me.SupprimerLMOEToolStripMenuItem.Image = Global.MBA.My.Resources.Resources.vendors_remove
-        Me.SupprimerLMOEToolStripMenuItem.Name = "SupprimerLMOEToolStripMenuItem"
-        Me.SupprimerLMOEToolStripMenuItem.Size = New System.Drawing.Size(329, 22)
-        Me.SupprimerLMOEToolStripMenuItem.Text = "     Supprimer l'MOE"
-        '
         'ListOE
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1354, 872)
+        Me.ClientSize = New System.Drawing.Size(1382, 886)
         Me.Controls.Add(Me.dgoe)
         Me.Controls.Add(Me.GroupBox1)
         Me.DoubleBuffered = True

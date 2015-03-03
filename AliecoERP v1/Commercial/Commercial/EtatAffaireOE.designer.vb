@@ -22,7 +22,6 @@ Partial Class OE
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(OE))
         Me.TabControl1 = New DevComponents.DotNetBar.TabControl()
         Me.TabControlPanel1 = New DevComponents.DotNetBar.TabControlPanel()
@@ -40,7 +39,7 @@ Partial Class OE
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip()
         Me.ModifStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.SupStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.exe = New DevComponents.DotNetBar.Controls.TextBoxX()
@@ -122,7 +121,7 @@ Partial Class OE
         Me.LabelX2 = New DevComponents.DotNetBar.LabelX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.duPropo = New DevComponents.Editors.DateTimeAdv.DateTimeInput()
-        Me.TabItem1 = New DevComponents.DotNetBar.TabItem(Me.components)
+        Me.TabItem1 = New DevComponents.DotNetBar.TabItem()
         Me.TabControlPanel2 = New DevComponents.DotNetBar.TabControlPanel()
         Me.redevanceN = New System.Windows.Forms.GroupBox()
         Me.Label58 = New System.Windows.Forms.Label()
@@ -173,7 +172,7 @@ Partial Class OE
         Me.emballage = New DevComponents.DotNetBar.Controls.TextBoxX()
         Me.Label35 = New System.Windows.Forms.Label()
         Me.Label34 = New System.Windows.Forms.Label()
-        Me.TabItem2 = New DevComponents.DotNetBar.TabItem(Me.components)
+        Me.TabItem2 = New DevComponents.DotNetBar.TabItem()
         CType(Me.TabControl1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControl1.SuspendLayout()
         Me.TabControlPanel1.SuspendLayout()
@@ -196,8 +195,8 @@ Partial Class OE
         '
         Me.TabControl1.BackColor = System.Drawing.Color.White
         Me.TabControl1.CanReorderTabs = True
-        Me.TabControl1.Controls.Add(Me.TabControlPanel1)
         Me.TabControl1.Controls.Add(Me.TabControlPanel2)
+        Me.TabControl1.Controls.Add(Me.TabControlPanel1)
         Me.TabControl1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.TabControl1.ForeColor = System.Drawing.Color.Black
         Me.TabControl1.Location = New System.Drawing.Point(0, 0)

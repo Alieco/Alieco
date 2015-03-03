@@ -22,7 +22,6 @@ Partial Class AjoutOffre
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(AjoutOffre))
         Me.TabControl1 = New DevComponents.DotNetBar.TabControl()
         Me.TabControlPanel1 = New DevComponents.DotNetBar.TabControlPanel()
@@ -45,7 +44,7 @@ Partial Class AjoutOffre
         Me.ColumnHeader4 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader5 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip()
         Me.ToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label11 = New System.Windows.Forms.Label()
@@ -72,7 +71,7 @@ Partial Class AjoutOffre
         Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.ContextMenuStrip2 = New System.Windows.Forms.ContextMenuStrip()
         Me.ToolStripMenuItem3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ToolStripMenuItem4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.prixunitaire = New DevComponents.Editors.DoubleInput()
@@ -137,7 +136,7 @@ Partial Class AjoutOffre
         Me.Label24 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.ButtonX2 = New DevComponents.DotNetBar.ButtonX()
-        Me.TabItem1 = New DevComponents.DotNetBar.TabItem(Me.components)
+        Me.TabItem1 = New DevComponents.DotNetBar.TabItem()
         Me.ComboItem16 = New DevComponents.Editors.ComboItem()
         Me.ComboItem15 = New DevComponents.Editors.ComboItem()
         Me.ComboItem14 = New DevComponents.Editors.ComboItem()
@@ -169,7 +168,7 @@ Partial Class AjoutOffre
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedTabFont = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Bold)
         Me.TabControl1.SelectedTabIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1355, 824)
+        Me.TabControl1.Size = New System.Drawing.Size(1383, 838)
         Me.TabControl1.Style = DevComponents.DotNetBar.eTabStripStyle.Metro
         Me.TabControl1.TabIndex = 248
         Me.TabControl1.TabLayoutType = DevComponents.DotNetBar.eTabLayoutType.FixedWithNavigationBox
@@ -187,7 +186,7 @@ Partial Class AjoutOffre
         Me.TabControlPanel1.Location = New System.Drawing.Point(0, 29)
         Me.TabControlPanel1.Name = "TabControlPanel1"
         Me.TabControlPanel1.Padding = New System.Windows.Forms.Padding(1)
-        Me.TabControlPanel1.Size = New System.Drawing.Size(1355, 795)
+        Me.TabControlPanel1.Size = New System.Drawing.Size(1383, 809)
         Me.TabControlPanel1.Style.BackColor1.Color = System.Drawing.Color.White
         Me.TabControlPanel1.Style.Border = DevComponents.DotNetBar.eBorderType.SingleLine
         Me.TabControlPanel1.Style.BorderColor.Color = System.Drawing.Color.FromArgb(CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer), CType(CType(211, Byte), Integer))
@@ -232,7 +231,7 @@ Partial Class AjoutOffre
         Me.GroupBox4.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox4.Name = "GroupBox4"
         Me.GroupBox4.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox4.Size = New System.Drawing.Size(1353, 211)
+        Me.GroupBox4.Size = New System.Drawing.Size(1381, 211)
         Me.GroupBox4.TabIndex = 253
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = " Bordereau des prix pour Prestation :"
@@ -493,7 +492,7 @@ Partial Class AjoutOffre
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(1353, 289)
+        Me.GroupBox1.Size = New System.Drawing.Size(1381, 289)
         Me.GroupBox1.TabIndex = 252
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = " Bordereau des prix :"
@@ -554,7 +553,7 @@ Partial Class AjoutOffre
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Location = New System.Drawing.Point(798, 258)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(87, 17)
+        Me.Label2.Size = New System.Drawing.Size(90, 17)
         Me.Label2.TabIndex = 285
         Me.Label2.Text = "Total DA/TTC :"
         '
@@ -580,7 +579,7 @@ Partial Class AjoutOffre
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Location = New System.Drawing.Point(798, 231)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(62, 17)
+        Me.Label3.Size = New System.Drawing.Size(66, 17)
         Me.Label3.TabIndex = 283
         Me.Label3.Text = "TVA 17% :"
         '
@@ -823,7 +822,7 @@ Partial Class AjoutOffre
         Me.GroupBox2.ForeColor = System.Drawing.Color.Black
         Me.GroupBox2.Location = New System.Drawing.Point(1, 1)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(1353, 159)
+        Me.GroupBox2.Size = New System.Drawing.Size(1381, 159)
         Me.GroupBox2.TabIndex = 125
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Identification du client :"
@@ -1004,7 +1003,7 @@ Partial Class AjoutOffre
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Location = New System.Drawing.Point(178, 126)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(122, 23)
+        Me.RadioButton2.Size = New System.Drawing.Size(124, 23)
         Me.RadioButton2.TabIndex = 305
         Me.RadioButton2.Text = "Terme paiement"
         Me.RadioButton2.UseVisualStyleBackColor = True
@@ -1237,7 +1236,7 @@ Partial Class AjoutOffre
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1355, 824)
+        Me.ClientSize = New System.Drawing.Size(1383, 838)
         Me.Controls.Add(Me.TabControl1)
         Me.DoubleBuffered = True
         Me.Font = New System.Drawing.Font("Segoe UI Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))

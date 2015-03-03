@@ -2,10 +2,32 @@ Imports DevExpress.XtraRichEdit
 Imports DevExpress.XtraPrinting
 Imports System.IO
 Imports DevExpress.XtraEditors.Controls
+Imports DevExpress.XtraTreeList
+Imports DevExpress.XtraTreeList.Nodes
+Imports DevComponents.DotNetBar
 Public Class ImpressionOE
-    Private Sub ImpressionOE_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+    Public codeoe As String = ""
+#Region "Fonctions"
+    Sub loadFilestoTree()
         Try
-            load_affaire()
+            treelist1.Nodes.Clear()
+            treelist1.BeginUnboundLoad()
+            Dim parentForRootNodes As TreeListNode = Nothing
+            Dim rootNode As TreeListNode = treelist1.AppendNode(New Object() {"Sauvegarde des ordres d'executions"}, parentForRootNodes)
+            rootNode.ImageIndex = 0
+
+            For Each myDirectory As IO.DirectoryInfo In New IO.DirectoryInfo(Application.StartupPath & "/Docs/OEBackups/").GetDirectories()
+                Dim aff As TreeListNode = treelist1.AppendNode(New Object() {myDirectory.Name}, rootNode)
+                aff.ImageIndex = 2
+                aff.SelectImageIndex = 2
+                For Each mFile As IO.FileInfo In New IO.DirectoryInfo(myDirectory.FullName).GetFiles()
+                    Dim af As TreeListNode = treelist1.AppendNode(New Object() {mFile.Name}, aff)
+                    af.ImageIndex = 3
+                    af.SelectImageIndex = 3
+                Next
+            Next
+            rootNode.Expanded = True
+            treelist1.EndUnboundLoad()
         Catch ex As Exception
             EnvoiError(ex.Message)
         End Try
@@ -24,7 +46,23 @@ Public Class ImpressionOE
             EnvoiError(ex.Message)
         End Try
     End Sub
-
+    Function RandomNumber()
+        Try
+            Return CLng(DateTime.Now.Subtract(New DateTime(1970, 1, 1)).TotalMilliseconds)
+        Catch ex As Exception
+            EnvoiError(ex.Message)
+        End Try
+        Return Nothing
+    End Function
+#End Region
+    Private Sub ImpressionOE_Load(sender As System.Object, e As System.EventArgs) Handles MyBase.Load
+        Try
+            loadFilestoTree()
+            load_affaire()
+        Catch ex As Exception
+            EnvoiError(ex.Message)
+        End Try
+    End Sub
     Private Sub ButtonX1_Click(sender As System.Object, e As System.EventArgs) Handles ButtonX1.Click
         'Try
         Dim ds1 As commercialOE = New commercialOE
@@ -134,7 +172,8 @@ Public Class ImpressionOE
                         cr.XrLabel22.Text = myDR("poids").ToString()
                         cr.XrLabel35.Text = myDR("controle").ToString()
                         cr.XrLabel19.Text = myDR("miseEnChantier").ToString()
-                        cr2.XrLabel36.Text = myDR("protection").ToString()
+                        cr2.XrLabel36.Text = myDR("protectionInterne").ToString()
+                        cr2.XrLabel1.Text = myDR("protectionExterne").ToString()
                         cr2.XrLabel37.Text = myDR("emballage").ToString()
                         cr2.XrLabel40.Text = myDR("marquage").ToString()
                         cr2.XrLabel41.Text = myDR("destinataire").ToString()
@@ -190,9 +229,31 @@ Public Class ImpressionOE
         cr.CreateDocument()
         cr2.CreateDocument()
         cr.Pages.AddRange(cr2.Pages)
-        DocumentViewer1.DocumentSource = cr
-        'Catch ex As Exception
-        '    EnvoiError(ex.Message)
-        'End Try
+        'DocumentViewer1.DocumentSource = cr
+        'ExportToDOC("docx", DocumentFormat.Rtf)
+        Dim nomFichier As String = RandomNumber() & ".Rtf"
+        'Dim cheminFichier = Application.StartupPath & "/Docs/Commercial/OEtemporaire/" & nomFichier
+        cr.ExportToRtf(Application.StartupPath & "/Docs/Commercial/OEtemporaire/" & nomFichier)
+        If IO.File.Exists(Application.StartupPath & "/Docs/Commercial/OEtemporaire/" & affaire.Text & "-" & codeoe) Then
+            OERichEditControl1.LoadDocument(Application.StartupPath & "/Docs/Commercial/OEtemporaire/OE-" & myDR("code_affaire").ToString & "-" & myDR("idcommercial_OE").ToString & ".rft", DocumentFormat.Rtf)
+            MsgBox("ok" & myDR("code_affaire").ToString & "-" & myDR("idcommercial_OE").ToString)
+        Else
+            IO.Directory.CreateDirectory(Application.StartupPath & "/Docs/Commercial/OEtemporaire/" & affaire.Text & "-" & codeoe)
+            If affaire.Text <> "" Then
+                If IsConnected("SELECT * FROM commercial_oe WHERE idcommercial_OE='" & codeoe & "'", False) Then
+                    If myDR.HasRows Then
+                        SaveBtn.Enabled = True
+                        PrintBtn.Enabled = True
+                        While myDR.Read
+                            'codeAffaire = myDR("code_affaire").ToString
+                            'codeoe = myDR("idcommercial_OE").ToString
+                            IO.File.Copy(Application.StartupPath & "/Docs/Commercial/OEtemporaire/" & nomFichier, Application.StartupPath & "/Docs/OEtemporaire/OE-" & myDR("code_affaire").ToString & "-" & myDR("idcommercial_OE").ToString & ".rft", True)
+                            OERichEditControl1.LoadDocument(Application.StartupPath & "/Docs/Commercial/OEtemporaire/OE-" & myDR("code_affaire").ToString & "-" & myDR("idcommercial_OE").ToString & ".rft", DocumentFormat.Rtf)
+                            'IO.File.Copy(Application.StartupPath & cr, Application.StartupPath & "/Docs/OEtemporaire/OE.rtf", True)
+                        End While
+                    End If
+                End If
+            End If
+        End If
     End Sub
 End Class
