@@ -1148,10 +1148,7 @@ Public Class Mainfrm
         Rapport.Show()
     End Sub
 
-    Private Sub ButtonItem154_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem154.Click
-        Catalogue.MdiParent = Me
-        Catalogue.Show()
-    End Sub
+    
 
     Private Sub ButtonItem150_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ButtonItem150.Click
         ' CreateKey("HKLM\SYSTEM\CurrentControlSet\Services\UsbStor\Start", "4")
@@ -1428,4 +1425,9 @@ Public Class Mainfrm
     End Sub
     'Coucou encore je suis la et oui ya partout ce genre de message pour ne pas m'oublié
     'j'imagine wache klitou fel ftour amina fritte escalope mohamed triangle et farid une pizza kastha wela lala
+
+    Private Sub AjouterCatalogBtn_Click(sender As Object, e As EventArgs) Handles AjouterCatalogBtn.Click
+        Catalogue.MdiParent = Me
+        Catalogue.Show()
+    End Sub
 End Class

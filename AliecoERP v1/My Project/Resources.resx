@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="shipment-search" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shipment-search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="clock-info" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clock-info.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -157,6 +160,9 @@
   <data name="invoice-table" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\invoice-table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="remove_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\remove_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="baby" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\baby.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -174,6 +180,9 @@
   </data>
   <data name="vacationman" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vacationman.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="address_book-coins" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\address_book-coins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="bill-print" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bill-print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -205,8 +214,8 @@
   <data name="proforma-database" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proforma-database.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="realise" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\realise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="history" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\history.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="worker-import" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\worker-import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -228,9 +237,6 @@
   </data>
   <data name="clock-add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clock-add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="history" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\history.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="invoice-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\invoice-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -298,9 +304,6 @@
   <data name="footsteps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\footsteps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clock-import" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clock-import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="graph" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\graph.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -315,6 +318,9 @@
   </data>
   <data name="money-internet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\money-internet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="shipment-table" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shipment-table.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="archive-option" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\archive-option.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -352,11 +358,8 @@
   <data name="add_button1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_button1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="picture-ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\picture-ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="tool_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\tool_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="order-table1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\order-table1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="account_book-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\account_book-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -382,11 +385,11 @@
   <data name="documents-edit" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\documents-edit.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="clock-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\clock-new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="plan" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\plan.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="contract-ok21" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\contract-ok21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="slideshow-delay" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\slideshow-delay.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -457,8 +460,8 @@
   <data name="smiley_happy" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\smiley_happy.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="remove_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\remove_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="picture-ok" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\picture-ok.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="graduate1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\graduate1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -514,6 +517,9 @@
   <data name="company" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\company.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="shipment-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shipment-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bill_mail-to_cash" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bill_mail-to_cash.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -528,6 +534,9 @@
   </data>
   <data name="bill_mail-internet" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bill_mail-internet.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="realise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\realise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="network_computer" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\network_computer.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -625,8 +634,8 @@
   <data name="add_button" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add_button.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="document_text-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\document_text-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="order-add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\order-add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="clock-delete1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\clock-delete1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -639,6 +648,9 @@
   </data>
   <data name="vendors-edit1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\vendors-edit1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="document_text-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\document_text-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="attestation" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\attestation.png;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -697,14 +709,14 @@
   <data name="worker-steps" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\worker-steps.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="address_book-coins" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\address_book-coins.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clock-new" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clock-new.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="excel" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\excel.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="order-add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\order-add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="tool_pencil" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\tool_pencil.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="20141" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\20141.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -729,6 +741,9 @@
   </data>
   <data name="add1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\add1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="notrealise" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\notrealise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="loan-print" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\loan-print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -835,9 +850,6 @@
   <data name="note_text-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\note_text-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="order-table1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\order-table1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="document_flat-execute" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\document_flat-execute.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -862,8 +874,8 @@
   <data name="proforma-add" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\proforma-add.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="notrealise" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\notrealise.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="clock-import" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\clock-import.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="gear-warn" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\gear-warn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -928,7 +940,7 @@
   <data name="traffic17" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\traffic17.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="contract-ok21" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\contract-ok21.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="shipment-print" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\shipment-print.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

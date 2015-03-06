@@ -2512,6 +2512,10 @@
     <Content Include="bin\Debug\MySqlBackup.dll" />
     <Content Include="bin\Debug\System.Windows.Forms.DataVisualization.dll" />
     <Content Include="logo1.ico" />
+    <None Include="Resources\shipment-print.png" />
+    <None Include="Resources\shipment-search.png" />
+    <None Include="Resources\shipment-table.png" />
+    <None Include="Resources\shipment-add.png" />
     <None Include="Resources\traffic171.png" />
     <None Include="Resources\traffic17.png" />
     <None Include="Resources\worker-import.png" />
