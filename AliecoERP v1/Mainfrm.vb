@@ -1427,7 +1427,7 @@ Public Class Mainfrm
     'j'imagine wache klitou fel ftour amina fritte escalope mohamed triangle et farid une pizza kastha wela lala
 
     Private Sub AjouterCatalogBtn_Click(sender As Object, e As EventArgs) Handles AjouterCatalogBtn.Click
-        Catalogue.MdiParent = Me
-        Catalogue.Show()
+        AddCatalogue.MdiParent = Me
+        AddCatalogue.Show()
     End Sub
 End Class

@@ -69,7 +69,7 @@
     <ApplicationIcon>logo1.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup>
-    <ManifestCertificateThumbprint>2449CA68E69E095959196CC8B0B18E71EF235889</ManifestCertificateThumbprint>
+    <ManifestCertificateThumbprint>83F0E487757EC0AF66F1B5514F3D6D39548087D4</ManifestCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup>
     <ManifestKeyFile>
@@ -792,10 +792,10 @@
     <Compile Include="Logistique\Stock\AjoutCompte.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Logistique\Stock\Catalogue.Designer.vb">
-      <DependentUpon>Catalogue.vb</DependentUpon>
+    <Compile Include="Logistique\Stock\AddCatalogue.Designer.vb">
+      <DependentUpon>AddCatalogue.vb</DependentUpon>
     </Compile>
-    <Compile Include="Logistique\Stock\Catalogue.vb">
+    <Compile Include="Logistique\Stock\AddCatalogue.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Modules\ConvertChiffreEnLettre.vb" />
@@ -1784,8 +1784,8 @@
     <EmbeddedResource Include="Logistique\Stock\AjoutCompte.resx">
       <DependentUpon>AjoutCompte.vb</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Logistique\Stock\Catalogue.resx">
-      <DependentUpon>Catalogue.vb</DependentUpon>
+    <EmbeddedResource Include="Logistique\Stock\AddCatalogue.resx">
+      <DependentUpon>AddCatalogue.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="Reports\ArretTravailRP.resx">

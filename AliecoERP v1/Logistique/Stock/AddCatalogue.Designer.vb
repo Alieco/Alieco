@@ -1,5 +1,5 @@
 <Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Catalogue
+Partial Class AddCatalogue
     Inherits DevComponents.DotNetBar.OfficeForm
 
     'Form overrides dispose to clean up the component list.

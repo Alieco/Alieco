@@ -1,6 +1,6 @@
 Imports DevComponents.DotNetBar
 
-Public Class Catalogue
+Public Class AddCatalogue
     Dim quary As String = ""
     Dim erreur As Boolean = False
     Dim sql As New SQLControl
