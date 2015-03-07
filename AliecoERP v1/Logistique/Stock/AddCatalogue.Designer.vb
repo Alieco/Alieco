@@ -97,9 +97,9 @@ Partial Class AddCatalogue
         Me.GroupBox4.Controls.Add(Me.Label10)
         Me.GroupBox4.Controls.Add(Me.Label11)
         Me.GroupBox4.Controls.Add(Me.prixunitaire)
-        Me.GroupBox4.Location = New System.Drawing.Point(525, 26)
+        Me.GroupBox4.Location = New System.Drawing.Point(571, 27)
         Me.GroupBox4.Name = "GroupBox4"
-        Me.GroupBox4.Size = New System.Drawing.Size(285, 115)
+        Me.GroupBox4.Size = New System.Drawing.Size(285, 133)
         Me.GroupBox4.TabIndex = 7
         Me.GroupBox4.TabStop = False
         Me.GroupBox4.Text = "Prix d'acticle :"
@@ -113,10 +113,10 @@ Partial Class AddCatalogue
         Me.total.Border.Class = "TextBoxBorder"
         Me.total.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.total.ForeColor = System.Drawing.Color.Black
-        Me.total.Location = New System.Drawing.Point(80, 80)
-        Me.total.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.total.Location = New System.Drawing.Point(80, 92)
+        Me.total.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.total.Name = "total"
-        Me.total.Size = New System.Drawing.Size(190, 20)
+        Me.total.Size = New System.Drawing.Size(190, 23)
         Me.total.TabIndex = 311
         '
         'Label1
@@ -124,9 +124,9 @@ Partial Class AddCatalogue
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.ForeColor = System.Drawing.Color.Black
-        Me.Label1.Location = New System.Drawing.Point(6, 87)
+        Me.Label1.Location = New System.Drawing.Point(6, 100)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(33, 13)
+        Me.Label1.Size = New System.Drawing.Size(36, 15)
         Me.Label1.TabIndex = 310
         Me.Label1.Text = "total :"
         '
@@ -135,9 +135,9 @@ Partial Class AddCatalogue
         Me.Label13.AutoSize = True
         Me.Label13.BackColor = System.Drawing.Color.White
         Me.Label13.ForeColor = System.Drawing.Color.Black
-        Me.Label13.Location = New System.Drawing.Point(6, 28)
+        Me.Label13.Location = New System.Drawing.Point(6, 32)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(53, 13)
+        Me.Label13.Size = New System.Drawing.Size(56, 15)
         Me.Label13.TabIndex = 303
         Me.Label13.Text = "Quantité :"
         '
@@ -150,10 +150,10 @@ Partial Class AddCatalogue
         Me.total11.Border.Class = "TextBoxBorder"
         Me.total11.Border.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.total11.ForeColor = System.Drawing.Color.Black
-        Me.total11.Location = New System.Drawing.Point(725, 137)
-        Me.total11.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.total11.Location = New System.Drawing.Point(725, 158)
+        Me.total11.Margin = New System.Windows.Forms.Padding(3, 5, 3, 5)
         Me.total11.Name = "total11"
-        Me.total11.Size = New System.Drawing.Size(117, 20)
+        Me.total11.Size = New System.Drawing.Size(117, 23)
         Me.total11.TabIndex = 308
         '
         'quantite
@@ -165,10 +165,10 @@ Partial Class AddCatalogue
         Me.quantite.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.quantite.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.quantite.Increment = 1.0R
-        Me.quantite.Location = New System.Drawing.Point(80, 21)
+        Me.quantite.Location = New System.Drawing.Point(80, 24)
         Me.quantite.Name = "quantite"
         Me.quantite.ShowUpDown = True
-        Me.quantite.Size = New System.Drawing.Size(190, 20)
+        Me.quantite.Size = New System.Drawing.Size(190, 23)
         Me.quantite.TabIndex = 304
         '
         'Label10
@@ -176,9 +176,9 @@ Partial Class AddCatalogue
         Me.Label10.AutoSize = True
         Me.Label10.BackColor = System.Drawing.Color.White
         Me.Label10.ForeColor = System.Drawing.Color.Black
-        Me.Label10.Location = New System.Drawing.Point(629, 139)
+        Me.Label10.Location = New System.Drawing.Point(629, 160)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(33, 13)
+        Me.Label10.Size = New System.Drawing.Size(36, 15)
         Me.Label10.TabIndex = 307
         Me.Label10.Text = "total :"
         '
@@ -187,9 +187,9 @@ Partial Class AddCatalogue
         Me.Label11.AutoSize = True
         Me.Label11.BackColor = System.Drawing.Color.White
         Me.Label11.ForeColor = System.Drawing.Color.Black
-        Me.Label11.Location = New System.Drawing.Point(6, 57)
+        Me.Label11.Location = New System.Drawing.Point(6, 66)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(70, 13)
+        Me.Label11.Size = New System.Drawing.Size(73, 15)
         Me.Label11.TabIndex = 305
         Me.Label11.Text = "Prix unitaire  :"
         '
@@ -202,10 +202,10 @@ Partial Class AddCatalogue
         Me.prixunitaire.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.prixunitaire.ButtonFreeText.Shortcut = DevComponents.DotNetBar.eShortcut.F2
         Me.prixunitaire.Increment = 1.0R
-        Me.prixunitaire.Location = New System.Drawing.Point(80, 51)
+        Me.prixunitaire.Location = New System.Drawing.Point(80, 59)
         Me.prixunitaire.Name = "prixunitaire"
         Me.prixunitaire.ShowUpDown = True
-        Me.prixunitaire.Size = New System.Drawing.Size(190, 20)
+        Me.prixunitaire.Size = New System.Drawing.Size(190, 23)
         Me.prixunitaire.TabIndex = 306
         '
         'GroupBox2
@@ -238,7 +238,7 @@ Partial Class AddCatalogue
         Me.GroupBox2.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox2.Location = New System.Drawing.Point(0, 0)
         Me.GroupBox2.Name = "GroupBox2"
-        Me.GroupBox2.Size = New System.Drawing.Size(862, 197)
+        Me.GroupBox2.Size = New System.Drawing.Size(1220, 227)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "Catalogue :"
@@ -249,9 +249,9 @@ Partial Class AddCatalogue
         '
         '
         Me.famille.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.famille.Location = New System.Drawing.Point(357, 113)
+        Me.famille.Location = New System.Drawing.Point(357, 130)
         Me.famille.Name = "famille"
-        Me.famille.Size = New System.Drawing.Size(151, 23)
+        Me.famille.Size = New System.Drawing.Size(151, 27)
         Me.famille.TabIndex = 47
         Me.famille.Text = "famille"
         '
@@ -261,9 +261,9 @@ Partial Class AddCatalogue
         '
         '
         Me.rayon.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.rayon.Location = New System.Drawing.Point(113, 167)
+        Me.rayon.Location = New System.Drawing.Point(113, 193)
         Me.rayon.Name = "rayon"
-        Me.rayon.Size = New System.Drawing.Size(151, 23)
+        Me.rayon.Size = New System.Drawing.Size(151, 27)
         Me.rayon.TabIndex = 46
         Me.rayon.Text = "rayon"
         '
@@ -273,9 +273,9 @@ Partial Class AddCatalogue
         '
         '
         Me.um.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.um.Location = New System.Drawing.Point(113, 139)
+        Me.um.Location = New System.Drawing.Point(113, 160)
         Me.um.Name = "um"
-        Me.um.Size = New System.Drawing.Size(151, 23)
+        Me.um.Size = New System.Drawing.Size(151, 27)
         Me.um.TabIndex = 45
         Me.um.Text = "um"
         '
@@ -285,9 +285,9 @@ Partial Class AddCatalogue
         '
         '
         Me.sfamille.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.sfamille.Location = New System.Drawing.Point(113, 108)
+        Me.sfamille.Location = New System.Drawing.Point(113, 125)
         Me.sfamille.Name = "sfamille"
-        Me.sfamille.Size = New System.Drawing.Size(151, 23)
+        Me.sfamille.Size = New System.Drawing.Size(151, 27)
         Me.sfamille.TabIndex = 44
         Me.sfamille.Text = "sfamille"
         '
@@ -297,9 +297,9 @@ Partial Class AddCatalogue
         '
         '
         Me.libelle.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.libelle.Location = New System.Drawing.Point(113, 79)
+        Me.libelle.Location = New System.Drawing.Point(113, 91)
         Me.libelle.Name = "libelle"
-        Me.libelle.Size = New System.Drawing.Size(151, 23)
+        Me.libelle.Size = New System.Drawing.Size(151, 27)
         Me.libelle.TabIndex = 43
         Me.libelle.Text = "libelle"
         '
@@ -309,9 +309,9 @@ Partial Class AddCatalogue
         '
         '
         Me.sousfamille.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.sousfamille.Location = New System.Drawing.Point(357, 84)
+        Me.sousfamille.Location = New System.Drawing.Point(357, 97)
         Me.sousfamille.Name = "sousfamille"
-        Me.sousfamille.Size = New System.Drawing.Size(151, 23)
+        Me.sousfamille.Size = New System.Drawing.Size(151, 27)
         Me.sousfamille.TabIndex = 42
         Me.sousfamille.Text = "sousfamille"
         '
@@ -321,9 +321,9 @@ Partial Class AddCatalogue
         Me.ButtonX3.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.ButtonX3.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ButtonX3.Image = Global.MBA.My.Resources.Resources.Excel_2013
-        Me.ButtonX3.Location = New System.Drawing.Point(720, 155)
+        Me.ButtonX3.Location = New System.Drawing.Point(720, 179)
         Me.ButtonX3.Name = "ButtonX3"
-        Me.ButtonX3.Size = New System.Drawing.Size(136, 23)
+        Me.ButtonX3.Size = New System.Drawing.Size(136, 27)
         Me.ButtonX3.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ButtonX3.TabIndex = 41
         Me.ButtonX3.Text = "Exporter vers Excel"
@@ -333,9 +333,9 @@ Partial Class AddCatalogue
         Me.ajout.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.ajout.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
         Me.ajout.Image = Global.MBA.My.Resources.Resources.add_button
-        Me.ajout.Location = New System.Drawing.Point(404, 155)
+        Me.ajout.Location = New System.Drawing.Point(404, 179)
         Me.ajout.Name = "ajout"
-        Me.ajout.Size = New System.Drawing.Size(124, 23)
+        Me.ajout.Size = New System.Drawing.Size(124, 27)
         Me.ajout.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ajout.TabIndex = 40
         Me.ajout.Text = "Ajouter"
@@ -344,10 +344,10 @@ Partial Class AddCatalogue
         '
         Me.ButtonX2.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.ButtonX2.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX2.Image = Global.MBA.My.Resources.Resources.add1
-        Me.ButtonX2.Location = New System.Drawing.Point(81, 52)
+        Me.ButtonX2.Image = Global.MBA.My.Resources.Resources.add2
+        Me.ButtonX2.Location = New System.Drawing.Point(93, 61)
         Me.ButtonX2.Name = "ButtonX2"
-        Me.ButtonX2.Size = New System.Drawing.Size(28, 19)
+        Me.ButtonX2.Size = New System.Drawing.Size(19, 22)
         Me.ButtonX2.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ButtonX2.TabIndex = 39
         '
@@ -355,10 +355,10 @@ Partial Class AddCatalogue
         '
         Me.ButtonX1.AccessibleRole = System.Windows.Forms.AccessibleRole.PushButton
         Me.ButtonX1.ColorTable = DevComponents.DotNetBar.eButtonColor.OrangeWithBackground
-        Me.ButtonX1.Image = Global.MBA.My.Resources.Resources.add1
-        Me.ButtonX1.Location = New System.Drawing.Point(322, 55)
+        Me.ButtonX1.Image = Global.MBA.My.Resources.Resources.add2
+        Me.ButtonX1.Location = New System.Drawing.Point(335, 64)
         Me.ButtonX1.Name = "ButtonX1"
-        Me.ButtonX1.Size = New System.Drawing.Size(32, 17)
+        Me.ButtonX1.Size = New System.Drawing.Size(19, 22)
         Me.ButtonX1.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.ButtonX1.TabIndex = 38
         '
@@ -368,9 +368,9 @@ Partial Class AddCatalogue
         '
         '
         Me.datenrg.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.datenrg.Location = New System.Drawing.Point(93, 18)
+        Me.datenrg.Location = New System.Drawing.Point(93, 21)
         Me.datenrg.Name = "datenrg"
-        Me.datenrg.Size = New System.Drawing.Size(151, 23)
+        Me.datenrg.Size = New System.Drawing.Size(151, 27)
         Me.datenrg.TabIndex = 37
         Me.datenrg.Text = "date"
         '
@@ -380,9 +380,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX3.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX3.Location = New System.Drawing.Point(270, 52)
+        Me.LabelX3.Location = New System.Drawing.Point(270, 60)
         Me.LabelX3.Name = "LabelX3"
-        Me.LabelX3.Size = New System.Drawing.Size(46, 23)
+        Me.LabelX3.Size = New System.Drawing.Size(46, 27)
         Me.LabelX3.TabIndex = 36
         Me.LabelX3.Text = "Compte :"
         '
@@ -391,10 +391,10 @@ Partial Class AddCatalogue
         Me.compte.DisplayMember = "Text"
         Me.compte.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.compte.FormattingEnabled = True
-        Me.compte.ItemHeight = 14
-        Me.compte.Location = New System.Drawing.Point(357, 55)
+        Me.compte.ItemHeight = 17
+        Me.compte.Location = New System.Drawing.Point(357, 63)
         Me.compte.Name = "compte"
-        Me.compte.Size = New System.Drawing.Size(151, 20)
+        Me.compte.Size = New System.Drawing.Size(151, 23)
         Me.compte.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.compte.TabIndex = 35
         '
@@ -404,9 +404,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX4.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX4.Location = New System.Drawing.Point(270, 84)
+        Me.LabelX4.Location = New System.Drawing.Point(270, 97)
         Me.LabelX4.Name = "LabelX4"
-        Me.LabelX4.Size = New System.Drawing.Size(81, 23)
+        Me.LabelX4.Size = New System.Drawing.Size(81, 27)
         Me.LabelX4.TabIndex = 32
         Me.LabelX4.Text = "Sous famille :"
         '
@@ -416,9 +416,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX5.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX5.Location = New System.Drawing.Point(270, 110)
+        Me.LabelX5.Location = New System.Drawing.Point(270, 127)
         Me.LabelX5.Name = "LabelX5"
-        Me.LabelX5.Size = New System.Drawing.Size(81, 28)
+        Me.LabelX5.Size = New System.Drawing.Size(81, 32)
         Me.LabelX5.TabIndex = 30
         Me.LabelX5.Text = "Famille :"
         '
@@ -428,9 +428,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX1.Location = New System.Drawing.Point(6, 167)
+        Me.LabelX1.Location = New System.Drawing.Point(6, 193)
         Me.LabelX1.Name = "LabelX1"
-        Me.LabelX1.Size = New System.Drawing.Size(81, 23)
+        Me.LabelX1.Size = New System.Drawing.Size(81, 27)
         Me.LabelX1.TabIndex = 27
         Me.LabelX1.Text = "Rayon :"
         '
@@ -440,9 +440,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX2.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX2.Location = New System.Drawing.Point(270, 23)
+        Me.LabelX2.Location = New System.Drawing.Point(270, 27)
         Me.LabelX2.Name = "LabelX2"
-        Me.LabelX2.Size = New System.Drawing.Size(81, 23)
+        Me.LabelX2.Size = New System.Drawing.Size(81, 27)
         Me.LabelX2.TabIndex = 26
         Me.LabelX2.Text = "Utilisateur :"
         '
@@ -452,9 +452,9 @@ Partial Class AddCatalogue
         '
         '
         Me.utilisateur.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.utilisateur.Location = New System.Drawing.Point(357, 23)
+        Me.utilisateur.Location = New System.Drawing.Point(357, 27)
         Me.utilisateur.Name = "utilisateur"
-        Me.utilisateur.Size = New System.Drawing.Size(151, 23)
+        Me.utilisateur.Size = New System.Drawing.Size(151, 27)
         Me.utilisateur.TabIndex = 25
         Me.utilisateur.Text = "Ut"
         '
@@ -463,10 +463,10 @@ Partial Class AddCatalogue
         Me.codearticle.DisplayMember = "Text"
         Me.codearticle.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
         Me.codearticle.FormattingEnabled = True
-        Me.codearticle.ItemHeight = 14
-        Me.codearticle.Location = New System.Drawing.Point(113, 52)
+        Me.codearticle.ItemHeight = 17
+        Me.codearticle.Location = New System.Drawing.Point(113, 60)
         Me.codearticle.Name = "codearticle"
-        Me.codearticle.Size = New System.Drawing.Size(151, 20)
+        Me.codearticle.Size = New System.Drawing.Size(151, 23)
         Me.codearticle.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.codearticle.TabIndex = 24
         '
@@ -476,9 +476,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX12.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX12.Location = New System.Drawing.Point(6, 139)
+        Me.LabelX12.Location = New System.Drawing.Point(6, 160)
         Me.LabelX12.Name = "LabelX12"
-        Me.LabelX12.Size = New System.Drawing.Size(81, 23)
+        Me.LabelX12.Size = New System.Drawing.Size(81, 27)
         Me.LabelX12.TabIndex = 12
         Me.LabelX12.Text = "UM :"
         '
@@ -488,9 +488,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX10.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX10.Location = New System.Drawing.Point(6, 47)
+        Me.LabelX10.Location = New System.Drawing.Point(6, 54)
         Me.LabelX10.Name = "LabelX10"
-        Me.LabelX10.Size = New System.Drawing.Size(69, 23)
+        Me.LabelX10.Size = New System.Drawing.Size(69, 27)
         Me.LabelX10.TabIndex = 9
         Me.LabelX10.Text = "Code Article :"
         '
@@ -500,9 +500,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX9.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX9.Location = New System.Drawing.Point(6, 79)
+        Me.LabelX9.Location = New System.Drawing.Point(6, 91)
         Me.LabelX9.Name = "LabelX9"
-        Me.LabelX9.Size = New System.Drawing.Size(81, 23)
+        Me.LabelX9.Size = New System.Drawing.Size(81, 27)
         Me.LabelX9.TabIndex = 7
         Me.LabelX9.Text = "Libellé :"
         '
@@ -512,9 +512,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX8.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX8.Location = New System.Drawing.Point(6, 101)
+        Me.LabelX8.Location = New System.Drawing.Point(6, 117)
         Me.LabelX8.Name = "LabelX8"
-        Me.LabelX8.Size = New System.Drawing.Size(81, 28)
+        Me.LabelX8.Size = New System.Drawing.Size(81, 32)
         Me.LabelX8.TabIndex = 5
         Me.LabelX8.Text = "S/famille :"
         '
@@ -524,9 +524,9 @@ Partial Class AddCatalogue
         '
         '
         Me.LabelX7.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
-        Me.LabelX7.Location = New System.Drawing.Point(6, 18)
+        Me.LabelX7.Location = New System.Drawing.Point(6, 21)
         Me.LabelX7.Name = "LabelX7"
-        Me.LabelX7.Size = New System.Drawing.Size(81, 23)
+        Me.LabelX7.Size = New System.Drawing.Size(81, 27)
         Me.LabelX7.TabIndex = 3
         Me.LabelX7.Text = "Date  :"
         '
@@ -534,12 +534,12 @@ Partial Class AddCatalogue
         '
         Me.DGcat.ContextMenuStrip = Me.ContextMenuStrip1
         Me.DGcat.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DGcat.Location = New System.Drawing.Point(0, 197)
+        Me.DGcat.Location = New System.Drawing.Point(0, 227)
         Me.DGcat.LookAndFeel.SkinName = "Office 2013"
         Me.DGcat.LookAndFeel.UseDefaultLookAndFeel = False
         Me.DGcat.MainView = Me.GridView1
         Me.DGcat.Name = "DGcat"
-        Me.DGcat.Size = New System.Drawing.Size(862, 328)
+        Me.DGcat.Size = New System.Drawing.Size(1220, 414)
         Me.DGcat.TabIndex = 6
         Me.DGcat.ViewCollection.AddRange(New DevExpress.XtraGrid.Views.Base.BaseView() {Me.GridView1})
         '
@@ -549,7 +549,7 @@ Partial Class AddCatalogue
         Me.ContextMenuStrip1.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GoogleToolStripMenuItem, Me.ToolStripMenuItem1, Me.ModifierLeFonctionnaireFonctionnaireToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(261, 92)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(261, 70)
         '
         'GoogleToolStripMenuItem
         '
@@ -642,18 +642,22 @@ Partial Class AddCatalogue
         '
         Me.ComboItem7.Text = "Par avion"
         '
-        'Catalogue
+        'AddCatalogue
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(862, 525)
+        Me.ClientSize = New System.Drawing.Size(1220, 641)
         Me.Controls.Add(Me.DGcat)
         Me.Controls.Add(Me.GroupBox2)
         Me.DoubleBuffered = True
-        Me.Name = "Catalogue"
+        Me.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
+        Me.MaximizeBox = False
+        Me.MinimizeBox = False
+        Me.Name = "AddCatalogue"
         Me.ShowIcon = False
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = " "
-        Me.WindowState = System.Windows.Forms.FormWindowState.Maximized
         Me.GroupBox4.ResumeLayout(False)
         Me.GroupBox4.PerformLayout()
         CType(Me.quantite, System.ComponentModel.ISupportInitialize).EndInit()

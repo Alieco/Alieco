@@ -33,6 +33,7 @@ Partial Class Mainfrm
         Me.ButtonItem156 = New DevComponents.DotNetBar.ButtonItem()
         Me.ButtonItem157 = New DevComponents.DotNetBar.ButtonItem()
         Me.RibbonBar46 = New DevComponents.DotNetBar.RibbonBar()
+        Me.NouveauCatalogBtn = New DevComponents.DotNetBar.ButtonItem()
         Me.AjouterCatalogBtn = New DevComponents.DotNetBar.ButtonItem()
         Me.GestionCatalogBtn = New DevComponents.DotNetBar.ButtonItem()
         Me.RechercheCatalogBtn = New DevComponents.DotNetBar.ButtonItem()
@@ -483,7 +484,7 @@ Partial Class Mainfrm
         Me.RibbonBar47.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RibbonBar47.ForeColor = System.Drawing.Color.Black
         Me.RibbonBar47.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.ButtonItem156, Me.ButtonItem157})
-        Me.RibbonBar47.Location = New System.Drawing.Point(310, 0)
+        Me.RibbonBar47.Location = New System.Drawing.Point(361, 0)
         Me.RibbonBar47.Name = "RibbonBar47"
         Me.RibbonBar47.Size = New System.Drawing.Size(160, 111)
         Me.RibbonBar47.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
@@ -529,10 +530,10 @@ Partial Class Mainfrm
         Me.RibbonBar46.Enabled = False
         Me.RibbonBar46.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RibbonBar46.ForeColor = System.Drawing.Color.Black
-        Me.RibbonBar46.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.AjouterCatalogBtn, Me.GestionCatalogBtn, Me.RechercheCatalogBtn, Me.PrintCatalogueBtn})
+        Me.RibbonBar46.Items.AddRange(New DevComponents.DotNetBar.BaseItem() {Me.NouveauCatalogBtn, Me.AjouterCatalogBtn, Me.GestionCatalogBtn, Me.RechercheCatalogBtn, Me.PrintCatalogueBtn})
         Me.RibbonBar46.Location = New System.Drawing.Point(3, 0)
         Me.RibbonBar46.Name = "RibbonBar46"
-        Me.RibbonBar46.Size = New System.Drawing.Size(307, 111)
+        Me.RibbonBar46.Size = New System.Drawing.Size(358, 111)
         Me.RibbonBar46.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
         Me.RibbonBar46.TabIndex = 10
         Me.RibbonBar46.Text = "Gestion Catalogue"
@@ -544,6 +545,13 @@ Partial Class Mainfrm
         '
         '
         Me.RibbonBar46.TitleStyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
+        '
+        'NouveauCatalogBtn
+        '
+        Me.NouveauCatalogBtn.Image = Global.MBA.My.Resources.Resources.shipment_new
+        Me.NouveauCatalogBtn.ImagePosition = DevComponents.DotNetBar.eImagePosition.Top
+        Me.NouveauCatalogBtn.Name = "NouveauCatalogBtn"
+        Me.NouveauCatalogBtn.Text = "Nouveau catalogue"
         '
         'AjouterCatalogBtn
         '
@@ -5310,5 +5318,6 @@ Partial Class Mainfrm
     Private WithEvents ButtonItem176 As DevComponents.DotNetBar.ButtonItem
     Private WithEvents RechercheCatalogBtn As DevComponents.DotNetBar.ButtonItem
     Private WithEvents PrintCatalogueBtn As DevComponents.DotNetBar.ButtonItem
+    Private WithEvents NouveauCatalogBtn As DevComponents.DotNetBar.ButtonItem
 
 End Class

@@ -798,6 +798,12 @@
     <Compile Include="Logistique\Stock\AddCatalogue.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Logistique\Stock\NewCatalog.Designer.vb">
+      <DependentUpon>NewCatalog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Logistique\Stock\NewCatalog.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Modules\ConvertChiffreEnLettre.vb" />
     <Compile Include="Modules\ExceptionHundlingScreenShot.vb" />
     <Compile Include="Modules\FolderLocker.vb" />
@@ -1787,6 +1793,9 @@
     <EmbeddedResource Include="Logistique\Stock\AddCatalogue.resx">
       <DependentUpon>AddCatalogue.vb</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Logistique\Stock\NewCatalog.resx">
+      <DependentUpon>NewCatalog.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\licenses.licx" />
     <EmbeddedResource Include="Reports\ArretTravailRP.resx">
       <DependentUpon>ArretTravailRP.vb</DependentUpon>
@@ -2512,6 +2521,7 @@
     <Content Include="bin\Debug\MySqlBackup.dll" />
     <Content Include="bin\Debug\System.Windows.Forms.DataVisualization.dll" />
     <Content Include="logo1.ico" />
+    <None Include="Resources\shipment-new.png" />
     <None Include="Resources\shipment-print.png" />
     <None Include="Resources\shipment-search.png" />
     <None Include="Resources\shipment-table.png" />
@@ -2791,6 +2801,7 @@
     <None Include="Resources\cancel.png" />
     <None Include="Resources\factory-add.png" />
     <None Include="Resources\contract-ok21.png" />
+    <None Include="Resources\add2.png" />
     <Content Include="Resources\refersh.png" />
     <None Include="Resources\refersh1.png" />
     <None Include="Resources\category.png" />
