@@ -391,10 +391,10 @@ Partial Class Mainfrm
         '
         Me.ribbonControl1.BackgroundStyle.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.ribbonControl1.CaptionVisible = True
-        Me.ribbonControl1.Controls.Add(Me.RibbonPanel4)
         Me.ribbonControl1.Controls.Add(Me.RibbonPanel12)
-        Me.ribbonControl1.Controls.Add(Me.RibbonPanel9)
         Me.ribbonControl1.Controls.Add(Me.RibbonPanel18)
+        Me.ribbonControl1.Controls.Add(Me.RibbonPanel4)
+        Me.ribbonControl1.Controls.Add(Me.RibbonPanel9)
         Me.ribbonControl1.Controls.Add(Me.ribbonPanel1)
         Me.ribbonControl1.Controls.Add(Me.RibbonPanel5)
         Me.ribbonControl1.Controls.Add(Me.RibbonPanel17)
@@ -465,6 +465,7 @@ Partial Class Mainfrm
         '
         Me.RibbonPanel4.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.RibbonPanel4.TabIndex = 5
+        Me.RibbonPanel4.Visible = False
         '
         'RibbonBar47
         '
@@ -612,7 +613,6 @@ Partial Class Mainfrm
         '
         Me.RibbonPanel12.StyleMouseOver.CornerType = DevComponents.DotNetBar.eCornerType.Square
         Me.RibbonPanel12.TabIndex = 13
-        Me.RibbonPanel12.Visible = False
         '
         'RibbonBar25
         '
@@ -4435,6 +4435,7 @@ Partial Class Mainfrm
         '
         'RibbonTabItem12
         '
+        Me.RibbonTabItem12.Checked = True
         Me.RibbonTabItem12.Group = Me.ribbonTabItemGroup1
         Me.RibbonTabItem12.Name = "RibbonTabItem12"
         Me.RibbonTabItem12.Panel = Me.RibbonPanel12
@@ -4442,7 +4443,6 @@ Partial Class Mainfrm
         '
         'RibbonTabItem4
         '
-        Me.RibbonTabItem4.Checked = True
         Me.RibbonTabItem4.ColorTable = DevComponents.DotNetBar.eRibbonTabColor.Green
         Me.RibbonTabItem4.Group = Me.RibbonTabItemGroup3
         Me.RibbonTabItem4.Name = "RibbonTabItem4"

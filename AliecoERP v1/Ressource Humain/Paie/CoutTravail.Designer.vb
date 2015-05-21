@@ -25,6 +25,8 @@ Partial Class CoutTravail
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CoutTravail))
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.fonction = New DevComponents.DotNetBar.Controls.ComboBoxEx()
+        Me.direction = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.ButtonX1 = New DevComponents.DotNetBar.ButtonX()
         Me.LabelX1 = New DevComponents.DotNetBar.LabelX()
         Me.Moi = New DevComponents.DotNetBar.Controls.ComboBoxEx()
@@ -97,8 +99,6 @@ Partial Class CoutTravail
         Me.PrintPreviewBarCheckItem15 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
         Me.PrintPreviewBarCheckItem16 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
         Me.PrintPreviewBarCheckItem17 = New DevExpress.XtraPrinting.Preview.PrintPreviewBarCheckItem()
-        Me.fonction = New DevComponents.DotNetBar.Controls.ComboBoxEx()
-        Me.direction = New DevComponents.DotNetBar.Controls.ComboBoxEx()
         Me.GroupBox1.SuspendLayout()
         CType(Me.DocumentViewerBarManager1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PrintPreviewRepositoryItemComboBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -118,12 +118,38 @@ Partial Class CoutTravail
         Me.GroupBox1.Dock = System.Windows.Forms.DockStyle.Top
         Me.GroupBox1.Font = New System.Drawing.Font("Segoe UI Light", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.GroupBox1.ForeColor = System.Drawing.Color.Black
-        Me.GroupBox1.Location = New System.Drawing.Point(35, 0)
+        Me.GroupBox1.Location = New System.Drawing.Point(46, 0)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(1018, 97)
+        Me.GroupBox1.Size = New System.Drawing.Size(1175, 97)
         Me.GroupBox1.TabIndex = 116
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Les couts de travail cette année  :"
+        '
+        'fonction
+        '
+        Me.fonction.DisplayMember = "Text"
+        Me.fonction.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.fonction.FormattingEnabled = True
+        Me.fonction.ItemHeight = 17
+        Me.fonction.Location = New System.Drawing.Point(364, 50)
+        Me.fonction.Name = "fonction"
+        Me.fonction.Size = New System.Drawing.Size(146, 23)
+        Me.fonction.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.fonction.TabIndex = 21
+        Me.fonction.WatermarkText = "Fonction :"
+        '
+        'direction
+        '
+        Me.direction.DisplayMember = "Text"
+        Me.direction.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.direction.FormattingEnabled = True
+        Me.direction.ItemHeight = 17
+        Me.direction.Location = New System.Drawing.Point(227, 52)
+        Me.direction.Name = "direction"
+        Me.direction.Size = New System.Drawing.Size(122, 23)
+        Me.direction.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
+        Me.direction.TabIndex = 20
+        Me.direction.WatermarkText = "Direction :"
         '
         'ButtonX1
         '
@@ -179,11 +205,11 @@ Partial Class CoutTravail
         '
         Me.DocumentViewer1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.DocumentViewer1.IsMetric = True
-        Me.DocumentViewer1.Location = New System.Drawing.Point(35, 97)
+        Me.DocumentViewer1.Location = New System.Drawing.Point(46, 97)
         Me.DocumentViewer1.LookAndFeel.SkinName = "Office 2013"
         Me.DocumentViewer1.LookAndFeel.UseDefaultLookAndFeel = False
         Me.DocumentViewer1.Name = "DocumentViewer1"
-        Me.DocumentViewer1.Size = New System.Drawing.Size(1018, 238)
+        Me.DocumentViewer1.Size = New System.Drawing.Size(1175, 329)
         Me.DocumentViewer1.TabIndex = 117
         '
         'DocumentViewerBarManager1
@@ -591,28 +617,28 @@ Partial Class CoutTravail
         Me.barDockControlTop.CausesValidation = False
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlTop.Size = New System.Drawing.Size(1053, 0)
+        Me.barDockControlTop.Size = New System.Drawing.Size(1221, 0)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 335)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1053, 25)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 426)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(1221, 26)
         '
         'barDockControlLeft
         '
         Me.barDockControlLeft.CausesValidation = False
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(35, 335)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(46, 426)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1053, 0)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 335)
+        Me.barDockControlRight.Location = New System.Drawing.Point(1221, 0)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 426)
         '
         'PrintPreviewSubItem1
         '
@@ -844,37 +870,11 @@ Partial Class CoutTravail
         Me.PrintPreviewBarCheckItem17.Id = 56
         Me.PrintPreviewBarCheckItem17.Name = "PrintPreviewBarCheckItem17"
         '
-        'fonction
-        '
-        Me.fonction.DisplayMember = "Text"
-        Me.fonction.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.fonction.FormattingEnabled = True
-        Me.fonction.ItemHeight = 17
-        Me.fonction.Location = New System.Drawing.Point(364, 50)
-        Me.fonction.Name = "fonction"
-        Me.fonction.Size = New System.Drawing.Size(146, 23)
-        Me.fonction.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.fonction.TabIndex = 21
-        Me.fonction.WatermarkText = "Fonction :"
-        '
-        'direction
-        '
-        Me.direction.DisplayMember = "Text"
-        Me.direction.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.direction.FormattingEnabled = True
-        Me.direction.ItemHeight = 17
-        Me.direction.Location = New System.Drawing.Point(227, 52)
-        Me.direction.Name = "direction"
-        Me.direction.Size = New System.Drawing.Size(122, 23)
-        Me.direction.Style = DevComponents.DotNetBar.eDotNetBarStyle.StyleManagerControlled
-        Me.direction.TabIndex = 20
-        Me.direction.WatermarkText = "Direction :"
-        '
         'CoutTravail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1053, 360)
+        Me.ClientSize = New System.Drawing.Size(1221, 452)
         Me.Controls.Add(Me.DocumentViewer1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.barDockControlLeft)

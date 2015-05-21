@@ -136,7 +136,7 @@ Partial Class AttestationDeTravail
         Me.GroupBox1.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
         Me.GroupBox1.Name = "GroupBox1"
         Me.GroupBox1.Padding = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.GroupBox1.Size = New System.Drawing.Size(1556, 98)
+        Me.GroupBox1.Size = New System.Drawing.Size(1640, 98)
         Me.GroupBox1.TabIndex = 20
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Attestation de Travail  :"
@@ -354,15 +354,15 @@ Partial Class AttestationDeTravail
         Me.barDockControlTop.Dock = System.Windows.Forms.DockStyle.Top
         Me.barDockControlTop.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlTop.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.barDockControlTop.Size = New System.Drawing.Size(1556, 0)
+        Me.barDockControlTop.Size = New System.Drawing.Size(1640, 0)
         '
         'barDockControlBottom
         '
         Me.barDockControlBottom.CausesValidation = False
         Me.barDockControlBottom.Dock = System.Windows.Forms.DockStyle.Bottom
-        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 880)
+        Me.barDockControlBottom.Location = New System.Drawing.Point(0, 922)
         Me.barDockControlBottom.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.barDockControlBottom.Size = New System.Drawing.Size(1556, 26)
+        Me.barDockControlBottom.Size = New System.Drawing.Size(1640, 26)
         '
         'barDockControlLeft
         '
@@ -370,15 +370,15 @@ Partial Class AttestationDeTravail
         Me.barDockControlLeft.Dock = System.Windows.Forms.DockStyle.Left
         Me.barDockControlLeft.Location = New System.Drawing.Point(0, 0)
         Me.barDockControlLeft.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 880)
+        Me.barDockControlLeft.Size = New System.Drawing.Size(0, 922)
         '
         'barDockControlRight
         '
         Me.barDockControlRight.CausesValidation = False
         Me.barDockControlRight.Dock = System.Windows.Forms.DockStyle.Right
-        Me.barDockControlRight.Location = New System.Drawing.Point(1556, 0)
+        Me.barDockControlRight.Location = New System.Drawing.Point(1640, 0)
         Me.barDockControlRight.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
-        Me.barDockControlRight.Size = New System.Drawing.Size(0, 880)
+        Me.barDockControlRight.Size = New System.Drawing.Size(0, 922)
         '
         'PrintPreviewBarItem2
         '
@@ -896,7 +896,7 @@ Partial Class AttestationDeTravail
         Me.RichEditControl1.LookAndFeel.UseDefaultLookAndFeel = False
         Me.RichEditControl1.MenuManager = Me.DocumentViewerBarManager1
         Me.RichEditControl1.Name = "RichEditControl1"
-        Me.RichEditControl1.Size = New System.Drawing.Size(1556, 782)
+        Me.RichEditControl1.Size = New System.Drawing.Size(1640, 824)
         Me.RichEditControl1.TabIndex = 26
         '
         'StatImageList
@@ -913,7 +913,7 @@ Partial Class AttestationDeTravail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 17.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1556, 906)
+        Me.ClientSize = New System.Drawing.Size(1640, 948)
         Me.Controls.Add(Me.RichEditControl1)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.barDockControlLeft)

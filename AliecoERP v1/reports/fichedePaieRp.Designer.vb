@@ -20,6 +20,8 @@ Partial Public Class fichedePaieRp
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.Detail = New DevExpress.XtraReports.UI.DetailBand()
+        Me.XrPageBreak1 = New DevExpress.XtraReports.UI.XRPageBreak()
+        Me.FormattingRule1 = New DevExpress.XtraReports.UI.FormattingRule()
         Me.XrTable4 = New DevExpress.XtraReports.UI.XRTable()
         Me.XrTableRow4 = New DevExpress.XtraReports.UI.XRTableRow()
         Me.XrTableCell17 = New DevExpress.XtraReports.UI.XRTableCell()
@@ -67,9 +69,7 @@ Partial Public Class fichedePaieRp
         Me.XrLabel2 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel3 = New DevExpress.XtraReports.UI.XRLabel()
         Me.XrLabel1 = New DevExpress.XtraReports.UI.XRLabel()
-        Me.FormattingRule1 = New DevExpress.XtraReports.UI.FormattingRule()
         Me.Parameter1 = New DevExpress.XtraReports.Parameters.Parameter()
-        Me.XrPageBreak1 = New DevExpress.XtraReports.UI.XRPageBreak()
         CType(Me.XrTable4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.FicheDePaieDs1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.XrTable2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -82,10 +82,28 @@ Partial Public Class fichedePaieRp
         '
         Me.Detail.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrPageBreak1, Me.XrTable4})
         Me.Detail.Dpi = 254.0!
-        Me.Detail.HeightF = 62.04168!
+        Me.Detail.HeightF = 57.99671!
         Me.Detail.Name = "Detail"
         Me.Detail.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254.0!)
         Me.Detail.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
+        '
+        'XrPageBreak1
+        '
+        Me.XrPageBreak1.Dpi = 254.0!
+        Me.XrPageBreak1.FormattingRules.Add(Me.FormattingRule1)
+        Me.XrPageBreak1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 5.080036!)
+        Me.XrPageBreak1.Name = "XrPageBreak1"
+        Me.XrPageBreak1.Visible = False
+        '
+        'FormattingRule1
+        '
+        Me.FormattingRule1.Condition = "([DataSource.CurrentRowIndex] % [Parameters.Parameter1]== 0) And ([DataSource.Cur" & _
+    "rentRowIndex] != 0)"
+        '
+        '
+        '
+        Me.FormattingRule1.Formatting.Visible = DevExpress.Utils.DefaultBoolean.[True]
+        Me.FormattingRule1.Name = "FormattingRule1"
         '
         'XrTable4
         '
@@ -205,7 +223,7 @@ Partial Public Class fichedePaieRp
         'BottomMargin
         '
         Me.BottomMargin.Dpi = 254.0!
-        Me.BottomMargin.HeightF = 77.0!
+        Me.BottomMargin.HeightF = 13.49998!
         Me.BottomMargin.Name = "BottomMargin"
         Me.BottomMargin.Padding = New DevExpress.XtraPrinting.PaddingInfo(0, 0, 0, 0, 254.0!)
         Me.BottomMargin.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopLeft
@@ -230,7 +248,7 @@ Partial Public Class fichedePaieRp
         'XrTable2
         '
         Me.XrTable2.Dpi = 254.0!
-        Me.XrTable2.LocationFloat = New DevExpress.Utils.PointFloat(0.0007266998!, 170.0691!)
+        Me.XrTable2.LocationFloat = New DevExpress.Utils.PointFloat(5.292393!, 242.2868!)
         Me.XrTable2.Name = "XrTable2"
         Me.XrTable2.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow2})
         Me.XrTable2.SizeF = New System.Drawing.SizeF(2067.448!, 63.5!)
@@ -347,7 +365,7 @@ Partial Public Class fichedePaieRp
         'XrTable1
         '
         Me.XrTable1.Dpi = 254.0!
-        Me.XrTable1.LocationFloat = New DevExpress.Utils.PointFloat(722.9831!, 0.0!)
+        Me.XrTable1.LocationFloat = New DevExpress.Utils.PointFloat(728.2747!, 72.21774!)
         Me.XrTable1.Name = "XrTable1"
         Me.XrTable1.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow1})
         Me.XrTable1.SizeF = New System.Drawing.SizeF(642.7258!, 74.08333!)
@@ -374,7 +392,7 @@ Partial Public Class fichedePaieRp
         '
         Me.XrTable3.Dpi = 254.0!
         Me.XrTable3.Font = New System.Drawing.Font("Segoe UI Light", 10.0!)
-        Me.XrTable3.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 337.4865!)
+        Me.XrTable3.LocationFloat = New DevExpress.Utils.PointFloat(5.291667!, 409.7043!)
         Me.XrTable3.Name = "XrTable3"
         Me.XrTable3.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow3})
         Me.XrTable3.SizeF = New System.Drawing.SizeF(2067.449!, 63.5!)
@@ -472,14 +490,14 @@ Partial Public Class fichedePaieRp
         '
         Me.ReportFooter.Controls.AddRange(New DevExpress.XtraReports.UI.XRControl() {Me.XrTable5, Me.XrLabel2, Me.XrLabel3, Me.XrLabel1})
         Me.ReportFooter.Dpi = 254.0!
-        Me.ReportFooter.HeightF = 158.75!
+        Me.ReportFooter.HeightF = 164.0417!
         Me.ReportFooter.Name = "ReportFooter"
         Me.ReportFooter.PrintAtBottom = True
         '
         'XrTable5
         '
         Me.XrTable5.Dpi = 254.0!
-        Me.XrTable5.LocationFloat = New DevExpress.Utils.PointFloat(1115.751!, 0.0!)
+        Me.XrTable5.LocationFloat = New DevExpress.Utils.PointFloat(1123.687!, 26.24678!)
         Me.XrTable5.Name = "XrTable5"
         Me.XrTable5.Rows.AddRange(New DevExpress.XtraReports.UI.XRTableRow() {Me.XrTableRow5})
         Me.XrTable5.SizeF = New System.Drawing.SizeF(1035.758!, 63.49992!)
@@ -539,7 +557,7 @@ Partial Public Class fichedePaieRp
         '
         Me.XrLabel2.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Employes.MP")})
         Me.XrLabel2.Dpi = 254.0!
-        Me.XrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(1199.776!, 63.49992!)
+        Me.XrLabel2.LocationFloat = New DevExpress.Utils.PointFloat(1207.712!, 89.74662!)
         Me.XrLabel2.Name = "XrLabel2"
         Me.XrLabel2.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254.0!)
         Me.XrLabel2.SizeF = New System.Drawing.SizeF(404.9354!, 58.42001!)
@@ -550,7 +568,7 @@ Partial Public Class fichedePaieRp
         '
         Me.XrLabel3.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Employes.AD")})
         Me.XrLabel3.Dpi = 254.0!
-        Me.XrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(261.0865!, 0.0!)
+        Me.XrLabel3.LocationFloat = New DevExpress.Utils.PointFloat(269.0228!, 26.24678!)
         Me.XrLabel3.Name = "XrLabel3"
         Me.XrLabel3.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254.0!)
         Me.XrLabel3.SizeF = New System.Drawing.SizeF(463.2648!, 58.42!)
@@ -561,7 +579,7 @@ Partial Public Class fichedePaieRp
         '
         Me.XrLabel1.DataBindings.AddRange(New DevExpress.XtraReports.UI.XRBinding() {New DevExpress.XtraReports.UI.XRBinding("Text", Nothing, "Employes.Net")})
         Me.XrLabel1.Dpi = 254.0!
-        Me.XrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(1762.573!, 63.49992!)
+        Me.XrLabel1.LocationFloat = New DevExpress.Utils.PointFloat(1770.509!, 89.74662!)
         Me.XrLabel1.Name = "XrLabel1"
         Me.XrLabel1.Padding = New DevExpress.XtraPrinting.PaddingInfo(5, 5, 0, 0, 254.0!)
         Me.XrLabel1.SizeF = New System.Drawing.SizeF(388.9354!, 58.41998!)
@@ -569,30 +587,12 @@ Partial Public Class fichedePaieRp
         Me.XrLabel1.Text = "XrLabel1"
         Me.XrLabel1.TextAlignment = DevExpress.XtraPrinting.TextAlignment.TopCenter
         '
-        'FormattingRule1
-        '
-        Me.FormattingRule1.Condition = "([DataSource.CurrentRowIndex] % [Parameters.Parameter1]== 0) And ([DataSource.Cur" & _
-    "rentRowIndex] != 0)"
-        '
-        '
-        '
-        Me.FormattingRule1.Formatting.Visible = DevExpress.Utils.DefaultBoolean.[True]
-        Me.FormattingRule1.Name = "FormattingRule1"
-        '
         'Parameter1
         '
         Me.Parameter1.Description = "Rows per Pages :"
         Me.Parameter1.Name = "Parameter1"
         Me.Parameter1.Type = GetType(Integer)
         Me.Parameter1.ValueInfo = "10"
-        '
-        'XrPageBreak1
-        '
-        Me.XrPageBreak1.Dpi = 254.0!
-        Me.XrPageBreak1.FormattingRules.Add(Me.FormattingRule1)
-        Me.XrPageBreak1.LocationFloat = New DevExpress.Utils.PointFloat(0.0!, 5.080036!)
-        Me.XrPageBreak1.Name = "XrPageBreak1"
-        Me.XrPageBreak1.Visible = False
         '
         'fichedePaieRp
         '
@@ -603,7 +603,7 @@ Partial Public Class fichedePaieRp
         Me.Dpi = 254.0!
         Me.Font = New System.Drawing.Font("Segoe UI Light", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FormattingRuleSheet.AddRange(New DevExpress.XtraReports.UI.FormattingRule() {Me.FormattingRule1})
-        Me.Margins = New System.Drawing.Printing.Margins(159, 143, 114, 77)
+        Me.Margins = New System.Drawing.Printing.Margins(159, 143, 114, 13)
         Me.PageHeight = 1519
         Me.PageWidth = 2507
         Me.PaperKind = System.Drawing.Printing.PaperKind.Custom
